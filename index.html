@@ -22,12 +22,12 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body>
+    <body ng-app="main">
         <!--[if lt IE 7]>
             <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
         <![endif]-->
 
-        <!-- This code was originall taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
 
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
@@ -50,42 +50,30 @@
             </div>
         </div>
 
+        <!-- Content -->
+        <div class="container" data-ng-view ></div>
+
+        <!-- Footer -->
         <div class="container">
-            <div class="hero-unit">
-                <h1>Jacob Walker</h1>
-                <p>My name is Jacob Walker and I am a web developer currently residing in Wichita, KS.</p>
-                <p><a class="btn btn-primary btn-large" href="#about">Learn more &raquo;</a></p>
-            </div>
-
-            <!-- Example row of columns -->
-            <div class="row">
-                <div class="span6">
-                    <h2>Resume</h2>
-                    <p>View my official resume in HTML, PDF or Markdown format.</p>
-                    <p><a class="btn" href="/resume">View Resume &raquo;</a></p>
-               </div>
-                <div class="span6">
-                    <h2>Portfolio</h2>
-                    <p>Browse through some of the projects I have been involved with.</p>
-                    <p><a class="btn" href="#portfolio">View Projects &raquo;</a></p>
-                </div>
-            </div>
-
             <hr>
-
             <footer>
                 <p>&copy; Jacob Walker 2013</p>
             </footer>
+        </div>
 
-        </div> <!-- /container -->
-
+        <!-- Libraries -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
-
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/vendor/angular.min.js"></script>
 
+        <!-- My application -->
         <script src="js/main.js"></script>
+        <script src="js/controllers/root.js"></script>
+        <script src="js/controllers/about.js"></script>
+        <script src="js/controllers/portfolio.js"></script>
 
+        <!-- Analytics -->
         <script>
             var _gaq=[['_setAccount','UA-42678895-1'],['_trackPageview']];
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
