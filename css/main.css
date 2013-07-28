@@ -3,6 +3,45 @@ body {
     padding-bottom: 40px;
 }
 
+.symbol {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    background-image: url("../img/icons.png");
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    vertical-align: top;
+}
+
+.social-twitter {
+    background-position: -192px 0px;
+}
+
+.social-facebook {
+    background-position: -96px 0px;
+}
+
+.social-github {
+    background-position: -128px 0px;
+}
+
+.social-googleplus {
+    background-position: -64px 0px;
+}
+
+.social-linkedin {
+    background-position: -160px 0px;
+}
+
+.social-youtube {
+    background-position: -224px 0px;
+}
+
+.social-mojolive{
+    background-position: -256px 0px;
+}
+
 
 
 
