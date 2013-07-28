@@ -1,8 +1,18 @@
 body {
     padding-top: 60px;
     padding-bottom: 40px;
+    background: url("../img/debut_light.png");
 }
 
+hr {
+    border-top: 1px solid #000000;
+}
+
+.hero-unit { 
+min-height: 300px;
+}
+
+/* Social Media Icons */
 .symbol {
     height: 32px;
     width: 32px;
@@ -42,18 +52,40 @@ body {
     background-position: -256px 0px;
 }
 
+/* End Social Media Icons */
 
+/* Responsive Slides -- From responsiveslides.com */
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 400px;
+    height: 300px;
+    padding: 0;
+    margin: 0;
+}
 
+.rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
 
+.rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 400px;
+    height: 300px;
+    border: 0;
+}
+/* End Responsive Slides */
