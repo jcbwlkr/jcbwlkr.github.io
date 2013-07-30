@@ -7,4 +7,5 @@ app.config(function($routeProvider) {
         .when("/", {controller: 'HomeCtrl', templateUrl: '/views/home.html'})
         .when("/about", {controller: 'AboutCtrl', templateUrl: '/views/about.html'})
         .when("/portfolio", {controller: 'PortfolioCtrl', templateUrl: '/views/portfolio.html'})
+        .when("/portfolio/:id", {controller: 'PortfolioCtrl', templateUrl: '/views/portfolio.html'})
 });

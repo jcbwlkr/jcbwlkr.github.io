@@ -8,8 +8,8 @@ hr {
     border-top: 1px solid #000000;
 }
 
-.hero-unit { 
-min-height: 300px;
+.hero-unit {
+    min-height: 300px;
 }
 
 /* Social Media Icons */
@@ -89,3 +89,42 @@ min-height: 300px;
     border: 0;
 }
 /* End Responsive Slides */
+
+#portfolio {
+    background: #f0f0f0;
+    border-radius: 12px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+    box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+    padding: 1em;
+}
+
+#portfolio-menu {
+    background: #ffffff;
+    border-radius: 12px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+    padding: 1em 0px;
+}
+
+#portfolio-menu li a:hover,
+#portfolio-menu li a:active {
+    background: #0044cc;
+    color: #ffffff;
+}
+
+#portfolio-menu li a.active {
+    background: #0044cc;
+    color: #ffffff;
+}
+
+#project-detail {
+    border-radius: 12px;
+      -moz-border-radius: 12px;
+      -webkit-border-radius: 12px;
+    background: #ffffff;
+    min-height: 313px;
+    padding: 5px 10px;
+}

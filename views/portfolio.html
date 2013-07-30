@@ -1,1 +1,9 @@
 <h1>Portfolio</h1>
+<div class="row-fluid" id="portfolio">
+    <div class="span3" id="portfolio-menu">
+        <ul class="nav nav-list">
+            <li data-ng-repeat="project in projects"><a data-ng-class="projectClass(project.id)" href="#portfolio/{{project.id}}">{{project.name}}</a></li>
+        </ul>
+    </div>
+    <div class="span9" id="project-detail" ng-bind-html-unsafe="currentProject.data"></div>
+</div>
