@@ -1,5 +1,4 @@
 body {
-    padding-top: 60px;
     padding-bottom: 40px;
     background: url("../img/debut_light.png");
 }
@@ -9,7 +8,18 @@ hr {
 }
 
 .hero-unit {
+    margin-top: 60px;
     min-height: 300px;
+}
+@media (max-width: 767px) {
+    .hero-unit {
+        margin-top: 0px;
+        padding: 10px;
+        overflow: auto;
+    }
+    .hero-unit #learn-more {
+        float: right;
+    }
 }
 
 /* Social Media Icons */
@@ -63,6 +73,16 @@ hr {
     height: 300px;
     padding: 0;
     margin: 0;
+    float: right;
+}
+@media (max-width: 767px) {
+    .rslides {
+        float: none;
+        width: 200px;
+        height: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .rslides li {
@@ -87,6 +107,12 @@ hr {
     width: 400px;
     height: 300px;
     border: 0;
+}
+@media (max-width: 767px) {
+    .rslides img {
+        width: 200px;
+        height: 150px;
+    }
 }
 /* End Responsive Slides */
 
