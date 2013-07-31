@@ -90,6 +90,7 @@ hr {
 }
 /* End Responsive Slides */
 
+/* Begin Portfolio */
 #portfolio {
     background: #f0f0f0;
     border-radius: 12px;
@@ -127,4 +128,11 @@ hr {
     background: #ffffff;
     min-height: 313px;
     padding: 5px 10px;
+}
+
+/* End Portfolio */
+
+#skill_cloud {
+    height: 253px;
+    width: 300px;
 }
