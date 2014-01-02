@@ -74,7 +74,7 @@ hr {
     list-style: none;
     overflow: hidden;
     width: 400px;
-    height: 300px;
+    height: 320px;
     padding: 0;
     margin: 0;
     float: right;
@@ -83,7 +83,7 @@ hr {
     .rslides {
         float: none;
         width: 200px;
-        height: 150px;
+        height: 170px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -107,14 +107,14 @@ hr {
 .rslides img {
     display: block;
     height: auto;
-    float: left;
-    width: 400px;
+    max-width: 380px;
     height: 300px;
     border: 0;
+    margin: 0px auto;
 }
 @media (max-width: 767px) {
     .rslides img {
-        width: 200px;
+        max-width: 180px;
         height: 150px;
     }
 }
@@ -167,11 +167,14 @@ hr {
     width: 300px;
 }
 
-.about-image {
-    background: #eeeeee;
+.about-image, .rslides img {
+    background: #e2e2e2;
     border-radius: 12px;
       -moz-border-radius: 12px;
       -webkit-border-radius: 12px;
     padding: 10px;
+}
+
+.about-image {
     margin: 5px 8px;
 }
