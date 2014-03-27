@@ -4,7 +4,7 @@ function PortfolioCtrl($scope, $routeParams, $http) {
         { name: "yagl-JS",                   id: 2},
         { name: "Regular Expressions 101",   id: 3},
         { name: "find.torrent",              id: 4},
-        { name: "UpFront Wichita",           id: 5},
+        { name: "devICT",                    id: 5},
         { name: "D&D Campaign Journal",      id: 6},
         { name: "TimeIPS",                   id: 7},
         { name: "Natural Organic Warehouse", id: 8},
