@@ -1,35 +1,30 @@
 # http://www.abcya.com/word_clouds.htm
 PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP
-MySQL MySQL MySQL MySQL MySQL
-HTML5 HTML5 HTML5 HTML5 HTML5
-JavaScript JavaScript JavaScript JavaScript JavaScript
+MySQL MySQL MySQL
+HTML5 HTML5 HTML5
 Bash Bash
 Regular~Expressions
-Python Python Python
+Python Python
 Ruby Ruby Ruby
-Expect
 C++
 Java
 Android Android
-Visual Basic
 PHPUnit PHPUnit PHPUnit PHPUnit PHPUnit PHPUnit
-Doctrine~2 Doctrine~2 Doctrine~2 Doctrine~2
+Doctrine~2 Doctrine~2 Doctrine~2 Doctrine~2 Doctrine~2
 Git Git Git Git
+Twig Twig Twig Twig
 jQuery
 Linux Linux Linux
 Vim Vim Vim Vim Vim
-Apache
-Xdebug
-Composer
+Composer Composer Composer
 Tmux
+Silex Silex
 Symfony~2
 Rails Rails
-Frisby.js
-HG
 Twitter~Bootstrap
 Less
 Node.js Node.js
 Angular.js
 Behat
 Mink
-CVS
+MongoDB MongoDB
