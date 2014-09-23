@@ -1,6 +1,3 @@
-**Or...**
-## How I Learned to Stop Worrying and Love the Regex
-
 In March 2013 I gave a presentation to my local web development group
 [devICT][devict] over the different forms and uses of Regular Expressions. The
 talk was just under two hours long and was well received by the audience
