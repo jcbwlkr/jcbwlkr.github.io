@@ -140,10 +140,6 @@ hr {
     padding: 1em 0px;
 }
 
-#portfolio-menu a:hover {
-    cursor: pointer;
-}
-
 #portfolio-menu li a:hover,
 #portfolio-menu li a:active {
     background: #0044cc;
