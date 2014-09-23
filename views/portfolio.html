@@ -2,7 +2,9 @@
 <div class="row-fluid" id="portfolio">
     <div class="span3" id="portfolio-menu">
         <ul class="nav nav-list">
-            <li data-ng-repeat="project in projects"><a data-ng-class="projectClass(project._id)" href="#portfolio/{{project._id}}">{{project.name}}</a></li>
+            <li data-ng-repeat="project in projects">
+            <a data-ng-class="projectClass(project._id)" data-ng-click="loadProject(project._id)">{{project.name}}</a>
+            </li>
         </ul>
     </div>
     <div class="span9" id="project-detail">
