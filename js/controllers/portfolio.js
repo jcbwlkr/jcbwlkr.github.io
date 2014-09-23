@@ -18,6 +18,8 @@ function PortfolioCtrl($scope, $routeParams, $http) {
             .success(function(data) {
                 $scope.currentProject = data.result;
             });
+    } else {
+        $scope.placeholder = "Choose a Project From the List";
     }
 
     $scope.projectClass = function(id) {
