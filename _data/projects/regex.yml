@@ -1,4 +1,5 @@
 name: Regular Expressions 101
+order: 5
 subtitle: Or How I Learned to Stop Worrying and Love the Regex
 _markdown:
     description: regex.md

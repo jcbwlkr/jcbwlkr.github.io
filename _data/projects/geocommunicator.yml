@@ -1,3 +1,4 @@
 name: Geocommunicator API Client
+order: 8
 _markdown:
     description: geocommunicator.md

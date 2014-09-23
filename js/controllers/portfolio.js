@@ -2,7 +2,14 @@ function PortfolioCtrl($scope, $routeParams, $http) {
     $http
         .get('/api/projects.json')
         .success(function(data) {
-            $scope.projects = data.result;
+            projects = data.result;
+            projects.sort(function(a, b) {
+                if (a.order == b.order) {
+                    return 0;
+                }
+                return (a.order < b.order) ? -1 : 1;
+            });
+            $scope.projects = projects;
         });
 
     if ($routeParams.id) {

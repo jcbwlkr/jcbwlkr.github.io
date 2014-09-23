@@ -1,3 +1,4 @@
 name: find.torrent
+order: 4
 _markdown:
     description: find.torrent.md

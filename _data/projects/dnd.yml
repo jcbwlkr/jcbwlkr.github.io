@@ -1,3 +1,4 @@
 name: D&D Campaign Journal
+order: 7
 _markdown:
     description: dnd.md

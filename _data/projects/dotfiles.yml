@@ -1,3 +1,4 @@
 name: My Dotfiles
+order: 6
 _markdown:
     description: dotfiles.md

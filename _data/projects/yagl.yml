@@ -1,4 +1,5 @@
 name: yagl-js
 subtitle: "Yet Another Game of Life :: In JavaScript"
+order: 10
 _markdown:
     description: yagl.md
