@@ -15,28 +15,31 @@
         KS. I am passionate about best practices, open source software, my
         family, Vim, and community.
     </p>
-    <p><a id="learn-more" class="btn btn-primary btn-large" href="#about">Learn more <i class="icon-double-angle-right"></i></a></p>
+    <p><a id="learn-more" class="btn btn-primary btn-large" href="/about.html">Learn more <i class="icon-double-angle-right"></i></a></p>
 </div>
 
 <div class="row">
     <div class="span4">
         <h2>Portfolio</h2>
         <p>Browse through some of the projects I have been involved with.</p>
-        <p><a class="btn" href="#portfolio">My Projects <i class="icon-double-angle-right"></i></a></p>
+        <p><a class="btn" href="/portfolio.html">My Projects <i class="icon-double-angle-right"></i></a></p>
     </div>
     <div class="span4">
         <h2>Blog</h2>
         <p>Read my thoughts on topics I have found interesting.</p>
-        <p><a class="btn" href="#blog">My Blog <i class="icon-double-angle-right"></i></a></p>
+        <p><a class="btn" href="/blog.html">My Blog <i class="icon-double-angle-right"></i></a></p>
     </div>
     <div class="span4">
         <h2>Resume</h2>
         <p>View my official resume in HTML, PDF or Markdown format.</p>
-        <p><a class="btn" href="/resume">My Resume <i class="icon-external-link"></i></a></p>
+        <p><a class="btn" href="/resume/">My Resume <i class="icon-external-link"></i></a></p>
    </div>
 </div>
+{% endblock %}
 
-<script src="js/vendor/responsiveslides.min.js"></script>
+{% block scripts %}
+{{ super() }}
+<script src="/js/vendor/responsiveslides.min.js"></script>
 <script type="text/javascript">
     // Slideshow on home page
     $(function() {
