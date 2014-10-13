@@ -49,40 +49,48 @@
 
         <div class="container">
             
-<div class="hero-unit">
-    <ul class="rslides">
-        <li><img src="http://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=300" /></li>
-        <li><img src="/img/skill_cloud.jpg" /></li>
-        <li><img src="/img/trex-cafe.jpg" /></li>
-        <li><img src="/img/vim.jpg" /></li>
-        <li><img src="/img/family-wedding.jpg" /></li>
-    </ul>
-    <h1>Jacob Walker</h1>
-    <p>
-        My name is Jacob Walker. I am a software developer living in Wichita,
-        KS. I am passionate about best practices, open source software, my
-        family, Vim, and community.
-    </p>
-    <p><a id="learn-more" class="btn btn-primary btn-large" href="/about.html">Learn more <i class="icon-double-angle-right"></i></a></p>
-</div>
+<h1>spf13-vim: The Ultimate Vim Distribution</h1>
+<p>Posted: <u>2013-02-02</u></p>
 
-<div class="row">
-    <div class="span4">
-        <h2>Portfolio</h2>
-        <p>Browse through some of the projects I have been involved with.</p>
-        <p><a class="btn" href="/portfolio/">My Projects <i class="icon-double-angle-right"></i></a></p>
-    </div>
-    <div class="span4">
-        <h2>Blog</h2>
-        <p>Read my thoughts on topics I have found interesting.</p>
-        <p><a class="btn" href="/blog/">My Blog <i class="icon-double-angle-right"></i></a></p>
-    </div>
-    <div class="span4">
-        <h2>Resume</h2>
-        <p>View my official resume in HTML, PDF or Markdown format.</p>
-        <p><a class="btn" href="/resume/">My Resume <i class="icon-external-link"></i></a></p>
-   </div>
-</div>
+<p>Steve Francia (commonly referred to as <a href="http://spf13.com">spf13</a> works at
+<a href="http://www.10gen.com/">10gen</a> on the popular NoSQL database
+<a href="http://en.wikipedia.org/wiki/Mongodb">MongoDB</a>. That's impressive, but more
+importantly to me he maintains spf13-vim which is appropriately self titled
+"The Ultimate Vim Distribution."</p>
+<p>sfp13-vim is a collection of plugins and configurations to boost your
+<a href="http://www.vim.org">Vim</a> experience. It is designed to work across different
+operating systems with minimal external dependencies. Installing it is trivial
+for those running Linux or Macs and worth the effort if you're using Windows.
+Installing the distribution is what helped me make the leap from "modern" IDEs
+to working solely in Vim.</p>
+<p>spf13 has done you a favor by reviewing different plugins and combining them
+together into this distribution. I have further tweaked the distribution to
+suit my own preferences and workflow. spf13 made the configuration convenient
+to edit by writing your own .vimrc.local and .vimrc.bundles.local files. Use
+the former for defining macros, functions, and keybindings and use the latter
+to enable/disable plugins or groups of plugins.</p>
+<p>If you would like to use my fork, and I so hope that you do, just visit
+<a href="https://github.com/jacobwalker0814/spf13-vim">jacobwalker0814/spf13-vim</a> on
+github and follow the installation instructions. I will be adding additional
+resources and updating the documentation soon so stay tuned.</p>
+<h2>Update</h2>
+<p>Since this post was originally written I have stopped maintaining my spf13
+fork. spf13-vim is still a great distribution that I follow closely and I would
+recommend it to anyone who wants to get a full featured vim configuration setup
+without doing all of the leg work. My own vim configuration is part of <a href="https://github.com/jacobwalker0814/mydotfiles">My
+Dotfiles Repo</a>.</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'jacobwalker0814';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         </div>
 
@@ -104,7 +112,6 @@
         </div>
 
         
-
         <!-- Libraries -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
@@ -122,13 +129,5 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         
-<script src="/js/vendor/responsiveslides.min.js"></script>
-<script type="text/javascript">
-    // Slideshow on home page
-    $(function() {
-        $(".rslides").responsiveSlides();
-    });
-</script>
-
     </body>
 </html>

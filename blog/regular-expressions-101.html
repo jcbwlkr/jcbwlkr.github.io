@@ -49,40 +49,40 @@
 
         <div class="container">
             
-<div class="hero-unit">
-    <ul class="rslides">
-        <li><img src="http://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=300" /></li>
-        <li><img src="/img/skill_cloud.jpg" /></li>
-        <li><img src="/img/trex-cafe.jpg" /></li>
-        <li><img src="/img/vim.jpg" /></li>
-        <li><img src="/img/family-wedding.jpg" /></li>
-    </ul>
-    <h1>Jacob Walker</h1>
-    <p>
-        My name is Jacob Walker. I am a software developer living in Wichita,
-        KS. I am passionate about best practices, open source software, my
-        family, Vim, and community.
-    </p>
-    <p><a id="learn-more" class="btn btn-primary btn-large" href="/about.html">Learn more <i class="icon-double-angle-right"></i></a></p>
-</div>
+<h1>Regular Expressions 101</h1>
+<p>Posted: <u>2013-03-29</u></p>
 
-<div class="row">
-    <div class="span4">
-        <h2>Portfolio</h2>
-        <p>Browse through some of the projects I have been involved with.</p>
-        <p><a class="btn" href="/portfolio/">My Projects <i class="icon-double-angle-right"></i></a></p>
-    </div>
-    <div class="span4">
-        <h2>Blog</h2>
-        <p>Read my thoughts on topics I have found interesting.</p>
-        <p><a class="btn" href="/blog/">My Blog <i class="icon-double-angle-right"></i></a></p>
-    </div>
-    <div class="span4">
-        <h2>Resume</h2>
-        <p>View my official resume in HTML, PDF or Markdown format.</p>
-        <p><a class="btn" href="/resume/">My Resume <i class="icon-external-link"></i></a></p>
-   </div>
-</div>
+<p>I recently joined a a great group of local developers called UpFront Wichita
+(edit: now called <a href="http://meetup.com/devict">devICT</a>. The organizers were so
+gracious as to let me present last night on one of my favorite topics: Regular
+Expressions.</p>
+<p>We recorded the presentation using Google Hangouts on Air. The video is
+available on <a href="http://youtu.be/4nyHF8dnIk" title="Regular Expressions 101 on
+YouTube">YouTube</a>. The slides, source code, and text files used for examples are
+available on <a href="https://github.com/upfrontwichita/Regex101" title="Regular
+Expressions 101 on GitHub">GitHub</a>.</p>
+<p>The video was our first attempt at recording one of these presentations. At our
+next meetup we will do things a little differently to produce a better video
+and to provide better support for remote participants that want to participate
+in the hangout.</p>
+<p>The presentation covers the most commonly used features of regex and some of
+the nicer advanced features like backreferences and assertions. Most of the
+research for the presentation comes from
+<a href="http://www.regular-expressions.info/">regular-expressions.info</a>. Interested
+readers should check out that site's references on some of the crazier things
+you can do.</p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'jacobwalker0814';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
         </div>
 
@@ -104,7 +104,6 @@
         </div>
 
         
-
         <!-- Libraries -->
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
@@ -122,13 +121,5 @@
             s.parentNode.insertBefore(g,s)}(document,'script'));
         </script>
         
-<script src="/js/vendor/responsiveslides.min.js"></script>
-<script type="text/javascript">
-    // Slideshow on home page
-    $(function() {
-        $(".rslides").responsiveSlides();
-    });
-</script>
-
     </body>
 </html>

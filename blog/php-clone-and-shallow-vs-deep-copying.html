@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Jacob Walker</title>
+        <meta name="description" content="Portfolio site for the developer Jacob Walker">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="/css/font-awesome.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
+
+        <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="/">Jacob Walker</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                            <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
+                            <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
+                            <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
+                            <li><a href="/resume"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            
+<h1>PHP Clone and Shallow vs Deep Copying</h1>
+<p>Posted: <u>2013-01-06</u></p>
+
+<p>Looking through the <a href="https://github.com/PHPOffice/PHPExcel">PHPExcel</a> library
+recently I saw how Mark Baker overrides the magic <code>__clone</code> method with
+comments about ensuring that cloning will perform a deep copy instead of a
+shallow one. This is a topic with which I had not had much experience so I did
+some research and experimenting to learn what happens when you use <code>clone</code> and
+the difference between a shallow copy and a deep copy.</p>
+<p>First I examined how you might copy variables in general. Let's start with the
+basics.</p>
+<pre><code class="php">// Example 1
+$foo = 1;
+$bar = $foo; // Copy by value
+++$bar;
+print $bar; // Outputs 2
+print $foo; // Outputs 1
+</code></pre>
+
+<p><code>$bar</code> is a copy of <code>$foo</code>. Incrementing <code>$bar</code> has no effect on <code>$foo</code>. If we
+wanted different behavior we would need to copy by reference with the use of an
+ampersand.</p>
+<pre><code class="php">// Example 2
+$foo = 1;
+$bar =&amp; $foo; // Copy by reference
+++$bar;
+print $bar; // Outputs 2
+print $foo; // Outputs 2
+</code></pre>
+
+<p>Now when we increment <code>$bar</code> we are also incrementing <code>$foo</code>. Well, not really.
+<code>$foo</code>, the variable, is a handle or reference to where the data is stored in
+memory. In the first example we copy by value which (more or less) makes a new
+entry in memory and <code>$bar</code> is a handle to that new location. In the second
+example <code>$bar</code> simply copies the handle. There is only one entry in memory and
+both <code>$foo</code> and <code>$bar</code> point to the same location. What we are actually doing
+when we increment <code>$bar</code> is incrementing the data referenced by <code>$bar</code>. <code>$foo</code>
+references the same data.</p>
+<p>Next I looked at how to copy objects. I started with this simple class Project.</p>
+<pre><code class="php">&lt;?php
+
+class Project {
+    protected $description;
+
+    public function setDescription($description) {
+        $this-&gt;description = $description;
+
+        return $this;
+    }
+
+    public function getDescription() {
+        return $this-&gt;description;
+    }
+}
+</code></pre>
+
+<p>I repeated the same copy assignment from Example 1.</p>
+<pre><code class="php">$project_one = new Project();
+$project_one-&gt;setDescription(&quot;This is my first test project&quot;);
+$project_two = $project_one; // Copying by value?
+</code></pre>
+
+<p>In the previous examples we would have two completely distinct variables that
+reference two different addresses in memory. So to see if this holds true we
+can make a change in <code>$project_two</code> and see the impact.</p>
+<pre><code class="php">$project_two-&gt;setDescription(&quot;A new description for my copied project&quot;);
+print $project_one-&gt;getDescription();
+</code></pre>
+
+<p>Based on Example 1 we might expect that this would print the original
+description we set in <code>$project_one</code>. In fact, it will actually print the new
+description. It appears that the objects are copied by reference. One of the
+things you will often hear is that in PHP 5 objects are copied by reference by
+default. Some research shows that isn't quite true either. Consider this
+explanation from
+<a href="http://php.net/manual/en/language.oop5.references.php">PHP.net</a></p>
+<blockquote>
+<p>A PHP reference is an alias, which allows two different variables to write to
+the same value. As of PHP 5, an object variable doesn't contain the object
+itself as value anymore. It only contains an object identifier which allows
+object accessors to find the actual object. When an object is sent by
+argument, returned or assigned to another variable, the different variables
+are not aliases: they hold a copy of the identifier, which points to the same
+object.</p>
+</blockquote>
+<p>This means copying an object by value will copy the identifier... by value.
+This behaves very similarly to copying by reference because the copied
+identifier points to the same object but is not exactly the same. For a more
+detailed explanation of the difference you can visit the source link.</p>
+<p>So what if you don't want this behavior? Here enters the <code>clone</code> keyword.</p>
+<pre><code class="php">$project_one = new Project();
+$project_one-&gt;setDescription(&quot;This is my first test project&quot;);
+$project_two = clone $project_one; // Cloning to get a new object
+</code></pre>
+
+<p>Now $project_two is a clone of <code>$project_one</code> and is its own honest object.
+When we repeat the test with the descriptions we will see that monkeying around
+with <code>$project_two</code>'s description has no effect on <code>$project_one</code>.</p>
+<p>What happens if the property of a Project is another object? To test this I
+created a new class Person and modified Project to hold a Person</p>
+<pre><code class="php">&lt;?php
+
+class Person {
+    protected $name;
+
+    public function setName($name) {
+        $this-&gt;name = $name;
+
+        return $this;
+    }
+
+    public function getName() {
+        return $this-&gt;name;
+    }
+}
+</code></pre>
+
+<pre><code class="php">&lt;?php
+
+class Project {
+    protected $leadDeveloper;
+
+    public function setLeadDeveloper(Person $developer) {
+        $this-&gt;leadDeveloper = $developer;
+
+        return $this;
+    }
+
+    public function getLeadDeveloper() {
+        return $this-&gt;leadDeveloper;
+    }
+}
+</code></pre>
+
+<p>I then made a Project and set its Lead Developer.</p>
+<pre><code class="php">$jacob = new Person();
+$jacob-&gt;setName(&quot;Jacob&quot;);
+
+$project_one = new Project();
+$project_one-&gt;setLeadDeveloper($jacob);
+$project_two = clone $project_one;
+
+$matthew = new Person();
+$matthew-&gt;setName(&quot;Matthew&quot;);
+$project_two-&gt;setLeadDeveloper($matthew);
+
+print $project_one-&gt;getLeadDeveloper()-&gt;getName(); // Outputs &quot;Jacob&quot;
+</code></pre>
+
+<p>As <code>$project_two</code> is a clone, setting a new value for
+<code>$project_two-&gt;leadDeveloper</code> did not change <code>$project_one</code>. Great, right?
+Let's look at this from a different angle.</p>
+<pre><code class="php">$jacob = new Person();
+$jacob-&gt;setName(&quot;Jacob&quot;);
+
+$project_one = new Project();
+$project_one-&gt;setLeadDeveloper($jacob);
+$project_two = clone $project_one;
+
+$project_two-&gt;getLeadDeveloper()-&gt;setName(&quot;Matthew&quot;);
+
+print $project_one-&gt;getLeadDeveloper()-&gt;getName(); // Outputs &quot;Matthew&quot;
+</code></pre>
+
+<p>The plot thickens. Here we can see that <code>$project_one-&gt;leadDeveloper</code> and
+<code>$project_two-&gt;leadDeveloper</code> both point to the same object. $project_one
+and $project_two are both unique objects but they do not have unique values for
+properties that are references or object identifiers. This is what is meant by
+a shallow copy. If we wanted the two projects to be completely separate we
+would need to change the default behavior of clone to perform a deep copy
+instead of a shallow copy. To do this I define the magic <code>__clone</code> method.</p>
+<pre><code class="php">class Project {
+    // Snip properties, getters, and setters
+
+    public function __clone() {
+        $this-&gt;leadDeveloper = clone $this-&gt;leadDeveloper;
+    }
+}
+</code></pre>
+
+<p>After PHP clones an object it will attempt to call the <code>__clone</code> method on
+<strong>the new cloned object</strong>. Now when we perform the previous test we can see
+that <code>$project_one-&gt;leadDeveloper</code> and <code>$project_two-&gt;leadDeveloper</code>
+point to two completely different objects. This is a deep copy.</p>
+<p>Note that a common technique for ensuring a deep copy is to serialize then
+immediately unserialize each of a class's object properties. Take for example
+this code from PHPExcel</p>
+<pre><code class="php">public function __clone() {
+    foreach($this as $key =&gt; $val) {
+        if (is_object($val) || (is_array($val))) {
+            $this-&gt;{$key} = unserialize(serialize($val));
+        }
+    }
+}
+</code></pre>
+
+<p>This method forces PHP to split apart any object properties from their
+references and return new instances.</p>
+<p>Additional information and examples about cloning can be found on
+<a href="http://php.net/manual/en/language.oop5.cloning.php">php.net</a></p>
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'jacobwalker0814';
+
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+        </div>
+
+        <!-- Footer -->
+        <div class="container">
+            <hr>
+            <footer>
+                <p class="pull-left">&copy; Jacob Walker 2013</p>
+                <p class="pull-right">
+                    <a href="https://twitter.com/jacobwalker0814"                      title="Jacob Walker on Twitter"     class="symbol social-twitter">Jacob Walker on Twitter</a>
+                    <a href="https://github.com/jacobwalker0814"                       title="Jacob Walker on Github"      class="symbol social-github">Jacob Walker on Github</a>
+                    <a href="https://google.com/+JacobWalker0814"                      title="Jacob Walker on Google Plus" class="symbol social-googleplus">Jacob Walker on Google Plus</a>
+                    <a href="https://www.facebook.com/jacobwalker0814"                 title="Jacob Walker on Facebook"    class="symbol social-facebook">Jacob Walker on Facebook</a>
+                    <a href="https://www.youtube.com/channel/UC5R8ji-vKH6NhUQTozKn5eg" title="Jacob Walker on YouTube"     class="symbol social-youtube">Jacob Walker on YouTube</a>
+                    <a href="http://mojolive.com/profile/jacobwalker0814"              title="Jacob Walker on Mojolive"    class="symbol social-mojolive">Jacob Walker on Mojolive</a>
+                    <a href="https://www.linkedin.com/in/jacobwalker0814"              title="Jacob Walker on LinkedIn"    class="symbol social-linkedin">Jacob Walker on LinkedIn</a>
+                </p>
+            </footer>
+        </div>
+
+        
+        <!-- Libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="/js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="/js/vendor/bootstrap.min.js"></script>
+
+        <!-- Code syntax highlighting -->
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+
+        <!-- Analytics -->
+        <script>
+            var _gaq=[['_setAccount','UA-42678895-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+        
+    </body>
+</html>
