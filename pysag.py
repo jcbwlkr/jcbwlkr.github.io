@@ -7,5 +7,11 @@ data_pages = {
         "directory": "portfolio",
         "file": "{{ project._id }}.html",
         "template": "_layouts/project.html"
+    },
+    "posts": {
+        "variable": "post",
+        "directory": "blog",
+        "file": "{{ post._id }}.html",
+        "template": "_layouts/post.html"
     }
 }

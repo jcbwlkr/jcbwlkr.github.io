@@ -1,0 +1,9 @@
+{% extends '_layouts/base.html' %}
+
+{% block body %}
+<h1>My Blog</h1>
+{% for post in posts|sort(attribute='date', reverse=True) %}
+    <h2><a href="/blog/{{ post._id }}.html">{{ post.title }}</a></h2>
+    <p class="post-date">{{ post.date }}</p>
+{% endfor %}
+{% endblock %}
