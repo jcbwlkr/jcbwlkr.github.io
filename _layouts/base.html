@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{% block title %}Jacob Walker{% endblock %}</title>
+        <meta name="description" content="Portfolio site for the developer Jacob Walker">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-responsive.min.css">
+        <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
+
+        <div class="navbar navbar-inverse navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </a>
+                    <a class="brand" href="#">Jacob Walker</a>
+                    <div class="nav-collapse collapse">
+                        <ul class="nav">
+                            <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                            <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
+                            <li><a href="/portfolio.html"><i class="icon-th-list"></i> Portfolio</a></li>
+                            <li><a href="/blog.html"><i class="icon-book"></i> Blog</a></li>
+                            <li><a href="/resume"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            {% block body %}
+            {% endblock %}
+        </div>
+
+        <!-- Footer -->
+        <div class="container">
+            <hr>
+            <footer>
+                <p class="pull-left">&copy; Jacob Walker 2013</p>
+                <p class="pull-right">
+                    <a href="https://twitter.com/jacobwalker0814"                      title="Jacob Walker on Twitter"     class="symbol social-twitter">Jacob Walker on Twitter</a>
+                    <a href="https://github.com/jacobwalker0814"                       title="Jacob Walker on Github"      class="symbol social-github">Jacob Walker on Github</a>
+                    <a href="https://google.com/+JacobWalker0814"                      title="Jacob Walker on Google Plus" class="symbol social-googleplus">Jacob Walker on Google Plus</a>
+                    <a href="https://www.facebook.com/jacobwalker0814"                 title="Jacob Walker on Facebook"    class="symbol social-facebook">Jacob Walker on Facebook</a>
+                    <a href="https://www.youtube.com/channel/UC5R8ji-vKH6NhUQTozKn5eg" title="Jacob Walker on YouTube"     class="symbol social-youtube">Jacob Walker on YouTube</a>
+                    <a href="http://mojolive.com/profile/jacobwalker0814"              title="Jacob Walker on Mojolive"    class="symbol social-mojolive">Jacob Walker on Mojolive</a>
+                    <a href="https://www.linkedin.com/in/jacobwalker0814"              title="Jacob Walker on LinkedIn"    class="symbol social-linkedin">Jacob Walker on LinkedIn</a>
+                </p>
+            </footer>
+        </div>
+
+        <!-- Libraries -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+        <script src="js/vendor/bootstrap.min.js"></script>
+
+        <!-- Analytics -->
+        <script>
+            var _gaq=[['_setAccount','UA-42678895-1'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src='//www.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>
+    </body>
+</html>
