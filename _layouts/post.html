@@ -1,5 +1,7 @@
 {% extends '_layouts/base.html' %}
 
+{% block title %}{{ super() }} | {{ post.title }}{% endblock %}
+
 {% block body %}
 <h1>{{ post.title }}</h1>
 <p>Posted: <u>{{ post.date }}</u></p>

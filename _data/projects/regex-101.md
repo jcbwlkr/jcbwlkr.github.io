@@ -8,4 +8,4 @@ Hangouts On Air and the video is available on [YouTube][video].
 
 [source]: https://github.com/jacobwalker0814/regex-101
 [video]: http://youtu.be/4LnyHF8dnIk
-[devict]: http://devict.org
+[devict]: /portfolio/devict.html

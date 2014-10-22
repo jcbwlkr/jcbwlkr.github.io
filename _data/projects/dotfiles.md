@@ -7,7 +7,7 @@ update my config by running
 bash <( curl -L http://bit.ly/jacobwalker )
 ```
 
-[Source][source]
+* [My Dotfiles on GitHub][source]
 
 [source]: https://github.com/jacobwalker0814/mydotfiles
 [homesick]: https://github.com/technicalpickles/homesick

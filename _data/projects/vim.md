@@ -1,12 +1,11 @@
 When I started using Vim as my primary editor I found my second love. Its pure
 efficiency combined with its extendability have yet to leave me seriously
-wanting for any features. I maintain a fork of the popular [spf13-vim][spf13]
-distribution. I have also contributed a new theme to the [vim-airline][airline]
-project.
+wanting for any features. I previously maintained a fork of the popular [spf13-vim][spf13] distribution. I have since abandoned that fork and created my own `.vimrc` which is hosted with [my dotfiles][dotfiles].
 
-[Source][source]
+I have also ported the default [Powerline][powerline] theme to the
+`powerlineish` theme in the [vim-airline][airline] project.
 
-[source]: https://github.com/jacobwalker0814/spf13-vim
+[powerline]: https://github.com/lokaltog/powerline
 [airline]: https://github.com/bling/vim-airline
-
-[spf13]: http://wp.me/p32nVp-12
+[spf13]: /blog/spf13-vim.html
+[dotfiles]: /portfolio/dotfiles.html

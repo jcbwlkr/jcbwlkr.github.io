@@ -7,8 +7,8 @@ significantly to meet the unique needs of NOW. Notable features include
 integration with shipping services and the [Avalara AvaTax][avalara] API to
 calculate and report accurate sales tax on local customers.
 
-[Natural Organic Warehouse][now]
+* [NOW Site][now]
 
-[tortugas]: http://tortuags-llc.com
+[tortugas]: http://tortugas-llc.com
 [now]: https://cart.naturalorganicwarehouse.com
 [avalara]: http://www.avalara.com/

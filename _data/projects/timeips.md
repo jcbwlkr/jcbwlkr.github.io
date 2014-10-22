@@ -1,10 +1,9 @@
 Since October 2010 the majority of my development focus has been with my
 employer TimeIPS. We make a time and attendance system which is used by
-thousands of companies around the world. Tracking employee hours sounds simple
-when you think about it, but to stay competitive in the time and attendance
-market TimeIPS does so much more than tracking punches in and out.
+thousands of companies around the world.
 
 TimeIPS is used to
+
 * Track employee hours worked from a variety of hardware and software interfaces
 * Record benefit usages and accruals
 * Monitor employee adherence to schedules
@@ -15,17 +14,23 @@ TimeIPS is used to
 * Calculate automatic holiday rules
 * And many other things
 
-At TimeIPS I am provided with the opportunity to work with the following technologies
+At TimeIPS I lead a team of 4 in the development of our products. Some of my
+major accomplishments in this role include:
 
-* PHP
-* Doctrine 2
-* PHPUnit
-* jQuery
-* Android
-* C++
-* QT
-* Python
-* QEMU virtual machines
-* Embedded Applications
+* Introduced Test Driven Development with [PHPUnit][phpunit]
+* Implemented Continuous Integration with [Jenkins-CI][jenkins]
+* Started code reviews via [Phabricator][phabricator]
+* Leading the development of a REST API
+* Working to update legacy code to use the [Doctrine 2][doctrine] ORM
+* Working to implement a Zero Defect policy
+* Developed a system for managing our farm of QEMU virtual machines
+* Revamped our build process making heavy use of [Composer][composer],
+  [Gulp][gulp], and [Bower][bower]
 
-[TimeIPS Videos](http://timeips.com/videos/)
+[phpunit]: https://phpunit.de/
+[jenkins]: http://jenkins-ci.org/
+[phabricator]: http://phabricator.org/
+[doctrine]: http://www.doctrine-project.org/
+[composer]: https://getcomposer.org/
+[gulp]: http://gulpjs.com/
+[bower]: http://bower.io/

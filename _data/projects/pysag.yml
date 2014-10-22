@@ -1,0 +1,5 @@
+name: pysag
+subtitle: The Python Static site and API Generator
+order: 3
+_markdown:
+    description: pysag.md

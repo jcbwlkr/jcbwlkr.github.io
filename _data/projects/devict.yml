@@ -1,4 +1,5 @@
 name: devICT
-order: 2
+subtitle: "Wichita's Development Community"
+order: 1
 _markdown:
     description: devict.md

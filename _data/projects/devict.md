@@ -1,14 +1,17 @@
-devICT is a local development community that covers all aspects of development.
-I first joined the group in December of 2012 and have made it a priority to be
-actively involved. I help to organize events, find and engage new members, and
-give presentations.
+devICT is the primary development community in Wichita, KS boasting over 150
+members. The group covers all aspects of software development. Our mission is:
 
-The group's home on the web is [devict.org][devict] The site was previously
-hosted on Heroku but has since been moved to a VPS. The application runs on
-Rails. I have made several contributions to the site such as setting up
-infrastructure, the user management system, and the IRC users integration.
+> To educate, empower, and connect software developers in the Wichita area.
 
-[Source][source]
+I first joined the group in December of 2012 and have since become one of the
+organizers. I help to organize and promote events, welcome new members, mediate
+conflicts, and give presentations. I am active in our IRC channel on freenode,
+`#devict`.
 
-[source]: https://github.com/devict/devict.org
+* [devICT Site][devict]
+* [Meetup Group][meetup]
+* [GitHub Organization][github]
+
+[github]: https://github.com/devict/
 [devict]: http://devict.org
+[meetup]: http://meetup.com/devict
