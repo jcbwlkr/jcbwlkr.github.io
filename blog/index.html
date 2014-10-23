@@ -6,43 +6,44 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jacob Walker</title>
+        <title>Jacob Walker | Blog</title>
         <meta name="description" content="Portfolio site for the developer Jacob Walker">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 
+        <!-- TODO do I need this? -->
         <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <!--[if lt IE 8]>
+            <p>
+            You are using an <strong>outdated</strong> browser. Please upgrade
+            or use a <a href="http://whatbrowser.org/">different browser</a>.
+            </p>
         <![endif]-->
 
-        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Jacob Walker</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="/">Jacob Walker</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li><a href="/"><i class="icon-home"></i> Home</a></li>
-                            <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
-                            <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
-                            <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
-                            <li><a href="/resume"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
-                        </ul>
-                    </div>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
+                        <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
+                        <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
+                        <li><a href="/resume/"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -51,17 +52,145 @@
             
 <h1>My Blog</h1>
 
-    <h2><a href="/blog/a-note-on-recovering-from-innodb-corruption.html">A Note on Recovering from InnoDB Corruption</a></h2>
-    <p class="post-date">2013-06-27</p>
+    <a class="link-panel" href="/blog/a-note-on-recovering-from-innodb-corruption.html">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">A Note on Recovering from InnoDB Corruption</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    Corrupt InnoDB tables are difficult to repair. I discovered a tip that might help when dealing with a misbehaving server
+                </p>
+            </div>
+            <div class="panel-footer">
+                2013-06-27
+                
+                    <div class="pull-right">
+                        
+    
+    
 
-    <h2><a href="/blog/regular-expressions-101.html">Regular Expressions 101</a></h2>
-    <p class="post-date">2013-03-29</p>
+    
+        
+            
+        
+        <span class="label label-info">mysql</span>
+    
+        
+            
+        
+        <span class="label label-success">innodb</span>
+    
+                    </div>
+                
+            </div>
+        </div>
+    </a>
 
-    <h2><a href="/blog/spf13-vim.html">spf13-vim: The Ultimate Vim Distribution</a></h2>
-    <p class="post-date">2013-02-02</p>
+    <a class="link-panel" href="/blog/regular-expressions-101.html">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Regular Expressions 101</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    I have an unreasonable love of regex. I held two dozen developers hostage for two hours to hear about it.
+                </p>
+            </div>
+            <div class="panel-footer">
+                2013-03-29
+                
+                    <div class="pull-right">
+                        
+    
+    
 
-    <h2><a href="/blog/php-clone-and-shallow-vs-deep-copying.html">PHP Clone and Shallow vs Deep Copying</a></h2>
-    <p class="post-date">2013-01-06</p>
+    
+        
+            
+        
+        <span class="label label-success">regex</span>
+    
+        
+            
+        
+        <span class="label label-warning">community</span>
+    
+        
+            
+        
+        <span class="label label-warning">presentation</span>
+    
+                    </div>
+                
+            </div>
+        </div>
+    </a>
+
+    <a class="link-panel" href="/blog/spf13-vim.html">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">spf13-vim: The Ultimate Vim Distribution</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    spf13 brings the IDE experience to Vim. I forked the project to add my own spin.
+                </p>
+            </div>
+            <div class="panel-footer">
+                2013-02-02
+                
+                    <div class="pull-right">
+                        
+    
+    
+
+    
+        
+            
+        
+        <span class="label label-info">vim</span>
+    
+                    </div>
+                
+            </div>
+        </div>
+    </a>
+
+    <a class="link-panel" href="/blog/php-clone-and-shallow-vs-deep-copying.html">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">PHP Clone and Shallow vs Deep Copying</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    I explore the differences in shallow vs deep copies when cloning an object in PHP.
+                </p>
+            </div>
+            <div class="panel-footer">
+                2013-01-06
+                
+                    <div class="pull-right">
+                        
+    
+    
+
+    
+        
+            
+        
+        <span class="label label-info">php</span>
+    
+        
+            
+        
+        <span class="label label-warning">oop</span>
+    
+                    </div>
+                
+            </div>
+        </div>
+    </a>
 
 
         </div>
@@ -70,7 +199,7 @@
         <div class="container">
             <hr>
             <footer>
-                <p class="pull-left">&copy; Jacob Walker 2013</p>
+                <p class="pull-left">&copy; Jacob Walker 2014</p>
                 <p class="pull-right">
                     <a href="https://twitter.com/jacobwalker0814"                      title="Jacob Walker on Twitter"     class="symbol social-twitter">Jacob Walker on Twitter</a>
                     <a href="https://github.com/jacobwalker0814"                       title="Jacob Walker on Github"      class="symbol social-github">Jacob Walker on Github</a>

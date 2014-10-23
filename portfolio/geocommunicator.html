@@ -6,99 +6,91 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jacob Walker</title>
+        <title>Jacob Walker | Geocommunicator API Client</title>
         <meta name="description" content="Portfolio site for the developer Jacob Walker">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 
+        <!-- TODO do I need this? -->
         <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <!--[if lt IE 8]>
+            <p>
+            You are using an <strong>outdated</strong> browser. Please upgrade
+            or use a <a href="http://whatbrowser.org/">different browser</a>.
+            </p>
         <![endif]-->
 
-        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Jacob Walker</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="/">Jacob Walker</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li><a href="/"><i class="icon-home"></i> Home</a></li>
-                            <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
-                            <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
-                            <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
-                            <li><a href="/resume"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
-                        </ul>
-                    </div>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
+                        <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
+                        <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
+                        <li><a href="/resume/"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
             
-<h1>My Portfolio</h1>
-<div class="row-fluid" id="portfolio">
-    <div class="span3" id="portfolio-menu">
-        <ul class="nav nav-list">
-            
-                
-            
+<a href="/portfolio/" class="btn btn-primary btn-sm">
+    <i class="icon-double-angle-left"></i> Back to Portfolio
+</a>
+<h1>Geocommunicator API Client</h1>
 
-            
-                <li><a class="" href="/portfolio/jacob-walker.com.html">jacob-walker.com</a></li>
-            
-                <li><a class="" href="/portfolio/devict.html">devICT</a></li>
-            
-                <li><a class="" href="/portfolio/timeips.html">TimeIPS</a></li>
-            
-                <li><a class="" href="/portfolio/find.torrent.html">find.torrent</a></li>
-            
-                <li><a class="" href="/portfolio/regex.html">Regular Expressions 101</a></li>
-            
-                <li><a class="" href="/portfolio/dotfiles.html">My Dotfiles</a></li>
-            
-                <li><a class="" href="/portfolio/dnd.html">D&D Campaign Journal</a></li>
-            
-                <li><a class="active" href="/portfolio/geocommunicator.html">Geocommunicator API Client</a></li>
-            
-                <li><a class="" href="/portfolio/now.html">Natural Organic Warehouse</a></li>
-            
-                <li><a class="" href="/portfolio/yagl.html">yagl-js</a></li>
-            
-                <li><a class="" href="/portfolio/vim.html">Vim Config</a></li>
-            
-        </ul>
-    </div>
-    <div class="span9" id="project-details">
+
+    <p>
         
-<h1></h1>
-<h2></h2>
-<div><p>I have a friend who travels around the mid-west servicing natural gas
-pipelines. As part of his duties he has to translate latitude / longitude
-coordinates into state, township, range, and section information. He was doing
-this by hand dozens of time per day. I found an API from the <a href="http://www.geocommunicator.gov/">Departartment of
-the Interior's Bureau of Land Management</a> which accepts coordinates and
-responds with the exact information my friend needed. I created a client class
-that can consume the API and another class that uses <a href="http://phpexcel.codeplex.com/">PHPExcel</a> to
-parse an XLS spreadsheet with coordinates and populate it with the additional
-information.</p>
-<p><a href="https://github.com/jacobwalker0814/geocommunicator-client">Source</a></p></div>
+    
+    
 
-    </div>
-</div>
+    
+        
+            
+        
+        <span class="label label-info">php</span>
+    
+        
+            
+        
+        <span class="label label-success">soap</span>
+    
+        
+            
+        
+        <span class="label label-warning">api</span>
+    
+    </p>
+
+
+<p>I have a friend who travels around the country servicing natural gas pipelines.
+As part of his duties he has to translate latitude / longitude coordinates into
+state, township, range, and section information. He was doing this by hand
+dozens of time per day. I found an API from the <a href="http://www.geocommunicator.gov/">Department of the Interior's
+Bureau of Land Management</a> which accepts coordinates and responds with the
+exact information my friend needed. I created a client class that can consume
+the API and another class that uses <a href="http://phpexcel.codeplex.com/">PHPExcel</a> to parse an XLS
+spreadsheet with coordinates and populate it with the additional information.</p>
+<ul>
+<li><a href="https://github.com/jacobwalker0814/geocommunicator-client">Source</a></li>
+</ul>
 
         </div>
 
@@ -106,7 +98,7 @@ information.</p>
         <div class="container">
             <hr>
             <footer>
-                <p class="pull-left">&copy; Jacob Walker 2013</p>
+                <p class="pull-left">&copy; Jacob Walker 2014</p>
                 <p class="pull-right">
                     <a href="https://twitter.com/jacobwalker0814"                      title="Jacob Walker on Twitter"     class="symbol social-twitter">Jacob Walker on Twitter</a>
                     <a href="https://github.com/jacobwalker0814"                       title="Jacob Walker on Github"      class="symbol social-github">Jacob Walker on Github</a>

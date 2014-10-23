@@ -1,29 +1,9 @@
 body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background: url("../img/debut_light.png");
-}
-@media (max-width: 990px) {
-    body {
-        padding-top: 0px;
-    }
+    padding-top: 6em;
 }
 
 hr {
     border-top: 1px solid #000000;
-}
-
-.hero-unit {
-    min-height: 300px;
-}
-@media (max-width: 767px) {
-    .hero-unit {
-        padding: 10px;
-        overflow: auto;
-    }
-    .hero-unit #learn-more {
-        float: right;
-    }
 }
 
 /* Social Media Icons */
@@ -79,11 +59,15 @@ hr {
     margin: 0;
     float: right;
 }
+@media (max-width: 990px) {
+    .rslides {
+        width: 200px;
+        height: 170px;
+    }
+}
 @media (max-width: 767px) {
     .rslides {
         float: none;
-        width: 200px;
-        height: 170px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -112,7 +96,7 @@ hr {
     border: 0;
     margin: 0px auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .rslides img {
         max-width: 180px;
         height: 150px;
@@ -120,47 +104,14 @@ hr {
 }
 /* End Responsive Slides */
 
-/* Begin Portfolio */
-#portfolio {
-    background: #eeeeee;
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    padding: 1em;
+.link-panel .panel-body,
+.link-panel .panel-footer {
+    color: #2c3e50;
 }
 
-#portfolio-menu {
-    background: #ffffff;
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    padding: 1em 0px;
+.link-panel:hover {
+    text-decoration: none;
 }
-
-#portfolio-menu li a:hover,
-#portfolio-menu li a:active {
-    background: #0044cc;
-    color: #ffffff;
-}
-
-#portfolio-menu li a.active {
-    background: #0044cc;
-    color: #ffffff;
-}
-
-#project-details {
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    background: #ffffff;
-    min-height: 313px;
-    padding: 5px 10px;
-}
-
-/* End Portfolio */
 
 #skill_cloud {
     height: 253px;

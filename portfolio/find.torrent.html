@@ -6,107 +6,103 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jacob Walker</title>
+        <title>Jacob Walker | find.torrent</title>
         <meta name="description" content="Portfolio site for the developer Jacob Walker">
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 
+        <!-- TODO do I need this? -->
         <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <!--[if lt IE 8]>
+            <p>
+            You are using an <strong>outdated</strong> browser. Please upgrade
+            or use a <a href="http://whatbrowser.org/">different browser</a>.
+            </p>
         <![endif]-->
 
-        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Jacob Walker</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="/">Jacob Walker</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li><a href="/"><i class="icon-home"></i> Home</a></li>
-                            <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
-                            <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
-                            <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
-                            <li><a href="/resume"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
-                        </ul>
-                    </div>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
+                        <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
+                        <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
+                        <li><a href="/resume/"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
 
         <div class="container">
             
-<h1>My Portfolio</h1>
-<div class="row-fluid" id="portfolio">
-    <div class="span3" id="portfolio-menu">
-        <ul class="nav nav-list">
-            
-                
-            
+<a href="/portfolio/" class="btn btn-primary btn-sm">
+    <i class="icon-double-angle-left"></i> Back to Portfolio
+</a>
+<h1>find.torrent</h1>
 
-            
-                <li><a class="" href="/portfolio/jacob-walker.com.html">jacob-walker.com</a></li>
-            
-                <li><a class="" href="/portfolio/devict.html">devICT</a></li>
-            
-                <li><a class="" href="/portfolio/timeips.html">TimeIPS</a></li>
-            
-                <li><a class="active" href="/portfolio/find.torrent.html">find.torrent</a></li>
-            
-                <li><a class="" href="/portfolio/regex.html">Regular Expressions 101</a></li>
-            
-                <li><a class="" href="/portfolio/dotfiles.html">My Dotfiles</a></li>
-            
-                <li><a class="" href="/portfolio/dnd.html">D&D Campaign Journal</a></li>
-            
-                <li><a class="" href="/portfolio/geocommunicator.html">Geocommunicator API Client</a></li>
-            
-                <li><a class="" href="/portfolio/now.html">Natural Organic Warehouse</a></li>
-            
-                <li><a class="" href="/portfolio/yagl.html">yagl-js</a></li>
-            
-                <li><a class="" href="/portfolio/vim.html">Vim Config</a></li>
-            
-        </ul>
-    </div>
-    <div class="span9" id="project-details">
+
+    <p>
         
-<h1></h1>
-<h2></h2>
-<div><p>At home my desktop PC acts as a UPNP media server and is the box I use to
-download torrents. This machine is inconveniently located in my basement. There
+    
+    
+
+    
+        
+            
+        
+        <span class="label label-info">php</span>
+    
+        
+            
+        
+        <span class="label label-success">phpunit</span>
+    
+        
+            
+        
+        <span class="label label-warning">rest</span>
+    
+        
+            
+        
+        <span class="label label-warning">tdd</span>
+    
+    </p>
+
+
+<p>At home my desktop PC acts as a UPNP media server and is the box I use to
+download torrents. This machine was inconveniently located in my basement. There
 were many times when I would want to start a download but the only device
 nearby is my phone. I found that finding and downloading a torrent file then
 getting it to my torrent machine was a cumbersome process. Furthermore, many
 sites that index torrent files contain advertising that ranges from annoying to
 inappropriate to explicit. I decided to create a service that facilitates the
-process of finding the .torrent files and triggering their download. The
+process of finding the <code>.torrent</code> files and triggering their download. The
 service does not download the torrent itself; just the torrent file.</p>
 <p>When I started this project I knew that I wanted to build the service as a REST
 API that I could then consume through various clients. I intend to develop web,
-command line, android, and iPhone applications. The service is written in
-<a href="http://bulletphp.com/">Bullet PHP</a> and serves the API with the <a href="http://stateless.co/hal_specification.html">HAL Hypermedia Type</a>.
-The service was written using a combination of TDD and BDD practices with tests
-in PHPUnit and Frisby.js.</p>
+command line, Android, and iOS applications. The service was written in <a href="http://bulletphp.com/">Bullet
+PHP</a> and serves the API with the <a href="http://stateless.co/hal_specification.html">HAL Hypermedia Type</a>. The
+service was developed using a combination of TDD and BDD practices with tests in
+PHPUnit and Frisby.js.</p>
 <p>This is a collaborative work with my co-worker and business partner <a href="http://matthewmkeeler.com">Matthew M.
 Keeler</a>.</p>
-<p><a href="https://github.com/Tortugas-Consulting-LLC/find.torrent">Source</a></p></div>
-
-    </div>
-</div>
+<p><a href="https://github.com/Tortugas-Consulting-LLC/find.torrent">Source</a></p>
 
         </div>
 
@@ -114,7 +110,7 @@ Keeler</a>.</p>
         <div class="container">
             <hr>
             <footer>
-                <p class="pull-left">&copy; Jacob Walker 2013</p>
+                <p class="pull-left">&copy; Jacob Walker 2014</p>
                 <p class="pull-right">
                     <a href="https://twitter.com/jacobwalker0814"                      title="Jacob Walker on Twitter"     class="symbol social-twitter">Jacob Walker on Twitter</a>
                     <a href="https://github.com/jacobwalker0814"                       title="Jacob Walker on Github"      class="symbol social-github">Jacob Walker on Github</a>
