@@ -1,4 +1,5 @@
 name: D&D Campaign Journal
+summary: "A Jekyll blog I keep to chronicle the D&D games I run."
 order: 10
 tags:
     - ruby

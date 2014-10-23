@@ -1,4 +1,5 @@
 name: My Dotfiles
+summary: "My linux command line configuration files. Designed to be shared across my machines."
 order: 16
 tags:
     - bash

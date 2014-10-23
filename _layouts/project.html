@@ -1,12 +1,21 @@
 {% extends '_layouts/base.html' %}
+{% import '_layouts/helpers.html' as helpers %}
 
 {% block title %}{{ super() }} | {{ project.name }}{% endblock %}
 
 {% block body %}
-<a href="/portfolio/">Back to portfolio</a>
+<a href="/portfolio/" class="btn btn-primary btn-sm">
+    <i class="icon-double-angle-left"></i> Back to Portfolio
+</a>
 <h1>{{ project.name }}</h1>
 {% if project.subtitle %}
-  <h2>{{ project.subtitle }}</h2>
+    <h2>{{ project.subtitle }}</h2>
 {% endif %}
-<div>{{ project.description }}</div>
+{% if project.tags %}
+    <p>
+        {{ helpers.tags(project.tags) }}
+    </p>
+{% endif %}
+
+{{ project.description }}
 {% endblock %}

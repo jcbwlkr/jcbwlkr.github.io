@@ -1,13 +1,14 @@
 name: Startup Wichita
 subtitle: startupwichita.com
+summary: "A community resource website for entrepreneurs written on the MEAN.io stack."
 order: 8
 tags:
-    - community
     - node
+    - mongo
     - express
     - angular
-    - mongo
     - bootstrap
+    - community
     - tdd
 _markdown:
     description: startup-wichita.md

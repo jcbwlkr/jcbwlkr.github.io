@@ -11,38 +11,39 @@
         <meta name="viewport" content="width=device-width">
 
         <link rel="stylesheet" href="/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/css/bootstrap-responsive.min.css">
         <link rel="stylesheet" href="/css/font-awesome.min.css">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.3/styles/github.min.css">
 
+        <!-- TODO do I need this? -->
         <script src="/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <!--[if lt IE 8]>
+            <p>
+            You are using an <strong>outdated</strong> browser. Please upgrade
+            or use a <a href="http://whatbrowser.org/">different browser</a>.
+            </p>
         <![endif]-->
 
-        <!-- This code was originally taken from http://twitter.github.com/bootstrap/examples/hero.html -->
-
-        <div class="navbar navbar-inverse navbar-fixed-top">
-            <div class="navbar-inner">
-                <div class="container">
-                    <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <div class="navbar navbar-default navbar-fixed-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <a href="/" class="navbar-brand">Jacob Walker</a>
+                    <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
-                    </a>
-                    <a class="brand" href="/">Jacob Walker</a>
-                    <div class="nav-collapse collapse">
-                        <ul class="nav">
-                            <li><a href="/"><i class="icon-home"></i> Home</a></li>
-                            <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
-                            <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
-                            <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
-                            <li><a href="/resume/"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
-                        </ul>
-                    </div>
+                    </button>
+                </div>
+                <div class="navbar-collapse collapse" id="navbar-main">
+                    <ul class="nav navbar-nav">
+                        <li><a href="/"><i class="icon-home"></i> Home</a></li>
+                        <li><a href="/about.html"><i class="icon-question-sign"></i> About</a></li>
+                        <li><a href="/portfolio/"><i class="icon-th-list"></i> Portfolio</a></li>
+                        <li><a href="/blog/"><i class="icon-book"></i> Blog</a></li>
+                        <li><a href="/resume/"><i class="icon-file"></i> Resume <i class="icon-external-link"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -56,7 +57,7 @@
         <div class="container">
             <hr>
             <footer>
-                <p class="pull-left">&copy; Jacob Walker 2013</p>
+                <p class="pull-left">&copy; Jacob Walker 2014</p>
                 <p class="pull-right">
                     <a href="https://twitter.com/jacobwalker0814"                      title="Jacob Walker on Twitter"     class="symbol social-twitter">Jacob Walker on Twitter</a>
                     <a href="https://github.com/jacobwalker0814"                       title="Jacob Walker on Github"      class="symbol social-github">Jacob Walker on Github</a>

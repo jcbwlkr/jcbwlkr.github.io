@@ -1,8 +1,10 @@
 name: find.torrent
+summary: "An API server I wrote for discovering .torrent files."
 order: 9
 tags:
     - php
     - phpunit
     - rest
+    - tdd
 _markdown:
     description: find.torrent.md

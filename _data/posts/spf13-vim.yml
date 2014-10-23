@@ -1,4 +1,7 @@
 title: "spf13-vim: The Ultimate Vim Distribution"
+summary: "spf13 brings the IDE experience to Vim. I forked the project to add my own spin."
 date: 2013-02-02
+tags:
+    - vim
 _markdown:
     body: spf13-vim.md

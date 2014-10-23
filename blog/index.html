@@ -1,11 +1,30 @@
 {% extends '_layouts/base.html' %}
+{% import '_layouts/helpers.html' as helpers %}
 
 {% block title %}{{ super() }} | Blog{% endblock %}
 
 {% block body %}
 <h1>My Blog</h1>
 {% for post in posts|sort(attribute='date', reverse=True) %}
-    <h2><a href="/blog/{{ post._id }}.html">{{ post.title }}</a></h2>
-    <p class="post-date">{{ post.date }}</p>
+    <a class="link-panel" href="/blog/{{ post._id }}.html">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{ post.title }}</h3>
+            </div>
+            <div class="panel-body">
+                <p>
+                    {{ post.summary }}
+                </p>
+            </div>
+            <div class="panel-footer">
+                {{ post.date }}
+                {% if post.tags %}
+                    <div class="pull-right">
+                        {{ helpers.tags(post.tags) }}
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </a>
 {% endfor %}
 {% endblock %}

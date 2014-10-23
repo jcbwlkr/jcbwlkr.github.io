@@ -1,4 +1,5 @@
 name: Natural Organic Warehouse
+summary: "An e-commerce site for a natural farming/gardening company."
 order: 12
 tags:
     - php

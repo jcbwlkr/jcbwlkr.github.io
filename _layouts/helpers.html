@@ -1,0 +1,18 @@
+{% macro tags(tags) -%}
+    {% set tags_languages = ["bash", "html5", "javascript", "mongo", "mysql", "node", "php", "python", "ruby", "c++", "vim"] %}
+    {% set tags_tools = ["angular", "avalara", "bootstrap", "canvas", "doctrine", "express", "innodb", "jekyll", "jinja2", "less", "phpunit", "rails", "regex", "silex", "soap", "symfony", "tmux", "twig"] %}
+    {% set tags_concepts = ["api", "community", "e-commerce", "oop", "presentation", "rest", "tdd"] %}
+
+    {% for tag in tags %}
+        {% if tag in tags_languages %}
+            {% set tag_class="info" %}
+        {% elif tag in tags_concepts %}
+            {% set tag_class="warning" %}
+        {% elif tag in tags_tools %}
+            {% set tag_class="success" %}
+        {% else %}
+            {% set tag_class="default" %}
+        {% endif %}
+        <span class="label label-{{tag_class}}">{{tag}}</span>
+    {% endfor %}
+{%- endmacro %}

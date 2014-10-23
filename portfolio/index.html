@@ -1,20 +1,40 @@
 {% extends '_layouts/base.html' %}
+{% import '_layouts/helpers.html' as helpers %}
 
 {% block title %}{{ super() }} | Portfolio{% endblock %}
 
 {% block body %}
 <h1>Portfolio</h1>
-<div class="row-fluid" class="portfolio">
-    {% for project in projects|sort(attribute='order') %}
-        <h2 class="project-name"><a href="/portfolio/{{project._id}}.html">{{project.name}}</a></h2>
-        {% if project.tags %}
-            <div class="portfolio-tags">
-                Tagged:
-            {% for tag in project.tags %}
-                <span class="tag {{tag}}">{{tag}}</span>
-            {% endfor %}
+
+{% set row_open=false %}
+{% for project in projects|sort(attribute='order') %}
+    {% if loop.index is divisibleby 2 %}
+    {% else %}
+        {% set row_open=true %}
+        <div class="row">
+    {% endif %}
+    <a class="col-md-6 link-panel" href="/portfolio/{{ project._id }}.html">
+        <div class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">{{ project.name }}</h3>
             </div>
-        {% endif %}
-    {% endfor %}
-</div>
+            <div class="panel-body">
+                {{ project.summary }}
+            </div>
+            <div class="panel-footer">
+                {% if project.tags %}
+                    {{ helpers.tags(project.tags) }}
+                {% endif %}
+            </div>
+        </div>
+    </a>
+    {% if loop.index is divisibleby 2 %}
+        </div>
+        {% set row_open=false %}
+    {% else %}
+    {% endif %}
+{% endfor %}
+{% if row_open %}
+    </div>
+{% endif %}
 {% endblock %}

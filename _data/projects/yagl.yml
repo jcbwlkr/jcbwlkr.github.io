@@ -1,5 +1,6 @@
 name: yagl-js
 subtitle: "Yet Another Game of Life :: In JavaScript"
+summary: "Yet Another Game of Life :: In JavaScript"
 order: 15
 tags:
     - javascript

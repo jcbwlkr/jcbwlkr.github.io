@@ -1,29 +1,9 @@
 body {
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background: url("../img/debut_light.png");
-}
-@media (max-width: 990px) {
-    body {
-        padding-top: 0px;
-    }
+    padding-top: 6em;
 }
 
 hr {
     border-top: 1px solid #000000;
-}
-
-.hero-unit {
-    min-height: 300px;
-}
-@media (max-width: 767px) {
-    .hero-unit {
-        padding: 10px;
-        overflow: auto;
-    }
-    .hero-unit #learn-more {
-        float: right;
-    }
 }
 
 /* Social Media Icons */
@@ -79,11 +59,15 @@ hr {
     margin: 0;
     float: right;
 }
+@media (max-width: 990px) {
+    .rslides {
+        width: 200px;
+        height: 170px;
+    }
+}
 @media (max-width: 767px) {
     .rslides {
         float: none;
-        width: 200px;
-        height: 170px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -112,7 +96,7 @@ hr {
     border: 0;
     margin: 0px auto;
 }
-@media (max-width: 767px) {
+@media (max-width: 990px) {
     .rslides img {
         max-width: 180px;
         height: 150px;
@@ -120,68 +104,14 @@ hr {
 }
 /* End Responsive Slides */
 
-/* Begin Portfolio */
-.project-name {
-    font-size: 2em;
-    /*display: block;*/
-    clear: both;
-    margin-bottom: 0.5em;
+.link-panel .panel-body,
+.link-panel .panel-footer {
+    color: #2c3e50;
 }
 
-.portfolio-tags {
-    float: left;
-    font-size: 1em;
+.link-panel:hover {
+    text-decoration: none;
 }
-
-.portfolio-tags .tag {
-    color: white;
-}
-
-/* language tags */
-.portfolio-tags .bash,
-.portfolio-tags .html5,
-.portfolio-tags .javascript,
-.portfolio-tags .mongo,
-.portfolio-tags .node,
-.portfolio-tags .php,
-.portfolio-tags .python,
-.portfolio-tags .ruby,
-.portfolio-tags .c\+\+,
-.portfolio-tags .vim {
-    background-color: red;
-}
-
-/* tool/library tags */
-.portfolio-tags .angular,
-.portfolio-tags .avalara,
-.portfolio-tags .bootstrap,
-.portfolio-tags .canvas,
-.portfolio-tags .doctrine,
-.portfolio-tags .express,
-.portfolio-tags .jekyll,
-.portfolio-tags .jinja2,
-.portfolio-tags .less,
-.portfolio-tags .phpunit,
-.portfolio-tags .rails,
-.portfolio-tags .silex,
-.portfolio-tags .symfony,
-.portfolio-tags .tmux,
-.portfolio-tags .twig {
-    background-color: green;
-}
-
-/* concept tags */
-.portfolio-tags .api,
-.portfolio-tags .community,
-.portfolio-tags .e-commerce,
-.portfolio-tags .presentation,
-.portfolio-tags .rest,
-.portfolio-tags .tdd {
-    background-color: yellow;
-}
-
-
-/* End Portfolio */
 
 #skill_cloud {
     height: 253px;

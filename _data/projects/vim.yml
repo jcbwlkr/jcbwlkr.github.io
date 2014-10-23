@@ -1,4 +1,5 @@
 name: Vim Config
+summary: "My contributions to the Vim ecosystem."
 order: 18
 tags:
     - vim

@@ -1,6 +1,8 @@
 name: Regular Expressions 101
+summary: "A presentation I gave to devICT teaching basic and advanced features of regex."
 order: 5
 tags:
+    - regex
     - community
     - presentation
 subtitle: Or How I Learned to Stop Worrying and Love the Regex

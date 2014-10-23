@@ -1,4 +1,9 @@
 title: Regular Expressions 101
+summary: "I have an unreasonable love of regex. I held two dozen developers hostage for two hours to hear about it."
 date: 2013-03-29
+tags:
+    - regex
+    - community
+    - presentation
 _markdown:
     body: regular-expressions-101.md
