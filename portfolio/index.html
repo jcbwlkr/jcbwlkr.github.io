@@ -1,7 +1,20 @@
-{% extends '_layouts/portfolio.html' %}
+{% extends '_layouts/base.html' %}
 
 {% block title %}{{ super() }} | Portfolio{% endblock %}
 
 {% block body %}
-{{ super() }}
+<h1>Portfolio</h1>
+<div class="row-fluid" class="portfolio">
+    {% for project in projects|sort(attribute='order') %}
+        <h2 class="project-name"><a href="/portfolio/{{project._id}}.html">{{project.name}}</a></h2>
+        {% if project.tags %}
+            <div class="portfolio-tags">
+                Tagged:
+            {% for tag in project.tags %}
+                <span class="tag {{tag}}">{{tag}}</span>
+            {% endfor %}
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
 {% endblock %}

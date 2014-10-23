@@ -1,4 +1,8 @@
 name: My Dotfiles
 order: 16
+tags:
+    - bash
+    - vim
+    - tmux
 _markdown:
     description: dotfiles.md

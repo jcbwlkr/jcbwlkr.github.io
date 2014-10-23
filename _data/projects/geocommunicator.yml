@@ -1,4 +1,7 @@
 name: Geocommunicator API Client
 order: 11
+tags:
+    - php
+    - api
 _markdown:
     description: geocommunicator.md

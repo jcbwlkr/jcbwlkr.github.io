@@ -1,9 +1,12 @@
-{% extends '_layouts/portfolio.html' %}
+{% extends '_layouts/base.html' %}
 
 {% block title %}{{ super() }} | {{ project.name }}{% endblock %}
 
-{% block project_details %}
+{% block body %}
+<a href="/portfolio/">Back to portfolio</a>
 <h1>{{ project.name }}</h1>
-<h2>{{ project.subtitle }}</h2>
+{% if project.subtitle %}
+  <h2>{{ project.subtitle }}</h2>
+{% endif %}
 <div>{{ project.description }}</div>
 {% endblock %}

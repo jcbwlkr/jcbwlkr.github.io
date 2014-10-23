@@ -1,4 +1,9 @@
 name: Implementing OOP
 order: 6
+tags:
+    - community
+    - php
+    - ruby
+    - presentation
 _markdown:
     description: implementing-oop.md

@@ -1,4 +1,6 @@
 name: Vim Config
 order: 18
+tags:
+    - vim
 _markdown:
     description: vim.md

@@ -1,5 +1,8 @@
 name: pysag
 subtitle: The Python Static site and API Generator
 order: 3
+tags:
+    - python
+    - jinja2
 _markdown:
     description: pysag.md

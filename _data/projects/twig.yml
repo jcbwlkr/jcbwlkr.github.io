@@ -1,4 +1,9 @@
 name: Templating In PHP With Twig
 order: 7
+tags:
+    - community
+    - presentation
+    - php
+    - twig
 _markdown:
     description: twig.md

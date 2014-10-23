@@ -121,44 +121,65 @@ hr {
 /* End Responsive Slides */
 
 /* Begin Portfolio */
-#portfolio {
-    background: #eeeeee;
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    box-sizing: border-box;
-      -webkit-box-sizing: border-box;
-      -moz-box-sizing: border-box;
-    padding: 1em;
+.project-name {
+    font-size: 2em;
+    /*display: block;*/
+    clear: both;
+    margin-bottom: 0.5em;
 }
 
-#portfolio-menu {
-    background: #ffffff;
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    padding: 1em 0px;
+.portfolio-tags {
+    float: left;
+    font-size: 1em;
 }
 
-#portfolio-menu li a:hover,
-#portfolio-menu li a:active {
-    background: #0044cc;
-    color: #ffffff;
+.portfolio-tags .tag {
+    color: white;
 }
 
-#portfolio-menu li a.active {
-    background: #0044cc;
-    color: #ffffff;
+/* language tags */
+.portfolio-tags .bash,
+.portfolio-tags .html5,
+.portfolio-tags .javascript,
+.portfolio-tags .mongo,
+.portfolio-tags .node,
+.portfolio-tags .php,
+.portfolio-tags .python,
+.portfolio-tags .ruby,
+.portfolio-tags .c\+\+,
+.portfolio-tags .vim {
+    background-color: red;
 }
 
-#project-details {
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    background: #ffffff;
-    min-height: 313px;
-    padding: 5px 10px;
+/* tool/library tags */
+.portfolio-tags .angular,
+.portfolio-tags .avalara,
+.portfolio-tags .bootstrap,
+.portfolio-tags .canvas,
+.portfolio-tags .doctrine,
+.portfolio-tags .express,
+.portfolio-tags .jekyll,
+.portfolio-tags .jinja2,
+.portfolio-tags .less,
+.portfolio-tags .phpunit,
+.portfolio-tags .rails,
+.portfolio-tags .silex,
+.portfolio-tags .symfony,
+.portfolio-tags .tmux,
+.portfolio-tags .twig {
+    background-color: green;
 }
+
+/* concept tags */
+.portfolio-tags .api,
+.portfolio-tags .community,
+.portfolio-tags .e-commerce,
+.portfolio-tags .presentation,
+.portfolio-tags .rest,
+.portfolio-tags .tdd {
+    background-color: yellow;
+}
+
 
 /* End Portfolio */
 

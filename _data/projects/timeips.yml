@@ -1,4 +1,17 @@
 name: TimeIPS
 order: 2
+tags:
+    - php
+    - python
+    - ruby
+    - bash
+    - c++
+    - doctrine
+    - silex
+    - angular
+    - less
+    - bootstrap
+    - tdd
+    - rest
 _markdown:
     description: timeips.md

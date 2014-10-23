@@ -1,4 +1,8 @@
 name: "jacob-walker.com"
 order: 4
+tags:
+    - python
+    - node
+    - bootstrap
 _markdown:
     description: "jacob-walker.com.md"

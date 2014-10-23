@@ -1,4 +1,8 @@
 name: Young Life Wichita
 order: 14
+tags:
+    - ruby
+    - rails
+    - bootstrap
 _markdown:
     description: young-life-wichita.md

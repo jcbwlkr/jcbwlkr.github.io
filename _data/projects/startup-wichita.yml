@@ -1,5 +1,13 @@
 name: Startup Wichita
 subtitle: startupwichita.com
 order: 8
+tags:
+    - community
+    - node
+    - express
+    - angular
+    - mongo
+    - bootstrap
+    - tdd
 _markdown:
     description: startup-wichita.md

@@ -1,4 +1,9 @@
 name: Norris Training Systems
 order: 13
+tags:
+    - php
+    - symfony
+    - bootstrap
+    - e-commerce
 _markdown:
     description: norris-training.md

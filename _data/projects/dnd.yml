@@ -1,4 +1,8 @@
 name: D&D Campaign Journal
 order: 10
+tags:
+    - ruby
+    - jekyll
+    - bootstrap
 _markdown:
     description: dnd.md

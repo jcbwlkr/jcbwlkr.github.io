@@ -1,4 +1,8 @@
 name: Natural Organic Warehouse
 order: 12
+tags:
+    - php
+    - avalara
+    - e-commerce
 _markdown:
     description: now.md
