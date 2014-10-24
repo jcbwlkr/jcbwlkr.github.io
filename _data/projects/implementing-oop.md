@@ -22,6 +22,10 @@ More info:
 * [Slides][slides]
 * [Source][source]
 
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/7QoEfPYULXM" allowfullscreen></iframe>
+</div>
+
 [source]: https://github.com/jacobwalker0814/implementing-oop
 [slides]: /implementing-oop/presentation/
 [video]: http://youtu.be/7QoEfPYULXM

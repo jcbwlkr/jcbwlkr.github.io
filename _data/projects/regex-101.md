@@ -6,6 +6,10 @@ Hangouts On Air and the video is available on [YouTube][video].
 
 [Slides and source][source]
 
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/4LnyHF8dnIk" allowfullscreen></iframe>
+</div>
+
 [source]: https://github.com/jacobwalker0814/regex-101
 [video]: http://youtu.be/4LnyHF8dnIk
 [devict]: /portfolio/devict.html

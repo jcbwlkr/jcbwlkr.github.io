@@ -10,6 +10,10 @@ More info:
 * [Slides][slides]
 * [Source][source]
 
+<div class="embed-responsive embed-responsive-4by3">
+  <iframe class="embed-responsive-item" src="//www.youtube.com/embed/deqGYV8P0Nc" allowfullscreen></iframe>
+</div>
+
 [source]: https://github.com/jacobwalker0814/twig-talk
 [slides]: /twig-talk/presentation/
 [video]: http://youtu.be/deqGYV8P0Nc
