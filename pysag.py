@@ -1,5 +1,5 @@
 exclude_dirs += ['_layouts']
-exclude_files += ['pysag.py', 'tag_cloud_info.txt']
+exclude_files += ['pysag.py', 'publish.sh', 'tag_cloud_info.txt']
 
 data_pages = {
     "projects": {
