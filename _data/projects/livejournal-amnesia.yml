@@ -1,0 +1,8 @@
+name: LiveJournal Amnesia
+summary: "A quick script to mark all of my old high school LiveJournal posts as private."
+order: 10
+tags:
+    - ruby
+    - api
+_markdown:
+    description: livejournal-amnesia.md
