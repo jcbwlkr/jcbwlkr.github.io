@@ -13,7 +13,7 @@ find . -mindepth 1 -maxdepth 1 -not -name ".git" -exec rm -rf {} \;
 find /tmp/_site -mindepth 1 -maxdepth 1 -exec cp -a {} . \;
 
 # Stage it all
-git add -u
+git add -A
 
 # Clean up
 rm -rf /tmp/_site
