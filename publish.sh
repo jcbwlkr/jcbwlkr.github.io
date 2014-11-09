@@ -9,7 +9,7 @@ git checkout master
 # Cleanse out what's here including hidden files (but not .git)
 find . -mindepth 1 -maxdepth 1 -not -name ".git" -exec rm -rf {} \;
 
-# Copy everything includeing hidden files from the generated _site folder
+# Copy everything including hidden files from the generated _site folder
 find /tmp/_site -mindepth 1 -maxdepth 1 -exec cp -a {} . \;
 
 # Stage it all
