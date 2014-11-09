@@ -113,8 +113,12 @@ hr {
     text-decoration: none;
 }
 
-#skill_cloud {
+#tag_cloud {
     height: 253px;
+    width: 300px;
+}
+
+#devict_logo {
     width: 300px;
 }
 
