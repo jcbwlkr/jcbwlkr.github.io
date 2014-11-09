@@ -1,30 +1,18 @@
 # http://www.abcya.com/word_clouds.htm
+Community Community Community Community Community Community Community Community Community Community Community Community 
 PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP
-MySQL MySQL MySQL
-HTML5 HTML5 HTML5
-Bash Bash
-Regular~Expressions
-Python Python
-Ruby Ruby Ruby
-C++
-Java
+Python Python Python Python Python Python Python Python
+Ruby Ruby Ruby Ruby Ruby Ruby Ruby Ruby
+REST REST REST REST REST REST REST REST
+TDD TDD TDD TDD TDD TDD TDD
+Bash Bash Bash Bash
+C C C C C
+Go Go Go Go
 Android Android
-PHPUnit PHPUnit PHPUnit PHPUnit PHPUnit PHPUnit
-Doctrine~2 Doctrine~2 Doctrine~2 Doctrine~2 Doctrine~2
-Git Git Git Git
-Twig Twig Twig Twig
-jQuery
+Git Git Git Git Git Git
 Linux Linux Linux
 Vim Vim Vim Vim Vim
-Composer Composer Composer
-Tmux
-Silex Silex
-Symfony~2
-Rails Rails
-Twitter~Bootstrap
-Less
-Node.js Node.js
-Angular.js
-Behat
-Mink
+Node Node
+MySQL MySQL MySQL
+PostgreSQL PostgreSQL PostgreSQL
 MongoDB MongoDB
