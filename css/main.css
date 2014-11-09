@@ -118,6 +118,10 @@ hr {
     width: 300px;
 }
 
+#devict_logo {
+    width: 300px;
+}
+
 .about-image, .rslides img {
     background: #e2e2e2;
     border-radius: 12px;
