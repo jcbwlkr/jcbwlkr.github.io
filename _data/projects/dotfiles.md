@@ -9,5 +9,5 @@ bash <( curl -L http://bit.ly/jacobwalker )
 
 * [My Dotfiles on GitHub][source]
 
-[source]: https://github.com/jacobwalker0814/mydotfiles
+[source]: https://github.com/jcbwlkr/mydotfiles
 [homesick]: https://github.com/technicalpickles/homesick

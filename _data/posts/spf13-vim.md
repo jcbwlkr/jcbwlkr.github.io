@@ -19,7 +19,7 @@ the former for defining macros, functions, and keybindings and use the latter
 to enable/disable plugins or groups of plugins.
 
 If you would like to use my fork, and I so hope that you do, just visit
-[jacobwalker0814/spf13-vim](https://github.com/jacobwalker0814/spf13-vim) on
+[jcbwlkr/spf13-vim](https://github.com/jcbwlkr/spf13-vim) on
 github and follow the installation instructions. I will be adding additional
 resources and updating the documentation soon so stay tuned.
 
@@ -29,4 +29,4 @@ Since this post was originally written I have stopped maintaining my spf13
 fork. spf13-vim is still a great distribution that I follow closely and I would
 recommend it to anyone who wants to get a full featured vim configuration setup
 without doing all of the leg work. My own vim configuration is part of [My
-Dotfiles Repo](https://github.com/jacobwalker0814/mydotfiles).
+Dotfiles Repo](https://github.com/jcbwlkr/mydotfiles).

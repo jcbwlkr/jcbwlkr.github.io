@@ -13,6 +13,6 @@ web view of the resume. The PDF is formatted through CSS.
 * [Site Source][site-source]
 * [Resume Source][resume-source]
 
-[site-source]: https://github.com/jacobwalker0814/jacobwalker0814.github.io
-[resume-source]: https://github.com/jacobwalker0814/resume
+[site-source]: https://github.com/jcbwlkr/jcbwlkr.github.io
+[resume-source]: https://github.com/jcbwlkr/resume
 [pysag]: /portfolio/pysag.html

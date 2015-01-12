@@ -25,6 +25,6 @@ additional milestones planned over the next few months.
 [mean]: https://mean.io
 [puppet]: http://puppetlabs.com
 [vagrant]: http://vagrantup.com
-[source]: https://github.com/jacobwalker0814/regex-101
+[source]: https://github.com/jcbwlkr/regex-101
 [site]: http://startupwichita.com
 [devict]: /portfolio/devict.html

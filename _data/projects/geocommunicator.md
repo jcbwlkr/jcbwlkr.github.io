@@ -9,6 +9,6 @@ spreadsheet with coordinates and populate it with the additional information.
 
 * [Source][source]
 
-[source]: https://github.com/jacobwalker0814/geocommunicator-client
+[source]: https://github.com/jcbwlkr/geocommunicator-client
 [phpexcel]: http://phpexcel.codeplex.com/
 [blm]: http://www.geocommunicator.gov/

@@ -14,7 +14,7 @@ More info:
   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/deqGYV8P0Nc" allowfullscreen></iframe>
 </div>
 
-[source]: https://github.com/jacobwalker0814/twig-talk
+[source]: https://github.com/jcbwlkr/twig-talk
 [slides]: /twig-talk/presentation/
 [video]: http://youtu.be/deqGYV8P0Nc
 [devict]: /portfolio/devict.html

@@ -26,7 +26,7 @@ More info:
   <iframe class="embed-responsive-item" src="//www.youtube.com/embed/7QoEfPYULXM" allowfullscreen></iframe>
 </div>
 
-[source]: https://github.com/jacobwalker0814/implementing-oop
+[source]: https://github.com/jcbwlkr/implementing-oop
 [slides]: /implementing-oop/presentation/
 [video]: http://youtu.be/7QoEfPYULXM
 [devict]: /portfolio/devict.html

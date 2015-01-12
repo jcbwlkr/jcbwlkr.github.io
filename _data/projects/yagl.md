@@ -7,6 +7,6 @@ game works in both desktop and mobile browsers.
 * [Source][source]
 
 [demo]: http://jacob-walker.com/yagl-js/
-[source]: https://github.com/jacobwalker0814/yagl-js
+[source]: https://github.com/jcbwlkr/yagl-js
 [glider]: http://www.catb.org/hacker-emblem/
 [conway]: http://en.wikipedia.org/wiki/Conway_game

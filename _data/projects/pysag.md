@@ -11,6 +11,6 @@ to [Jinja2](jinja2) templates to create true static pages.
 
 Check out the README on [GitHub](pysag) for a better description.
 
-[pysag]: https://github.com/jacobwalker0814/pysag
+[pysag]: https://github.com/jcbwlkr/pysag
 [jinja2]: http://jinja.pocoo.org/docs/dev/
 [markdown]: https://pypi.python.org/pypi/Markdown

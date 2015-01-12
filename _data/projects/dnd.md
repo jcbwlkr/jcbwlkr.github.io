@@ -13,7 +13,7 @@ my project [pysag][pysag].
 [Source][Source]
 
 [site]: http://jacob-walker.com/campaign-journal
-[source]: https://github.com/jacobwalker0814/campaign-journal
+[source]: https://github.com/jcbwlkr/campaign-journal
 [jekyll]: http://jekyllrb.com/
 [pysag]: /portfolio/pysag.html
 [angular]: https://angularjs.org
