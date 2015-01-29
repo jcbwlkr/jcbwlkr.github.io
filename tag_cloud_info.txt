@@ -1,13 +1,12 @@
 # http://www.abcya.com/word_clouds.htm
-Community Community Community Community Community Community Community Community Community Community Community Community 
-PHP PHP PHP PHP PHP PHP PHP PHP PHP PHP
-Python Python Python Python Python Python Python Python
-Ruby Ruby Ruby Ruby Ruby Ruby Ruby Ruby
-REST REST REST REST REST REST REST REST
-TDD TDD TDD TDD TDD TDD TDD
+Go Go Go Go Go Go Go Go Go Go Go Go
+PHP PHP PHP PHP PHP PHP PHP PHP
+Python Python Python Python Python Python
+Ruby Ruby Ruby Ruby Ruby Ruby
+REST REST REST REST REST REST
+TDD TDD TDD TDD TDD TDD
 Bash Bash Bash Bash
-C C C C C
-Go Go Go Go
+C C C C
 Android Android
 Git Git Git Git Git Git
 Linux Linux Linux
