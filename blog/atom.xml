@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <author>Jacob Walker</author>
+    <title>Jacob Walker's Blog</title>
+    <link href="http://jacob-walker.com/blog/atom.xml" rel="self"/>
+    <link href="http://jacob-walker.com"/>
+    {%-set sorted_posts = posts|sort(attribute='date', reverse=True)%}
+    <updated>{{sorted_posts[0].date}}</updated>
+    {%-for post in sorted_posts %}
+    <entry>
+        <title>{{post.title}}</title>
+        <link href="http://jacob-walker.com/blog/{{post._id}}.html"/>
+        <updated>{{post.date}}</updated>
+        <summary>{{post.summary}}</summary>
+    </entry>
+    {%-endfor%}
+</feed>

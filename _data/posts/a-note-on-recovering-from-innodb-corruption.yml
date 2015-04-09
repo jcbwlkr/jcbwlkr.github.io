@@ -1,5 +1,5 @@
 title: A Note on Recovering from InnoDB Corruption
-summary: "Corrupt InnoDB tables are difficult to repair. I discovered a tip that might help when dealing with a misbehaving server"
+summary: "Corrupt InnoDB tables are difficult to repair. I discovered a tip that might help when dealing with a misbehaving server."
 date: 2013-06-27
 tags:
     - mysql

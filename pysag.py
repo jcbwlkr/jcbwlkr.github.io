@@ -1,5 +1,6 @@
 exclude_dirs += ['_layouts']
 exclude_files += ['pysag.py', 'publish.sh', 'tag_cloud_info.txt']
+template_extensions += ['xml']
 
 data_pages = {
     "projects": {
