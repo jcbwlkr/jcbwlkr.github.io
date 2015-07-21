@@ -1,6 +1,6 @@
-Since October 2010 the majority of my development focus has been with my
-employer TimeIPS. We make a time and attendance system which is used by
-thousands of companies around the world.
+From October 2010 to February 2015 the majority of my development focus has
+been with my employer TimeIPS. We made a time and attendance system which is
+used by thousands of companies around the world.
 
 TimeIPS is used to
 
@@ -17,13 +17,13 @@ TimeIPS is used to
 At TimeIPS I lead a team of 4 in the development of our products. Some of my
 major accomplishments in this role include:
 
-* Introduced Test Driven Development with [PHPUnit][phpunit]
-* Implemented Continuous Integration with [Jenkins-CI][jenkins]
-* Started code reviews via [Phabricator][phabricator]
+* Introducing Test Driven Development with [PHPUnit][phpunit]
+* Implementing Continuous Integration with [Jenkins-CI][jenkins]
+* Starting code reviews via [Phabricator][phabricator]
 * Leading the development of a REST API
 * Working to update legacy code to use the [Doctrine 2][doctrine] ORM
-* Working to implement a Zero Defect policy
-* Developed a system for managing our farm of QEMU virtual machines
+* Implementing a Zero Defect policy
+* Developing a system for managing our farm of QEMU virtual machines
 * Revamped our build process making heavy use of [Composer][composer],
   [Gulp][gulp], and [Bower][bower]
 
