@@ -1,0 +1,9 @@
+name: Getting Started With Go
+summary: "A presentation I have given about the Go programming language."
+order: 15
+tags:
+    - go
+    - community
+    - presentation
+_markdown:
+    description: getting-started-with-go.md

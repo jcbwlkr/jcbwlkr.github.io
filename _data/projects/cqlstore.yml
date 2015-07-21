@@ -1,0 +1,8 @@
+name: cqlstore
+summary: "A Go library for storing sessions in Cassandra"
+order: 17
+tags:
+    - go
+    - cassandra
+_markdown:
+    description: cqlstore.md
