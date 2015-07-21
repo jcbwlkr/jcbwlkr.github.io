@@ -1,6 +1,6 @@
 name: TimeIPS
 summary: "My day job for the last 4 years: a complicated time and attendance application."
-order: 2
+order: 20
 tags:
     - php
     - python

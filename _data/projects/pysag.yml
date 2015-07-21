@@ -1,7 +1,7 @@
 name: pysag
 subtitle: The Python Static site and API Generator
 summary: "My own static site generator with a different take on generation."
-order: 3
+order: 30
 tags:
     - python
     - jinja2

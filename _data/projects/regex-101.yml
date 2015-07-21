@@ -1,6 +1,6 @@
 name: Regular Expressions 101
 summary: "A presentation I gave to devICT teaching basic and advanced features of regex."
-order: 5
+order: 50
 tags:
     - regex
     - community

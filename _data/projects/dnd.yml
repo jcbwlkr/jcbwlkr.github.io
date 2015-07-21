@@ -1,6 +1,6 @@
 name: D&D Campaign Journal
 summary: "A Jekyll blog I keep to chronicle the D&D games I run."
-order: 11
+order: 110
 tags:
     - ruby
     - jekyll
