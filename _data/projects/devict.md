@@ -5,8 +5,7 @@ members. The group covers all aspects of software development. Our mission is:
 
 I first joined the group in December of 2012 and have since become one of the
 organizers. I help to organize and promote events, welcome new members, mediate
-conflicts, and give presentations. I am active in our IRC channel on freenode,
-`#devict`.
+conflicts, and give presentations.
 
 * [devICT Site][devict]
 * [Meetup Group][meetup]
