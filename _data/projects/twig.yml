@@ -2,9 +2,9 @@ name: Templating In PHP With Twig
 summary: "A presentation I gave to devICT introducing the basics of the Twig templating language"
 order: 70
 tags:
-    - community
-    - presentation
-    - php
-    - twig
+    - concept:community
+    - concept:presentation
+    - language:php
+    - tool:twig
 _markdown:
     description: twig.md

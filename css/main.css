@@ -133,3 +133,7 @@ hr {
 .about-image {
     margin: 5px 8px;
 }
+
+small .badge {
+  font-size: 8px;
+}

@@ -2,8 +2,8 @@ name: "jacob-walker.com"
 summary: "This site!"
 order: 40
 tags:
-    - python
-    - node
-    - bootstrap
+    - language:python
+    - language:node
+    - tool:bootstrap
 _markdown:
     description: "jacob-walker.com.md"

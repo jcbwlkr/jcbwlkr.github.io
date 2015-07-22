@@ -2,9 +2,9 @@ name: Norris Training Systems
 summary: "A SF2 app/e-commerce site for insurance agents to purchase and schedule training services."
 order: 140
 tags:
-    - php
-    - symfony
-    - bootstrap
-    - e-commerce
+    - language:php
+    - tool:symfony
+    - tool:bootstrap
+    - concept:e-commerce
 _markdown:
     description: norris-training.md

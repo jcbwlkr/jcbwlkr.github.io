@@ -2,8 +2,8 @@ name: Getting Started With Go
 summary: "A presentation I have given about the Go programming language."
 order: 15
 tags:
-    - go
-    - community
-    - presentation
+    - language:go
+    - concept:community
+    - concept:presentation
 _markdown:
     description: getting-started-with-go.md

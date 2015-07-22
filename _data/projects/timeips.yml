@@ -2,17 +2,17 @@ name: TimeIPS
 summary: "My day job for about 4.5 years: a complicated time and attendance application."
 order: 20
 tags:
-    - php
-    - python
-    - ruby
-    - bash
-    - c++
-    - doctrine
-    - silex
-    - angular
-    - less
-    - bootstrap
-    - tdd
-    - rest
+    - language:php
+    - language:python
+    - language:javascript
+    - language:bash
+    - language:c++
+    - tool:doctrine
+    - tool:silex
+    - tool:angular
+    - tool:less
+    - tool:jenkins
+    - concept:tdd
+    - concept:rest
 _markdown:
     description: timeips.md

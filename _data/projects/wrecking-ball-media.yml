@@ -1,0 +1,14 @@
+name: Wrecking Ball Media
+summary: "My current primary job where I work on a project for Adobe."
+order: 12
+tags:
+    - language:go
+    - language:bash
+    - tool:aws
+    - tool:docker
+    - tool:jenkins
+    - tool:ansible
+    - concept:tdd
+    - concept:rest
+_markdown:
+    description: wrecking-ball-media.md

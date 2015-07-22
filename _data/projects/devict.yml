@@ -3,6 +3,6 @@ subtitle: "Wichita's Development Community"
 summary: "I am one of the organizers of Wichita's primary development community."
 order: 10
 tags:
-    - community
+    - concept:community
 _markdown:
     description: devict.md

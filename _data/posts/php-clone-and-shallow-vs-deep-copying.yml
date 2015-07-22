@@ -2,7 +2,7 @@ title: PHP Clone and Shallow vs Deep Copying
 summary: "I explore the differences in shallow vs deep copies when cloning an object in PHP."
 date: 2013-01-06
 tags:
-    - php
-    - oop
+    - language:php
+    - concept:oop
 _markdown:
     body: php-clone-and-shallow-vs-deep-copying.md

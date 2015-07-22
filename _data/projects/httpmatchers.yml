@@ -2,6 +2,6 @@ name: httpmatchers
 summary: "A Go library extending the Gomega TDD library for testing HTTP responses."
 order: 18
 tags:
-    - go
+  - language:go
 _markdown:
     description: httpmatchers.md

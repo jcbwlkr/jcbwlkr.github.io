@@ -2,8 +2,8 @@ name: D&D Campaign Journal
 summary: "A Jekyll blog I keep to chronicle the D&D games I run."
 order: 110
 tags:
-    - ruby
-    - jekyll
-    - bootstrap
+    - language:ruby
+    - tool:jekyll
+    - tool:bootstrap
 _markdown:
     description: dnd.md

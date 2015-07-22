@@ -2,6 +2,6 @@ name: Vim Config
 summary: "My contributions to the Vim ecosystem."
 order: 180
 tags:
-    - vim
+    - tool:vim
 _markdown:
     description: vim.md

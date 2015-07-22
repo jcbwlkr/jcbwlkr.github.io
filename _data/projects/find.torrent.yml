@@ -2,9 +2,9 @@ name: find.torrent
 summary: "An API server I wrote for discovering .torrent files."
 order: 90
 tags:
-    - php
-    - phpunit
-    - rest
-    - tdd
+    - language:php
+    - concept:rest
+    - concept:api
+    - concept:tdd
 _markdown:
     description: find.torrent.md

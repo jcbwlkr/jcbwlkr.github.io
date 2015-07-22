@@ -2,8 +2,7 @@ name: My Dotfiles
 summary: "My linux command line configuration files. Designed to be shared across my machines."
 order: 170
 tags:
-    - bash
-    - vim
-    - tmux
+    - language:bash
+    - tool:vim
 _markdown:
     description: dotfiles.md

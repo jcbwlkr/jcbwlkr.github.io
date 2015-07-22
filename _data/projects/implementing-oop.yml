@@ -2,10 +2,10 @@ name: Implementing OOP
 summary: "A presentation I gave to devICT covering the basics of OOP in PHP and Ruby."
 order: 60
 tags:
-    - php
-    - ruby
-    - community
-    - presentation
-    - oop
+    - language:php
+    - language:ruby
+    - concept:community
+    - concept:presentation
+    - concept:oop
 _markdown:
     description: implementing-oop.md

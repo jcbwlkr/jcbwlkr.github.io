@@ -6,14 +6,22 @@
 {% block body %}
 <h1>Portfolio</h1>
 
-{% set row_open=false %}
+<div id="filters"></div>
+
+<script type="text/javascript">
+  var tags = [
+{% for project in projects %}
+  {% if project.tags %}
+    {% for tag in project.tags %}
+      '{{tag}}',
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+  ];
+</script>
+
 {% for project in projects|sort(attribute='order') %}
-    {% if loop.index is divisibleby 2 %}
-    {% else %}
-        {% set row_open=true %}
-        <div class="row">
-    {% endif %}
-    <a class="col-md-6 link-panel" href="/portfolio/{{ project._id }}.html">
+    <a class="row portfolio-item link-panel" href="/portfolio/{{ project._id }}.html">
         <div class="panel panel-primary">
             <div class="panel-heading">
                 <h3 class="panel-title">{{ project.name }}</h3>
@@ -28,13 +36,11 @@
             </div>
         </div>
     </a>
-    {% if loop.index is divisibleby 2 %}
-        </div>
-        {% set row_open=false %}
-    {% else %}
-    {% endif %}
 {% endfor %}
-{% if row_open %}
-    </div>
-{% endif %}
+
+{% endblock %}
+
+{% block scripts %}
+{{ super() }}
+<script type="text/javascript" src="/js/portfolio.js"></script>
 {% endblock %}

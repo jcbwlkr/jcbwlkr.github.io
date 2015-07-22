@@ -2,8 +2,8 @@ name: Young Life Wichita
 summary: "A Rails application for tracking event RSVPs."
 order: 150
 tags:
-    - ruby
-    - rails
-    - bootstrap
+    - language:ruby
+    - tool:rails
+    - tool:bootstrap
 _markdown:
     description: young-life-wichita.md

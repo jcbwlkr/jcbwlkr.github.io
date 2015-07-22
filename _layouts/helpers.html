@@ -1,18 +1,18 @@
 {% macro tags(tags) -%}
-    {% set tags_languages = ["go", "cassandra", "bash", "html5", "javascript", "mongo", "mysql", "node", "php", "python", "ruby", "c++", "vim"] %}
-    {% set tags_tools = ["angular", "avalara", "bootstrap", "canvas", "doctrine", "express", "innodb", "jekyll", "jinja2", "less", "phpunit", "rails", "regex", "silex", "soap", "symfony", "tmux", "twig"] %}
-    {% set tags_concepts = ["api", "community", "e-commerce", "oop", "presentation", "rest", "tdd"] %}
-
     {% for tag in tags %}
-        {% if tag in tags_languages %}
+        {% if tag.find('language:') == 0 %}
             {% set tag_class="info" %}
-        {% elif tag in tags_concepts %}
+            {% set tag_display=tag[9:] %}
+        {% elif tag.find('concept:') == 0 %}
             {% set tag_class="warning" %}
-        {% elif tag in tags_tools %}
+            {% set tag_display=tag[8:] %}
+        {% elif tag.find('tool:') == 0 %}
             {% set tag_class="success" %}
+            {% set tag_display=tag[5:] %}
         {% else %}
             {% set tag_class="default" %}
+            {% set tag_display=tag %}
         {% endif %}
-        <span class="label label-{{tag_class}}">{{tag}}</span>
+        <span class="label label-{{tag_class}}" data-tag="{{tag}}">{{tag_display}}</span>
     {% endfor %}
 {%- endmacro %}

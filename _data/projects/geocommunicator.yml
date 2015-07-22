@@ -2,8 +2,7 @@ name: Geocommunicator API Client
 summary: "An API client I wrote for processing lat/long coordinates via one of the Bureau of Land Management's APIs"
 order: 120
 tags:
-    - php
-    - soap
-    - api
+    - language:php
+    - concept:api
 _markdown:
     description: geocommunicator.md

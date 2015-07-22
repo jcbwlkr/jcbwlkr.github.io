@@ -3,8 +3,8 @@ subtitle: "Yet Another Game of Life :: In JavaScript."
 summary: "Yet Another Game of Life :: In JavaScript."
 order: 160
 tags:
-    - javascript
-    - html5
-    - canvas
+    - language:javascript
+    - language:html5
+    - tool:canvas
 _markdown:
     description: yagl.md

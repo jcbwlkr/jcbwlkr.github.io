@@ -2,9 +2,9 @@ name: Regular Expressions 101
 summary: "A presentation I gave to devICT teaching basic and advanced features of regex."
 order: 50
 tags:
-    - regex
-    - community
-    - presentation
+    - tool:regex
+    - concept:community
+    - concept:presentation
 subtitle: Or How I Learned to Stop Worrying and Love the Regex
 _markdown:
     description: regex-101.md
