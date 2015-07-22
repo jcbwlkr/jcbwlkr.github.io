@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jacob Walker | My Dotfiles</title>
+        <title>Jacob Walker | cqlstore</title>
         <meta name="description" content="Portfolio site for the developer Jacob Walker">
         <meta name="viewport" content="width=device-width">
 
@@ -53,7 +53,7 @@
 <a href="/portfolio/" class="btn btn-primary btn-sm">
     <i class="icon-double-angle-left"></i> Back to Portfolio
 </a>
-<h1>My Dotfiles</h1>
+<h1>cqlstore</h1>
 
 
     <p>
@@ -62,26 +62,28 @@
             
             
         
-        <span class="label label-info" data-tag="language:bash">bash</span>
+        <span class="label label-info" data-tag="language:go">go</span>
     
         
             
             
         
-        <span class="label label-success" data-tag="tool:vim">vim</span>
+        <span class="label label-info" data-tag="language:cassandra">cassandra</span>
     
     </p>
 
 
-<p>It seems like every *nix developer hosts at least their bashrc file on GitHub
-and I am no exception. My repo uses the Ruby gem <a href="https://github.com/technicalpickles/homesick">homesick</a> to easily
-keep my config files in sync. To further ease the process I can install or
-update my config by running</p>
-<pre><code>bash &lt;( curl -L http://bit.ly/jacobwalker )
-</code></pre>
-
+<p>In Go web development the <a href="http://www.gorillatoolkit.org/">Gorilla web toolkit</a> is a very popular
+collection of libraries for common web tasks. The <code>gorilla/sessions</code> package
+provides an easy interface for using/storing users' session data. The package
+itself relies on implementations of its storage interface so developers can
+store the data in whatever place is best for their environment.</p>
+<p>For an application we were prototyping at work we elected to store everything
+in <a href="http://cassandra.apache.org/">Cassandra DB</a>. There was no implementation for using
+<code>gorilla/sessions</code> with Cassandra so I created one.</p>
 <ul>
-<li><a href="https://github.com/jcbwlkr/mydotfiles">My Dotfiles on GitHub</a></li>
+<li><a href="https://github.com/jcbwlkr/cqlstore">Source</a></li>
+<li><a href="https://godoc.org/github.com/jcbwlkr/cqlstore">Documentation</a></li>
 </ul>
 
         </div>

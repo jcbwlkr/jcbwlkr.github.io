@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Jacob Walker | My Dotfiles</title>
+        <title>Jacob Walker | httpmatchers</title>
         <meta name="description" content="Portfolio site for the developer Jacob Walker">
         <meta name="viewport" content="width=device-width">
 
@@ -53,7 +53,7 @@
 <a href="/portfolio/" class="btn btn-primary btn-sm">
     <i class="icon-double-angle-left"></i> Back to Portfolio
 </a>
-<h1>My Dotfiles</h1>
+<h1>httpmatchers</h1>
 
 
     <p>
@@ -62,26 +62,20 @@
             
             
         
-        <span class="label label-info" data-tag="language:bash">bash</span>
-    
-        
-            
-            
-        
-        <span class="label label-success" data-tag="tool:vim">vim</span>
+        <span class="label label-info" data-tag="language:go">go</span>
     
     </p>
 
 
-<p>It seems like every *nix developer hosts at least their bashrc file on GitHub
-and I am no exception. My repo uses the Ruby gem <a href="https://github.com/technicalpickles/homesick">homesick</a> to easily
-keep my config files in sync. To further ease the process I can install or
-update my config by running</p>
-<pre><code>bash &lt;( curl -L http://bit.ly/jacobwalker )
-</code></pre>
-
+<p>BDD in Go is made easier using the <a href="http://onsi.github.io/ginkgo/">Ginkgo</a> and <a href="http://onsi.github.io/gomega/">Gomega</a>
+packages. Gomega specifically provides a collection of matchers for asserting
+that results match expectations. When using these tools to test an API I was
+developing I noticed some common patterns appearing around the assertion of
+HTTP status codes. I created the <code>github.com/jcbwlkr/httpmatchers</code> package to
+simplify some of those patterns.</p>
 <ul>
-<li><a href="https://github.com/jcbwlkr/mydotfiles">My Dotfiles on GitHub</a></li>
+<li><a href="https://github.com/jcbwlkr/httpmatchers">Source</a></li>
+<li><a href="https://godoc.org/github.com/jcbwlkr/httpmatchers">Documentation</a></li>
 </ul>
 
         </div>
