@@ -1,4 +1,4 @@
-Since February 2015 I have been a contract engineer at [Wrecking Ball Media
+Since February 2015 I have been a contracting engineer at [Wrecking Ball Media
 Group][wbm]. As a part of this team I am working on a web based platform for
 [Adobe][adobe]. The project utilizes several different APIs from Adobe and
 other vendors. More project details to come after the project launches.
