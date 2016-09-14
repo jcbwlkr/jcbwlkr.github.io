@@ -23,8 +23,10 @@ problem.
 Right before we gave up I had an idea. When you start the client it gives you
 the following message:
 
-    Reading table information for completion of table and column names
-    You can turn off this feature to get a quicker startup with -A
+```nohighlight
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+```
 
 What this means is that the client looks up meta information about the tables
 and columns in your selected database so that when you hit <kbd>TAB</kbd> it
@@ -32,10 +34,10 @@ will auto fill the table names like you would get on the command line. The list
 of tables and columns is rebuilt any time you change databases or issue the
 `REHASH;` command.
 
-On a hunch I tried starting the client with the <span class="code">-A</span>
-flag to prevent this table scanning. I don't know the technical reason within
-MySQL's binaries but with this option enabled my problem went away. I can only
-assume that when the client scans the tables (including the corrupt table)
-something goes horribly wrong.
+On a hunch I tried starting the client with the `-A` flag to prevent this table
+scanning. I don't know the technical reason within MySQL's binaries but with
+this option enabled my problem went away. I can only assume that when the
+client scans the tables (including the corrupt table) something goes horribly
+wrong.
 
 So just file that away in your DBA utility belt :)
