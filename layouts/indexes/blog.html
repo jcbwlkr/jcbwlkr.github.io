@@ -8,14 +8,14 @@
 
   <div class="container">
     {{ range .Data.Pages }}
-    <article>
+    <article class="clearfix">
       <header>
         <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
         {{ partial "post-meta" . }}
       </header>
       <p>{{ .Summary }} </p>
       <footer>
-        <a class="btn btn-primary" href="{{ .Permalink }}">
+        <a class="btn btn-primary pull-right" href="{{ .Permalink }}">
           Read More<i class="fa fa-angle-double-right fa-fw"></i>
         </a>
       </footer>
