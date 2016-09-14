@@ -1,0 +1,19 @@
+{{ if or (.Prev) (.Next) }}
+<hr />
+<div class="row">
+  <div class="col-md-6 text-left">
+    {{ if .PrevInSection }}
+    <nav class="prev">
+      <a href="{{ .PrevInSection.Permalink }}"><i class="fa fa-fw fa-chevron-left"></i> {{ .PrevInSection.Title }}</a>
+    </nav>
+    {{ end }}
+  </div>
+  <div class="col-md-6 text-right">
+    {{ if .NextInSection }}
+    <nav class="next">
+      <a href="{{ .NextInSection.Permalink }}">{{ .NextInSection.Title }} <i class="fa fa-fw fa-chevron-right"></i></a>
+    </nav>
+    {{ end }}
+  </div>
+</div>
+{{ end }}

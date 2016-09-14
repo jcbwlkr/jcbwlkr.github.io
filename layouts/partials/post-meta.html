@@ -1,0 +1,19 @@
+<div class="post-meta">
+  {{ $baseUrl := .Site.BaseURL }}
+  <div>
+    <i class="fa fa-calendar fa-fw"></i>
+    <time>{{ .Date.Format "Jan 02, 2006" }}</time>
+
+    {{ if isset .Params "tags" }}
+      {{ $count := len .Params.tags }}
+      {{ if gt $count 0 }}
+        <i class="fa fa-tags fa-fw"></i>
+        {{ range $k, $v := .Params.tags }}
+          {{/* TODO hook these links back up */}}
+          <!--<a href="{{ $.Site.BaseURL }}tags/{{ . | urlize }}.html">{{ . }}</a>{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}-->
+          {{ . }}{{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+  </div>
+</div>

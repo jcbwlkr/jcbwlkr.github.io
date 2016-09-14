@@ -38,3 +38,16 @@
   background-position: -288px 0px;
 }
 /* End Social Media Icons */
+
+/* Font overrides from Bootswatch Readable */
+.navbar {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+/* Give a little more space after a header such as on the blog list page */
+header {
+  margin-bottom: 1em;
+}

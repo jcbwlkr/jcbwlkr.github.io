@@ -1,20 +1,9 @@
 baseurl = "http://jacob-walker.com/"
 languageCode = "en-us"
-title = "Jacob Walker"
+title = "jcbwlkr"
 uglyURLs = true
+pluralizelisttitles = false
 
 [params]
-  description = "I am a Software Developer in Wichita, KS. I am passionate about Go, community, open source software, my family, and Vim."
-  twitter = "jcbwlkr"
-  github = "jcbwlkr"
-  facebook = "jacobwalker0814"
-  gplus = "+JacobWalker0814"
-  linkedin = "jcbwlkr"
-  googleAnalyticsUserID = "UA-42678895-1"
-  stackoverflow = "859353/jcbwlkr"
-  youtube = "UC5R8ji-vKH6NhUQTozKn5eg"
-
-  # https://stackoverflow.com/users/859353/jcbwlkr
-  # https://www.youtube.com/channel/UC5R8ji-vKH6NhUQTozKn5eg
-  # headerCover = "images/headerCover.png"
-  # footerCover = "images/footerCover.png"
+  googleAnalytics = "UA-42678895-1"
+  disqus = "jacobwalker0814"
