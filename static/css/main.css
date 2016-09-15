@@ -40,14 +40,34 @@
 /* End Social Media Icons */
 
 /* Font overrides from Bootswatch Readable */
-.navbar {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-}
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+.navbar,
+.label,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 /* Give a little more space after a header such as on the blog list page */
 header {
   margin-bottom: 1em;
+}
+
+.category {
+  display: inline-block;
+  text-align: center;
+  height: 6em;
+  padding-bottom: 10px;
+}
+
+.category i {
+  display: block;
+}
+
+.category i.devicons {
+  font-size: 4em;
+}
+
+.category i.fa {
+  font-size: 2.8em;
+  padding: 10px 0px;
 }
