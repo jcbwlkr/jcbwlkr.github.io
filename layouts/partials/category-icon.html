@@ -1,0 +1,9 @@
+{{- if eq . "community" -}}
+  fa fa-users
+{{- else if eq . "bash" -}}
+  devicons devicons-terminal
+{{- else if eq . "ruby" -}}
+  devicons devicons-ruby_rough
+{{- else -}}
+  {{  printf "devicons devicons-%s" . -}}
+{{- end }}
