@@ -13,7 +13,7 @@ tags = ["presentation"]
 [slides]: https://github.com/jcbwlkr/gettingstartedwithgo/raw/master/slides.pdf
 
 This is a talk I presented at the first [Kansas Linux Fest][klf] in March 2015.
-I gave it again that month at my company's internal roundtable again for
+I gave it again that month at my company's internal roundtable and again for
 [devICT][devict] that July.
 
 <!--more-->
