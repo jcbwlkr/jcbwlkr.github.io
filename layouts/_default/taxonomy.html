@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode }}">
+
+{{ partial "head" . }}
+
+<body>
+  {{ partial "header" . }}
+
+  {{ $data := .Data }}
+  <div class="container">
+    <div class="text-center">
+      {{ if eq .Data.Singular "category" }}
+      <h1 class="category-title">
+        Category <i class="{{ partial "category-icon" (lower .Title) }}"></i>
+      </h1>
+      {{ else }}
+      <h1>#{{ .Title | lower }}</h1>
+      {{ end }}
+    </div>
+
+    {{ range .Data.Pages.GroupBy "Section" }}
+      {{ range .Pages.ByWeight }}
+        {{ partial "summary" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+
+  {{ partial "footer" . }}
+</body>
+</html>

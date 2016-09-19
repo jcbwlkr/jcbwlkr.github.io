@@ -1,8 +1,7 @@
 +++
 title = "TimeIPS"
-summary = "My day job for about 4.5 years: a complicated time and attendance application."
 weight = 20
-categories = ["php", "python", "javascript", "bash"]
+categories = ["php", "bash", "javascript", "python", "mysql"]
 tags = ["doctrine", "phabricator", "jenkins", "qemu", "tdd", "rest"]
 
 +++
@@ -10,6 +9,8 @@ tags = ["doctrine", "phabricator", "jenkins", "qemu", "tdd", "rest"]
 From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
 thousands of companies around the world.
+
+<!--more-->
 
 TimeIPS is used to
 

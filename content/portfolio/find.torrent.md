@@ -1,6 +1,5 @@
 +++
 title = "find.torrent"
-summary = "An API server I wrote for discovering .torrent files."
 weight = 90
 categories = ["php"]
 tags = ["rest", "api", "tdd"]
@@ -24,12 +23,11 @@ PHP][bullet] and serves the API with the [HAL Hypermedia Type][hal]. The
 service was developed using a combination of TDD and BDD practices with tests in
 PHPUnit and Frisby.js.
 
-This is a collaborative work with my co-worker and business partner [Matthew M.
-Keeler][matthew].
+This is a collaborative work with my friend [Matthew M. Keeler][matthew].
 
 [Source][source]
 
 [source]: https://github.com/Tortugas-Consulting-LLC/find.torrent
-[matthew]: http://matthewmkeeler.com
+[matthew]: http://cupfullofcode.com
 [bullet]: http://bulletphp.com/
 [hal]: http://stateless.co/hal_specification.html

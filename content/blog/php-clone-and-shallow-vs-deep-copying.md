@@ -1,7 +1,8 @@
 +++
 date = 2013-01-06
 title = "PHP Clone and Shallow vs Deep Copying"
-tags = ["php"]
+categories = ["php"]
+tags = ["oop"]
 +++
 
 Looking through the [PHPExcel](https://github.com/PHPOffice/PHPExcel) library

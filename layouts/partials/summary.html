@@ -1,0 +1,12 @@
+<article class="clearfix">
+  <header>
+    <h2>{{ partial "post-icon" . }} {{ .Title }}</h2>
+    {{ partial "post-meta" . }}
+  </header>
+  <p>{{ .Summary }} </p>
+  <footer>
+    <a class="btn btn-primary" href="{{ .Permalink }}">
+      Read More<i class="fa fa-angle-double-right fa-fw"></i>
+    </a>
+  </footer>
+</article>

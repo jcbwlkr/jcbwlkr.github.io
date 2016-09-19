@@ -1,7 +1,8 @@
 +++
 date = "2013-06-27"
 title = "A Note on Recovering from InnoDB Corruption"
-tags = ["mysql"]
+categories = ["mysql"]
+tags = ["innodb", "corruption"]
 +++
 
 InnoDB is a great storage engine for MySQL offering, among other things,
