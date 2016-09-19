@@ -1,21 +1,27 @@
-  <div class="container">
-<div class="navbar navbar-default navbar-static-top">
-  <div class="container">
-    <div class="navbar-header">
-      <a href="/" class="navbar-brand">{{ .Site.Title }}</a>
-      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-    </div>
-    <div class="navbar-collapse navbar-right collapse" id="navbar-main">
-      <ul class="nav navbar-nav">
-        <li><a href="/blog.html"><i class="fa fa-book"></i> Blog</a></li>
-        <li><a href="/portfolio.html"><i class="fa fa-briefcase"></i> Portfolio</a></li>
-        <li><a href="/resume/"><i class="fa fa-file"></i> Resume <i class="fa fa-external-link"></i></a></li>
-      </ul>
+<div class="container">
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">{{ .Site.Title }}</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse navbar-right collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          {{ range .Site.Menus.main }}
+          <li
+            {{ if $.IsPage }}{{ if eq .Identifier $.Type }}class="active"{{ end }}
+            {{ else }}{{ if ($.IsMenuCurrent "main" .) }}class="active"{{ end }}
+            {{ end }}
+          >
+            <a href="{{ .URL }}">{{ .Pre }} {{ .Name }}</a>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
     </div>
   </div>
-</div>
 </div>

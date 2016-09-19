@@ -4,6 +4,26 @@ title = "jcbwlkr"
 uglyURLs = true
 pluralizelisttitles = false
 
+[[menu.main]]
+    name = "Blog"
+    identifier = "blog"
+    pre = "<i class='fa fa-book'></i>"
+    weight = 10
+    url = "/blog.html"
+[[menu.main]]
+    name = "Portfolio"
+    identifier = "portfolio"
+    pre = "<i class='fa fa-briefcase'></i>"
+    weight = 20
+    url = "/portfolio.html"
+[[menu.main]]
+    name = "Resume"
+    identifier = "resume"
+    pre = "<i class='fa fa-file'></i>"
+    weight = 30
+    url = "/resume/Resume.pdf"
+
+
 [params]
   googleAnalytics = "UA-42678895-1"
   disqus = "jacobwalker0814"
