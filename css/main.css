@@ -59,6 +59,13 @@ header {
   padding-bottom: 10px;
 }
 
+/* Undo the height for categories on when the icons are hidden */
+@media (max-width: 768px) {
+  .category {
+    height: inherit;
+  }
+}
+
 .category i {
   display: block;
 }
@@ -78,6 +85,7 @@ header {
   vertical-align: middle;
 }
 
+/* Put a little division between subsequent articles */
 article+article {
   margin-top: 15px;
   border-top: 1px solid #dddddd;
@@ -89,4 +97,19 @@ a.unstyled {
 }
 a.unstyled:hover {
   text-decoration: inherit;
+}
+
+/* From 566px up I want the picture floated right */
+@media (min-width: 566px) {
+  .mugshot {
+    float: right;
+  }
+}
+
+/* On smaller displays make the picture centered */
+@media (max-width: 566px) {
+  .mugshot {
+    margin: auto;
+    width: 100%;
+  }
 }
