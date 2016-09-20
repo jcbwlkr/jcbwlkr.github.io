@@ -2,7 +2,7 @@
 title = "find.torrent"
 weight = 90
 categories = ["php"]
-tags = ["rest", "api", "tdd"]
+tags = ["api", "tdd"]
 
 +++
 

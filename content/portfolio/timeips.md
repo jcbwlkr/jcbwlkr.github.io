@@ -2,7 +2,7 @@
 title = "TimeIPS"
 weight = 20
 categories = ["php", "bash", "javascript", "python", "mysql"]
-tags = ["doctrine", "phabricator", "jenkins", "qemu", "tdd", "rest"]
+tags = ["doctrine", "phabricator", "jenkins", "qemu", "tdd", "api"]
 
 +++
 

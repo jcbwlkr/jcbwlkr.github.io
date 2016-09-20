@@ -1,8 +1,8 @@
 +++
 title = "Wrecking Ball Media"
 weight = 12
-categories = ["go", "bash", "docker", "mysql"]
-tags = ["aws", "jenkins", "ansible", "tdd", "rest"]
+categories = ["go", "bash", "docker", "mysql", "javascript"]
+tags = ["aws", "jenkins", "ansible", "tdd", "api"]
 
 +++
 
