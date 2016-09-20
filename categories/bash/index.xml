@@ -6,7 +6,27 @@
     <description>Recent content in Bash on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     <atom:link href="http://jacob-walker.com/categories/bash.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ardan Labs</title>
+      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
+We specialize in the Go programming language and offer training and consulting
+services.&lt;/p&gt;
+
+&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
+100 companies. Projects I have worked on have involved stock market evaluation,
+monitoring and alerting configuration, and integration with various third party
+services and APIs.&lt;/p&gt;
+
+&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>My Dotfiles</title>

@@ -307,6 +307,25 @@ Wichita&lt;/a&gt;. I agreed to carry the torch.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Ardan Labs</title>
+      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
+We specialize in the Go programming language and offer training and consulting
+services.&lt;/p&gt;
+
+&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
+100 companies. Projects I have worked on have involved stock market evaluation,
+monitoring and alerting configuration, and integration with various third party
+services and APIs.&lt;/p&gt;
+
+&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Wrecking Ball Media</title>
       <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -622,20 +641,6 @@ PHPUnit and Frisby.js.&lt;/p&gt;
 &lt;p&gt;This is a collaborative work with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/Tortugas-Consulting-LLC/find.torrent&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>LiveJournal Amnesia</title>
-      <link>http://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;LiveJournal Amnesia&lt;/a&gt; is a quick script I wrote to automate the
-process of hiding the 200-some LiveJournal blog posts I generated in my late
-teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
-README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
-you never wrote that poem Junior year!&lt;/p&gt;
 </description>
     </item>
     

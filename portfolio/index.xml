@@ -38,6 +38,25 @@ Wichita&lt;/a&gt;. I agreed to carry the torch.&lt;/p&gt;
     </item>
     
     <item>
+      <title>Ardan Labs</title>
+      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
+We specialize in the Go programming language and offer training and consulting
+services.&lt;/p&gt;
+
+&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
+100 companies. Projects I have worked on have involved stock market evaluation,
+monitoring and alerting configuration, and integration with various third party
+services and APIs.&lt;/p&gt;
+
+&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Wrecking Ball Media</title>
       <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
@@ -389,28 +408,6 @@ it with the additional information.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/geocommunicator-client&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Natural Organic Warehouse</title>
-      <link>http://jacob-walker.com/portfolio/now.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://jacob-walker.com/portfolio/now.html</guid>
-      <description>&lt;p&gt;Natural Organic Warehouse (NOW) is a distributor of organic products for
-farming, gardening, and landscaping purposes. Their slogan is &amp;ldquo;better, cleaner,
-sustainable choices.&amp;rdquo; Through my consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
-LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;
-
-&lt;p&gt;The site started with an open source e-commerce solution and has grown
-significantly to meet the unique needs of NOW. Notable features include
-integration with shipping services and the &lt;a href=&#34;http://www.avalara.com/&#34;&gt;Avalara AvaTax&lt;/a&gt; API to
-calculate and report accurate sales tax on local customers.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://cart.naturalorganicwarehouse.com&#34;&gt;NOW Site&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>

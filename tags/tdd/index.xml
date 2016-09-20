@@ -6,7 +6,27 @@
     <description>Recent content in Tdd on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     <atom:link href="http://jacob-walker.com/tags/tdd.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Ardan Labs</title>
+      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
+We specialize in the Go programming language and offer training and consulting
+services.&lt;/p&gt;
+
+&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
+100 companies. Projects I have worked on have involved stock market evaluation,
+monitoring and alerting configuration, and integration with various third party
+services and APIs.&lt;/p&gt;
+
+&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Startup Wichita</title>
@@ -136,6 +156,30 @@ PHPUnit and Frisby.js.&lt;/p&gt;
 &lt;p&gt;This is a collaborative work with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&#34;https://github.com/Tortugas-Consulting-LLC/find.torrent&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>httpmatchers</title>
+      <link>http://jacob-walker.com/portfolio/httpmatchers.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/httpmatchers.html</guid>
+      <description>&lt;p&gt;BDD in Go is made easier using the &lt;a href=&#34;http://onsi.github.io/ginkgo/&#34;&gt;Ginkgo&lt;/a&gt; and &lt;a href=&#34;http://onsi.github.io/gomega/&#34;&gt;Gomega&lt;/a&gt;
+packages. Gomega specifically provides a collection of matchers for asserting
+that results match expectations. When using these tools to test an API I was
+developing I noticed some common patterns appearing around the assertion of
+HTTP status codes. I created the &lt;code&gt;github.com/jcbwlkr/httpmatchers&lt;/code&gt; package to
+simplify some of those patterns.&lt;/p&gt;
+
+&lt;p&gt;Since writing this I hame moved to just using the standard &lt;code&gt;testing&lt;/code&gt; library. I
+still appreciate the value from &lt;code&gt;ginkgo&lt;/code&gt; and &lt;code&gt;gomega&lt;/code&gt; and would use the library
+again if I was working on a project using that testing framework.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/httpmatchers&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://godoc.org/github.com/jcbwlkr/httpmatchers&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
