@@ -59,6 +59,13 @@ header {
   padding-bottom: 10px;
 }
 
+/* Undo the height for categories on when the icons are hidden */
+@media (max-width: 768px) {
+  .category {
+    height: inherit;
+  }
+}
+
 .category i {
   display: block;
 }

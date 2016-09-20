@@ -1,17 +1,8 @@
 {{ $data := .Data }}
-
-<div class="row text-center visible-xs">
-  {{ range $key, $value := .Site.Taxonomies.categories.ByCount }}
-  <a class="label label-primary" href="{{ $data.Plural }}/categories/{{ $value.Name | urlize }}.html">
-    {{ $value.Name }} ({{ $value.Count }})
-  </a>
-  {{ end }}
-  <hr />
-</div>
-<div class="row text-center hidden-xs">
+<div class="text-center">
   {{ range $key, $value := .Site.Taxonomies.categories.ByCount }}
   <div class="category">
-    <a class="unstyled" href="{{ $data.Plural }}/categories/{{ $value.Name | urlize }}.html">
+    <a class="unstyled hidden-xs" href="{{ $data.Plural }}/categories/{{ $value.Name | urlize }}.html">
       <i class="{{ partial "category-icon" $value.Name }}"></i>
     </a>
     <a class="label label-primary" href="{{ $data.Plural }}/categories/{{ $value.Name | urlize }}.html">
