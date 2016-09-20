@@ -1,3 +1,5 @@
+**This branch is abandoned. Use the hugo branch**
+
 # jcbwlkr.github.io
 
 http://jacob-walker.com hosted on GitHub Pages
