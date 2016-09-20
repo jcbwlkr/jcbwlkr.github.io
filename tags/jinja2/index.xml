@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jinja2 on jcbwlkr</title>
+    <link>http://jacob-walker.com/tags/jinja2.html</link>
+    <description>Recent content in Jinja2 on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/tags/jinja2.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>pysag</title>
+      <link>http://jacob-walker.com/portfolio/pysag.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/pysag.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
+from other (great) static site generators like Jekyll by being focused on data
+first and pages second.&lt;/p&gt;
+
+&lt;p&gt;The user defines their data such as blog posts, employees, or products in the
+filesystem as yaml files. This data is first converted to json files to
+generate a read-only &amp;ldquo;API&amp;rdquo;. The ideal usecase here is a JavaScript application
+to render the data. Properties of the yaml files can be paths to
+&lt;a href=&#34;markdown&#34;&gt;Markdown&lt;/a&gt; files for easy authoring. If desired the data can be fed
+to &lt;a href=&#34;jinja2&#34;&gt;Jinja2&lt;/a&gt; templates to create true static pages.&lt;/p&gt;
+
+&lt;p&gt;Check out the &lt;a href=&#34;pysag&#34;&gt;README&lt;/a&gt; on GitHub for a better description.&lt;/p&gt;
+
+&lt;p&gt;I ended up abandoning this project in favor of &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. It was a neat idea
+and a fun experience but ultimately Hugo won out for me :)&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

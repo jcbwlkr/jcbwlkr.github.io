@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Vim on jcbwlkr</title>
+    <link>http://jacob-walker.com/categories/vim.html</link>
+    <description>Recent content in Vim on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/categories/vim.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>My Dotfiles</title>
+      <link>http://jacob-walker.com/portfolio/dotfiles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/dotfiles.html</guid>
+      <description>&lt;p&gt;It seems like every *nix developer hosts at least their bashrc file on GitHub
+and I am no exception. My repo uses the Ruby gem &lt;a href=&#34;https://github.com/technicalpickles/homesick&#34;&gt;homesick&lt;/a&gt; to easily
+keep my config files in sync.&lt;/p&gt;
+
+&lt;p&gt;To further ease the process I can install or update my config by running&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;bash &amp;lt;( curl -L http://bit.ly/jacobwalker )
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The installation script is Linux specific and hasn&amp;rsquo;t been updated in a
+while.&lt;/p&gt;
+
+&lt;p&gt;Key features of my dotfiles include my vim, zsh, and tmux configs.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/mydotfiles&#34;&gt;My Dotfiles on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vim Contributions</title>
+      <link>http://jacob-walker.com/portfolio/vim.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/vim.html</guid>
+      <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
+efficiency combined with its extendability have yet to leave me seriously
+wanting for any features. I have made some contributions back to the vim
+ecosystem.&lt;/p&gt;
+
+&lt;p&gt;I previously maintained a fork of the popular &lt;a href=&#34;http://vim.spf13.com/&#34;&gt;spf13-vim&lt;/a&gt; distribution.
+I have since abandoned that fork and created my own &lt;code&gt;.vimrc&lt;/code&gt; which is hosted
+with &lt;a href=&#34;http://jacob-walker.com/portfolio/dotfiles.html&#34;&gt;my dotfiles&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have also ported the default &lt;a href=&#34;https://github.com/lokaltog/powerline&#34;&gt;Powerline&lt;/a&gt; theme to the
+&lt;code&gt;powerlineish&lt;/code&gt; theme in the &lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt; project. It&amp;rsquo;s pretty neat to
+look at someone else&amp;rsquo;s &lt;code&gt;.vimrc&lt;/code&gt; and see they&amp;rsquo;re using the theme I ported :)&lt;/p&gt;
+
+&lt;p&gt;In March of 2015 I collaborated with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt; on
+a pair of talks about our favorite editors. I covered the things that I love
+about Vim and how I use it daily. The video is available on YouTube and has
+over 8k views as of September 2016.&lt;/p&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/SaGgc8xnO1U&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

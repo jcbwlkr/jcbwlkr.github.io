@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Presentation on jcbwlkr</title>
+    <link>http://jacob-walker.com/tags/presentation.html</link>
+    <description>Recent content in Presentation on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/tags/presentation.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Getting Started With Go</title>
+      <link>http://jacob-walker.com/portfolio/getting-started-with-go.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
+      <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
+I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
+&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;
+
+&lt;p&gt;The talk introduces &lt;a href=&#34;http://golang.org/&#34;&gt;the Go programming language&lt;/a&gt; by highlighting some
+important features and provides advice on how to be successful in adopting the
+language.&lt;/p&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/zVvjpLu6iIo&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/gettingstartedwithgo/raw/master/slides.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/gettingstartedwithgo&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Implementing OOP</title>
+      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
+      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
+Object Oriented Programming in PHP and Ruby. I chose this topic when I was
+explaining inheritance to a friend and realized others would be interested. I
+chose PHP and Ruby for examples because I was already familiar with OOP in PHP
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
+
+&lt;p&gt;The talk is an hour and a half long. It covers the basic ideas and syntax of
+OOP such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Class vs Object&lt;/li&gt;
+&lt;li&gt;Properties and Methods&lt;/li&gt;
+&lt;li&gt;Access modifiers (public, private, protected)&lt;/li&gt;
+&lt;li&gt;Inheritance&lt;/li&gt;
+&lt;li&gt;Static or Class methods and properties&lt;/li&gt;
+&lt;li&gt;Method overriding&lt;/li&gt;
+&lt;li&gt;Abstract classes&lt;/li&gt;
+&lt;li&gt;Interfaces&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More info:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jacob-walker.com/implementing-oop/presentation/&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/implementing-oop&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https//www.youtube.com/embed/7QoEfPYULXM&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Regular Expressions 101</title>
+      <link>http://jacob-walker.com/portfolio/regex-101.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/regex-101.html</guid>
+      <description>&lt;p&gt;In March 2013 I gave a presentation to my local development group
+&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
+talk was just under two hours long and was well received by the audience
+(approximately 25 developers). The presentation was broadcast through Google
+Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The presentation covers the most commonly used features of regex and some of
+the nicer advanced features like backreferences and assertions. Most of the
+research for the presentation comes from
+&lt;a href=&#34;http://www.regular-expressions.info/&#34;&gt;regular-expressions.info&lt;/a&gt;. Interested readers should check out
+that site&amp;rsquo;s references on some of the crazier things you can do.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/regex-101&#34;&gt;Slides and source&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/4LnyHF8dnIk&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Templating In PHP With Twig</title>
+      <link>http://jacob-walker.com/portfolio/twig.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/twig.html</guid>
+      <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
+templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
+installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;
+
+&lt;p&gt;The talk is 23 minutes long.&lt;/p&gt;
+
+&lt;p&gt;More info:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jacob-walker.com/twig-talk/presentation/&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/twig-talk&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;//www.youtube.com/embed/deqGYV8P0Nc&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Vim Contributions</title>
+      <link>http://jacob-walker.com/portfolio/vim.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/vim.html</guid>
+      <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
+efficiency combined with its extendability have yet to leave me seriously
+wanting for any features. I have made some contributions back to the vim
+ecosystem.&lt;/p&gt;
+
+&lt;p&gt;I previously maintained a fork of the popular &lt;a href=&#34;http://vim.spf13.com/&#34;&gt;spf13-vim&lt;/a&gt; distribution.
+I have since abandoned that fork and created my own &lt;code&gt;.vimrc&lt;/code&gt; which is hosted
+with &lt;a href=&#34;http://jacob-walker.com/portfolio/dotfiles.html&#34;&gt;my dotfiles&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I have also ported the default &lt;a href=&#34;https://github.com/lokaltog/powerline&#34;&gt;Powerline&lt;/a&gt; theme to the
+&lt;code&gt;powerlineish&lt;/code&gt; theme in the &lt;a href=&#34;https://github.com/bling/vim-airline&#34;&gt;vim-airline&lt;/a&gt; project. It&amp;rsquo;s pretty neat to
+look at someone else&amp;rsquo;s &lt;code&gt;.vimrc&lt;/code&gt; and see they&amp;rsquo;re using the theme I ported :)&lt;/p&gt;
+
+&lt;p&gt;In March of 2015 I collaborated with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt; on
+a pair of talks about our favorite editors. I covered the things that I love
+about Vim and how I use it daily. The video is available on YouTube and has
+over 8k views as of September 2016.&lt;/p&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/SaGgc8xnO1U&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

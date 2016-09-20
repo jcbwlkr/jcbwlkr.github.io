@@ -1,143 +1,92 @@
-body {
-    padding-top: 6em;
-}
-
-hr {
-    border-top: 1px solid #000000;
-}
-
 /* Social Media Icons */
 .symbol {
-    height: 32px;
-    width: 32px;
-    display: inline-block;
-    background-image: url("../img/icons.png");
-    text-indent: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    vertical-align: top;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-image: url("../images/icons.png");
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  vertical-align: top;
 }
 
 .social-twitter {
-    background-position: -192px 0px;
+  background-position: -192px 0px;
 }
 
 .social-facebook {
-    background-position: -96px 0px;
+  background-position: -96px 0px;
 }
 
 .social-github {
-    background-position: -128px 0px;
+  background-position: -128px 0px;
 }
 
 .social-googleplus {
-    background-position: -64px 0px;
+  background-position: -64px 0px;
 }
 
 .social-linkedin {
-    background-position: -160px 0px;
+  background-position: -160px 0px;
 }
 
 .social-youtube {
-    background-position: -224px 0px;
-}
-
-.social-mojolive{
-    background-position: -256px 0px;
+  background-position: -224px 0px;
 }
 
 .social-stackoverflow{
-    background-position: -288px 0px;
+  background-position: -288px 0px;
 }
-
 /* End Social Media Icons */
 
-/* Responsive Slides -- From responsiveslides.com */
-.rslides {
-    position: relative;
-    list-style: none;
-    overflow: hidden;
-    width: 400px;
-    height: 320px;
-    padding: 0;
-    margin: 0;
-    float: right;
-}
-@media (max-width: 990px) {
-    .rslides {
-        width: 200px;
-        height: 170px;
-    }
-}
-@media (max-width: 767px) {
-    .rslides {
-        float: none;
-        margin-left: auto;
-        margin-right: auto;
-    }
+/* Font overrides from Bootswatch Readable */
+.navbar,
+.label,
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+{
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-.rslides li {
-    -webkit-backface-visibility: hidden;
-    position: absolute;
-    display: none;
-    width: 100%;
-    left: 0;
-    top: 0;
+/* Give a little more space after a header such as on the blog list page */
+header {
+  margin-bottom: 1em;
 }
 
-.rslides li:first-child {
-    position: relative;
-    display: block;
-    float: left;
+.category {
+  display: inline-block;
+  text-align: center;
+  height: 6em;
+  padding-bottom: 10px;
 }
 
-.rslides img {
-    display: block;
-    height: auto;
-    max-width: 380px;
-    height: 300px;
-    border: 0;
-    margin: 0px auto;
-}
-@media (max-width: 990px) {
-    .rslides img {
-        max-width: 180px;
-        height: 150px;
-    }
-}
-/* End Responsive Slides */
-
-.link-panel .panel-body,
-.link-panel .panel-footer {
-    color: #2c3e50;
+.category i {
+  display: block;
 }
 
-.link-panel:hover {
-    text-decoration: none;
+.category i.devicons {
+  font-size: 4em;
 }
 
-#tag_cloud {
-    height: 253px;
-    width: 300px;
+.category i.fa {
+  font-size: 2.8em;
+  padding: 10px 0px;
 }
 
-#devict_logo {
-    width: 300px;
+.category-title i.devicons {
+  display: inline-block;
+  font-size: 1.5em;
+  vertical-align: middle;
 }
 
-.about-image, .rslides img {
-    background: #e2e2e2;
-    border-radius: 12px;
-      -moz-border-radius: 12px;
-      -webkit-border-radius: 12px;
-    padding: 10px;
+article+article {
+  margin-top: 15px;
+  border-top: 1px solid #dddddd;
 }
 
-.about-image {
-    margin: 5px 8px;
+/* Remove special styling of links with the "unstyled" class */
+a.unstyled {
+  color: inherit;
 }
-
-small .badge {
-  font-size: 8px;
+a.unstyled:hover {
+  text-decoration: inherit;
 }

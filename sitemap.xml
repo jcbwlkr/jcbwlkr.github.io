@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://jacob-walker.com/</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</loc>
+    <lastmod>2013-01-06T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/devict.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/wrecking-ball-media.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/getting-started-with-go.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/cqlstore.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/httpmatchers.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/timeips.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/pysag.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/regex-101.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/implementing-oop.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/twig.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/startup-wichita.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/find.torrent.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/livejournal-amnesia.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/geocommunicator.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/now.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/norris-training.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/young-life-wichita.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/yagl.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/dotfiles.html</loc>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/portfolio/vim.html</loc>
+  </url>
+  
+</urlset>

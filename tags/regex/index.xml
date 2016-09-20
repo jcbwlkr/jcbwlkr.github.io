@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Regex on jcbwlkr</title>
+    <link>http://jacob-walker.com/tags/regex.html</link>
+    <description>Recent content in Regex on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/tags/regex.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Regular Expressions 101</title>
+      <link>http://jacob-walker.com/portfolio/regex-101.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/regex-101.html</guid>
+      <description>&lt;p&gt;In March 2013 I gave a presentation to my local development group
+&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
+talk was just under two hours long and was well received by the audience
+(approximately 25 developers). The presentation was broadcast through Google
+Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The presentation covers the most commonly used features of regex and some of
+the nicer advanced features like backreferences and assertions. Most of the
+research for the presentation comes from
+&lt;a href=&#34;http://www.regular-expressions.info/&#34;&gt;regular-expressions.info&lt;/a&gt;. Interested readers should check out
+that site&amp;rsquo;s references on some of the crazier things you can do.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/regex-101&#34;&gt;Slides and source&lt;/a&gt;&lt;/p&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/4LnyHF8dnIk&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Qemu on jcbwlkr</title>
+    <link>http://jacob-walker.com/tags/qemu.html</link>
+    <description>Recent content in Qemu on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/tags/qemu.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>TimeIPS</title>
+      <link>http://jacob-walker.com/portfolio/timeips.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
+      <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
+with my employer TimeIPS. We made a time and attendance system which is used by
+thousands of companies around the world.&lt;/p&gt;
+
+&lt;p&gt;TimeIPS is used to&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Track employee hours worked from a variety of hardware and software interfaces&lt;/li&gt;
+&lt;li&gt;Record benefit usages and accruals&lt;/li&gt;
+&lt;li&gt;Monitor employee adherence to schedules&lt;/li&gt;
+&lt;li&gt;Ensure employee coverage for particular tasks or locations&lt;/li&gt;
+&lt;li&gt;Calculate FLSA overtime&lt;/li&gt;
+&lt;li&gt;Record piecework pay such as tips and bonuses&lt;/li&gt;
+&lt;li&gt;Serve company documents to employees and managers&lt;/li&gt;
+&lt;li&gt;Calculate automatic holiday rules&lt;/li&gt;
+&lt;li&gt;And many other things&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At TimeIPS I lead a team of 4 in the development of our products. Some of my
+major accomplishments in this role include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Introducing Test Driven Development with &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Implementing Continuous Integration with &lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;Jenkins-CI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Starting code reviews via &lt;a href=&#34;http://phabricator.org/&#34;&gt;Phabricator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Leading the development of a REST API&lt;/li&gt;
+&lt;li&gt;Working to update legacy code to use the &lt;a href=&#34;http://www.doctrine-project.org/&#34;&gt;Doctrine 2&lt;/a&gt; ORM&lt;/li&gt;
+&lt;li&gt;Implementing a Zero Defect policy&lt;/li&gt;
+&lt;li&gt;Developing a system for managing our farm of QEMU virtual machines&lt;/li&gt;
+&lt;li&gt;Revamped our build process making heavy use of &lt;a href=&#34;https://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;,
+&lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, and &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

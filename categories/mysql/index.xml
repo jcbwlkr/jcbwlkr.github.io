@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mysql on jcbwlkr</title>
+    <link>http://jacob-walker.com/categories/mysql.html</link>
+    <description>Recent content in Mysql on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 27 Jun 2013 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://jacob-walker.com/categories/mysql.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A Note on Recovering from InnoDB Corruption</title>
+      <link>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</guid>
+      <description>&lt;p&gt;InnoDB is a great storage engine for MySQL offering, among other things,
+transaction support. One of its drawbacks is the difficulty that you can face
+when corruption inevitably hits.&lt;/p&gt;
+
+&lt;p&gt;At work we have dealt with corrupt InnoDB tables often enough to make the
+procedure fairly routine. Last week I was faced with a situation that had me
+pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;
+
+&lt;p&gt;In this particular instance I was connecting to the database with the standard
+command line client &lt;code&gt;mysql&lt;/code&gt;. Every time I ran any query (against the corrupt
+table or not) I was slapped in the face with the annoying &amp;ldquo;MySQL Server Has
+Gone Away&amp;rdquo; message. Even queries like &lt;code&gt;SHOW PROCESSLIST;&lt;/code&gt; would trigger the
+problem.&lt;/p&gt;
+
+&lt;p&gt;Right before we gave up I had an idea. When you start the client it gives you
+the following message:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;What this means is that the client looks up meta information about the tables
+and columns in your selected database so that when you hit &lt;kbd&gt;TAB&lt;/kbd&gt; it
+will auto fill the table names like you would get on the command line. The list
+of tables and columns is rebuilt any time you change databases or issue the
+&lt;code&gt;REHASH;&lt;/code&gt; command.&lt;/p&gt;
+
+&lt;p&gt;On a hunch I tried starting the client with the &lt;code&gt;-A&lt;/code&gt; flag to prevent this table
+scanning. I don&amp;rsquo;t know the technical reason within MySQL&amp;rsquo;s binaries but with
+this option enabled my problem went away. I can only assume that when the
+client scans the tables (including the corrupt table) something goes horribly
+wrong.&lt;/p&gt;
+
+&lt;p&gt;So just file that away in your DBA utility belt :)&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>TimeIPS</title>
+      <link>http://jacob-walker.com/portfolio/timeips.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
+      <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
+with my employer TimeIPS. We made a time and attendance system which is used by
+thousands of companies around the world.&lt;/p&gt;
+
+&lt;p&gt;TimeIPS is used to&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Track employee hours worked from a variety of hardware and software interfaces&lt;/li&gt;
+&lt;li&gt;Record benefit usages and accruals&lt;/li&gt;
+&lt;li&gt;Monitor employee adherence to schedules&lt;/li&gt;
+&lt;li&gt;Ensure employee coverage for particular tasks or locations&lt;/li&gt;
+&lt;li&gt;Calculate FLSA overtime&lt;/li&gt;
+&lt;li&gt;Record piecework pay such as tips and bonuses&lt;/li&gt;
+&lt;li&gt;Serve company documents to employees and managers&lt;/li&gt;
+&lt;li&gt;Calculate automatic holiday rules&lt;/li&gt;
+&lt;li&gt;And many other things&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;At TimeIPS I lead a team of 4 in the development of our products. Some of my
+major accomplishments in this role include:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Introducing Test Driven Development with &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Implementing Continuous Integration with &lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;Jenkins-CI&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Starting code reviews via &lt;a href=&#34;http://phabricator.org/&#34;&gt;Phabricator&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Leading the development of a REST API&lt;/li&gt;
+&lt;li&gt;Working to update legacy code to use the &lt;a href=&#34;http://www.doctrine-project.org/&#34;&gt;Doctrine 2&lt;/a&gt; ORM&lt;/li&gt;
+&lt;li&gt;Implementing a Zero Defect policy&lt;/li&gt;
+&lt;li&gt;Developing a system for managing our farm of QEMU virtual machines&lt;/li&gt;
+&lt;li&gt;Revamped our build process making heavy use of &lt;a href=&#34;https://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;,
+&lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, and &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Wrecking Ball Media</title>
+      <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
+      <description>&lt;p&gt;From February 2015 to February 2016 I was a contracting engineer at &lt;a href=&#34;http://wreckingballmedia.com/&#34;&gt;Wrecking
+Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
+community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
+APIs from Adobe and other vendors to create a white labeled site for connecting
+and empowering creative youth.&lt;/p&gt;
+
+&lt;p&gt;For this project I primarily worked in Go. I developed the server application
+composing middleware, Go templating, a REST API, request contexts, a service
+layer, logger, internationalization, and both unit and integration tests.&lt;/p&gt;
+
+&lt;p&gt;Additionally I constructed the team&amp;rsquo;s Continuous Integration and Continuous
+Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.&lt;/p&gt;
+
+&lt;p&gt;Multiple deployments of the platform were completed during my time including
+the &lt;a href=&#34;https://withmalala.org/&#34;&gt;#WithMalala&lt;/a&gt; project and the &lt;a href=&#34;https://sundanceignitewhatsnext.org&#34;&gt;2015 Sundance Ignite
+Challenge&lt;/a&gt;.&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

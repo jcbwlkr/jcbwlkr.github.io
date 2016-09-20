@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api on jcbwlkr</title>
+    <link>http://jacob-walker.com/tags/api.html</link>
+    <description>Recent content in Api on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/tags/api.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Geocommunicator API Client</title>
+      <link>http://jacob-walker.com/portfolio/geocommunicator.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/geocommunicator.html</guid>
+      <description>&lt;p&gt;I have a friend who travels around the country servicing natural gas pipelines.
+As part of his duties he has to translate latitude / longitude coordinates into
+state, township, range, and section information. He was doing this by hand
+dozens of time per day. I found an API from the &lt;a href=&#34;http://www.geocommunicator.gov/&#34;&gt;Department of the Interior&amp;rsquo;s
+Bureau of Land Management&lt;/a&gt; which accepts coordinates and responds with the
+exact information my friend needed.&lt;/p&gt;
+
+&lt;p&gt;I created a PHP client that can consume the API and another class that uses
+&lt;a href=&#34;http://phpexcel.codeplex.com/&#34;&gt;PHPExcel&lt;/a&gt; to parse an XLS spreadsheet with coordinates and populate
+it with the additional information.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/geocommunicator-client&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LiveJournal Amnesia</title>
+      <link>http://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;LiveJournal Amnesia&lt;/a&gt; is a quick script I wrote to automate the
+process of hiding the 200-some LiveJournal blog posts I generated in my late
+teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
+README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
+you never wrote that poem Junior year!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>find.torrent</title>
+      <link>http://jacob-walker.com/portfolio/find.torrent.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/find.torrent.html</guid>
+      <description>&lt;p&gt;At home my desktop PC acts as a UPNP media server and is the box I use to
+download torrents. This machine was inconveniently located in my basement. There
+were many times when I would want to start a download but the only device
+nearby is my phone. I found that finding and downloading a torrent file then
+getting it to my torrent machine was a cumbersome process. Furthermore, many
+sites that index torrent files contain advertising that ranges from annoying to
+inappropriate to explicit. I decided to create a service that facilitates the
+process of finding the &lt;code&gt;.torrent&lt;/code&gt; files and triggering their download. The
+service does not download the torrent itself; just the torrent file.&lt;/p&gt;
+
+&lt;p&gt;When I started this project I knew that I wanted to build the service as a REST
+API that I could then consume through various clients. I intend to develop web,
+command line, Android, and iOS applications. The service was written in &lt;a href=&#34;http://bulletphp.com/&#34;&gt;Bullet
+PHP&lt;/a&gt; and serves the API with the &lt;a href=&#34;http://stateless.co/hal_specification.html&#34;&gt;HAL Hypermedia Type&lt;/a&gt;. The
+service was developed using a combination of TDD and BDD practices with tests in
+PHPUnit and Frisby.js.&lt;/p&gt;
+
+&lt;p&gt;This is a collaborative work with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&#34;https://github.com/Tortugas-Consulting-LLC/find.torrent&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

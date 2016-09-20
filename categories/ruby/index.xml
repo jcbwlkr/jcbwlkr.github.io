@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on jcbwlkr</title>
+    <link>http://jacob-walker.com/categories/ruby.html</link>
+    <description>Recent content in Ruby on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <atom:link href="http://jacob-walker.com/categories/ruby.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Implementing OOP</title>
+      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
+      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
+Object Oriented Programming in PHP and Ruby. I chose this topic when I was
+explaining inheritance to a friend and realized others would be interested. I
+chose PHP and Ruby for examples because I was already familiar with OOP in PHP
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
+
+&lt;p&gt;The talk is an hour and a half long. It covers the basic ideas and syntax of
+OOP such as:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Class vs Object&lt;/li&gt;
+&lt;li&gt;Properties and Methods&lt;/li&gt;
+&lt;li&gt;Access modifiers (public, private, protected)&lt;/li&gt;
+&lt;li&gt;Inheritance&lt;/li&gt;
+&lt;li&gt;Static or Class methods and properties&lt;/li&gt;
+&lt;li&gt;Method overriding&lt;/li&gt;
+&lt;li&gt;Abstract classes&lt;/li&gt;
+&lt;li&gt;Interfaces&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;More info:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://jacob-walker.com/implementing-oop/presentation/&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/implementing-oop&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
+  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https//www.youtube.com/embed/7QoEfPYULXM&#34; allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>LiveJournal Amnesia</title>
+      <link>http://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;LiveJournal Amnesia&lt;/a&gt; is a quick script I wrote to automate the
+process of hiding the 200-some LiveJournal blog posts I generated in my late
+teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
+README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
+you never wrote that poem Junior year!&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Startup Wichita</title>
+      <link>http://jacob-walker.com/portfolio/startup-wichita.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/startup-wichita.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
+Wichita with local people and resources. In March 2014 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
+hackathon to kick-start development on the community site.&lt;/p&gt;
+
+&lt;p&gt;We decided to build the site on the &lt;a href=&#34;mean&#34;&gt;MEAN stack&lt;/a&gt; (MongoDB, Express,
+Angular, and Node). We provisioned a development environment with
+&lt;a href=&#34;http://puppetlabs.com&#34;&gt;Puppet&lt;/a&gt; and &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;. We split into teams for content,
+design, front end development and back end development. I managed the various
+teams, helped developers set up their environments, and merged pull requests.&lt;/p&gt;
+
+&lt;p&gt;The hackathon laid the ground work for the application but at the end of the
+day there was still a lot of work to be done. Over the next several months
+devICT members met periodically to push the site forward. Progress was slow as
+each developer was only working in their spare time.&lt;/p&gt;
+
+&lt;p&gt;In September (6 months since the hackathon) the Entrepreneurship Task Force of
+the Wichita Metro Chamber of Commerce hired my company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
+LLC&lt;/a&gt; to dedicate development resources towards the completion of the
+site. The first phase milestone was reached on October 21st 2014.&lt;/p&gt;
+
+&lt;p&gt;Additional work included a rewrite to Ruby on Rails. Eventually the project was
+handed over to another organization to finish.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita site&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/regex-101&#34;&gt;Startup Wichita on GitHub&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Young Life Wichita</title>
+      <link>http://jacob-walker.com/portfolio/young-life-wichita.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/young-life-wichita.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
+organization. YLW supports local families through various charitable events and
+activities. My consulting company was hired to develop an online application
+where people could RSVP for different activities.&lt;/p&gt;
+
+&lt;p&gt;The website was built on Rails 4 with Twitter Bootstrap. Another local agency
+&lt;a href=&#34;http://www.barrettmorgandesignllc.com/&#34;&gt;Barrett Morgan Deisgn LLC &lt;/a&gt; developed the look which we implemented.&lt;/p&gt;
+
+&lt;p&gt;Features implemented included&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;An event creator&lt;/li&gt;
+&lt;li&gt;A reservation management system&lt;/li&gt;
+&lt;li&gt;Hosting, backups, and automated deployment&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
