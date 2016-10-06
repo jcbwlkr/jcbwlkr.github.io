@@ -3,8 +3,7 @@
 Portfolio and Blog: **[http://jacob-walker.com](http://jacob-walker.com)**
 
 ## Contact Information
-* 2101 N Parkwood Ln, Wichita, KS 67208
-* (316) 461-1127
+* Wichita, KS 67208
 * [jacobwalker0814@gmail.com](mailto:jacobwalker0814@gmail.com)
 
 ## Objective
