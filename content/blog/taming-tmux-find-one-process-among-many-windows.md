@@ -12,8 +12,8 @@ I'm a big fan of [tmux][tmux] and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing "find the right window" especially if I had backgrounded
-vim in some window. This happened often enough that I spent the time to come up
-with a little tmux keybinding to find that window automatically.
+vim. This happened often enough that I spent the time to come up with a little
+tmux keybinding to find that window automatically.
 
 <!--more-->
 
@@ -46,8 +46,8 @@ Swap file "~/.vim/swaps/foo.txt.swp" already exists!
 ```
 
 Do you see the line that says `process ID: 79121`? That gives us the process id
-(pid for short) of the `vim` process that's editing this file. What we'll do
-is take that pid and ask tmux to find it for us.
+(pid for short) of the vim process that's editing this file. What we'll do is
+take that pid and ask tmux to find it for us.
 
 ## The solution
 
@@ -71,7 +71,7 @@ Let's see it in action!
 
 ## Break it down now
 
-Let's unravel this a bit to see the different pieces. It's all one on line and
+Let's unravel this a bit to see the different pieces. It's all on one line and
 there is a lot of escaping going on because it's a script within a script
 within a string... but if we split it up it's not hard to follow.
 
