@@ -21,8 +21,8 @@
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing &amp;ldquo;find the right window&amp;rdquo; especially if I had backgrounded
-vim in some window. This happened often enough that I spent the time to come up
-with a little tmux keybinding to find that window automatically.&lt;/p&gt;
+vim. This happened often enough that I spent the time to come up with a little
+tmux keybinding to find that window automatically.&lt;/p&gt;
 
 &lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
 
@@ -52,8 +52,8 @@ Swap file &amp;quot;~/.vim/swaps/foo.txt.swp&amp;quot; already exists!
 &lt;/code&gt;&lt;/pre&gt;
 
 &lt;p&gt;Do you see the line that says &lt;code&gt;process ID: 79121&lt;/code&gt;? That gives us the process id
-(pid for short) of the &lt;code&gt;vim&lt;/code&gt; process that&amp;rsquo;s editing this file. What we&amp;rsquo;ll do
-is take that pid and ask tmux to find it for us.&lt;/p&gt;
+(pid for short) of the vim process that&amp;rsquo;s editing this file. What we&amp;rsquo;ll do is
+take that pid and ask tmux to find it for us.&lt;/p&gt;
 
 &lt;h2 id=&#34;the-solution&#34;&gt;The solution&lt;/h2&gt;
 
@@ -76,7 +76,7 @@ Let&amp;rsquo;s see it in action!&lt;/p&gt;
 
 &lt;h2 id=&#34;break-it-down-now&#34;&gt;Break it down now&lt;/h2&gt;
 
-&lt;p&gt;Let&amp;rsquo;s unravel this a bit to see the different pieces. It&amp;rsquo;s all one on line and
+&lt;p&gt;Let&amp;rsquo;s unravel this a bit to see the different pieces. It&amp;rsquo;s all on one line and
 there is a lot of escaping going on because it&amp;rsquo;s a script within a script
 within a string&amp;hellip; but if we split it up it&amp;rsquo;s not hard to follow.&lt;/p&gt;
 
