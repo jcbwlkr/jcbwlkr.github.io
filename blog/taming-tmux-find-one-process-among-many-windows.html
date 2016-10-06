@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="generator" content="Hugo 0.16-DEV" />
+
+
+
+
+
+
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="/css/highlight.js/vs.css">
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<title>Taming tmux: Find One Process Among Many Windows &middot; jcbwlkr</title>
+</head>
+
+
+<body>
+  <div class="container">
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">jcbwlkr</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse navbar-right collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          
+          <li
+            class="active"
+            
+          >
+            <a href="/blog.html"><i class='fa fa-book'></i> Blog</a>
+          </li>
+          
+          <li
+            
+            
+          >
+            <a href="/portfolio.html"><i class='fa fa-briefcase'></i> Portfolio</a>
+          </li>
+          
+          <li
+            
+            
+          >
+            <a href="/resume/resume.pdf"><i class='fa fa-file'></i> Resume</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    <article>
+      <header>
+        <h1>Taming tmux: Find One Process Among Many Windows</h1>
+        <div class="post-meta">
+  
+  <div>
+    
+      <i class="fa fa-calendar fa-fw"></i>
+      <time>2016-10-04</time>
+    
+
+    
+    
+      <i class="fa fa-folder fa-fw"></i>
+      
+        <a href="http://jacob-walker.com/categories/bash.html" alt="bash">bash</a>
+        &nbsp;&#47;
+      
+        <a href="http://jacob-walker.com/categories/vim.html" alt="vim">vim</a>
+        
+      
+    
+
+    
+      
+      
+        <i class="fa fa-tags fa-fw"></i>
+        
+          <a href="http://jacob-walker.com/tags/tmux.html">tmux</a>
+        
+      
+    
+  </div>
+</div>
+
+      </header>
+
+      
+
+<p>I&rsquo;m a big fan of <a href="https://tmux.github.io/">tmux</a> and I use it daily. Over time I will open more
+and more windows and my workspace starts to get a bit cluttered. Occasionally I
+will try to open some file in vim that is already open in another window. I
+used to dread playing &ldquo;find the right window&rdquo; especially if I had backgrounded
+vim in some window. This happened often enough that I spent the time to come up
+with a little tmux keybinding to find that window automatically.</p>
+
+<h2 id="the-problem">The problem</h2>
+
+<p>Vim users will be used to seeing this screen and may even dread it.</p>
+
+<pre><code class="language-none">E325: ATTENTION
+Found a swap file by the name &quot;~/.vim/swaps/foo.txt.swp&quot;
+          owned by: jwalker   dated: Wed Oct  5 18:10:25 2016
+         file name: ~jwalker/foo.txt
+          modified: no
+         user name: jwalker   host name: jacobs-mbp
+        process ID: 79121 (still running)
+While opening file &quot;foo.txt&quot;
+             dated: Wed Oct  5 18:10:25 2016
+
+(1) Another program may be editing the same file.  If this is the case,
+    be careful not to end up with two different instances of the same
+    file when making changes.  Quit, or continue with caution.
+(2) An edit session for this file crashed.
+    If this is the case, use &quot;:recover&quot; or &quot;vim -r foo.txt&quot;
+    to recover the changes (see &quot;:help recovery&quot;).
+    If you did this already, delete the swap file &quot;/Users/jwalker/.vim/swaps/foo.txt.swp&quot;
+    to avoid this message.
+
+Swap file &quot;~/.vim/swaps/foo.txt.swp&quot; already exists!
+[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort:
+</code></pre>
+
+<p>Do you see the line that says <code>process ID: 79121</code>? That gives us the process id
+(pid for short) of the <code>vim</code> process that&rsquo;s editing this file. What we&rsquo;ll do
+is take that pid and ask tmux to find it for us.</p>
+
+<h2 id="the-solution">The solution</h2>
+
+<p>Add this to your <code>~/.tmux.conf</code> file (and reload the config if necessary)</p>
+
+<pre><code class="language-none">bind-key W command-prompt -p &quot;Switch to pane with pid:&quot; &quot;run-shell 'pane=\$(ps eww %% | sed \&quot;1d; s/^.*TMUX_PANE=//;s/ .*//\&quot;); [[ -z \$pane ]] &amp;&amp; tmux display-message \&quot;could not find pid\&quot; || tmux switch-client -t \$pane'&quot;
+</code></pre>
+
+<p>With that in our config and knowing the pid we want to find we hit
+<kbd>prefix</kbd> <kbd>W</kbd>. Prefix defaults to <kbd>ctrl-b</kbd> and I
+chose capital <kbd>W</kbd> because I remember this command as <code>Where</code> and
+<kbd>w</kbd> was already taken. When we do this our tmux will prompt <code>Switch to
+pane with pid:</code> so we&rsquo;ll type in <kbd>79121</kbd> <kbd>enter</kbd> and tmux
+automatically switches to the right window even in another session. How cool!
+Let&rsquo;s see it in action!</p>
+
+<div class="text-center">
+  <img class="img-responsive img-thumbnail" alt="finding tmux window containing pid" src="https://cldup.com/pDEQFB-8Iy.gif" />
+</div>
+
+<h2 id="break-it-down-now">Break it down now</h2>
+
+<p>Let&rsquo;s unravel this a bit to see the different pieces. It&rsquo;s all one on line and
+there is a lot of escaping going on because it&rsquo;s a script within a script
+within a string&hellip; but if we split it up it&rsquo;s not hard to follow.</p>
+
+<p>First our key binding runs the tmux command <code>command-prompt</code> with two
+arguments: the prompt to display to the user and the tmux command to run. That
+command is <code>run-shell</code> and the argument we pass to that is the shell script.</p>
+
+<p>The script first runs <code>ps eww %%</code>. The <code>%%</code> gets replaced with whatever you
+typed in the command prompt so in our example it becomes <code>ps eww 79121</code>. Now
+<code>ps</code> is a tool that inspects the process list for information. The flag <code>e</code>
+causes it to include the environment variables that were present when the
+process launched and the flags <code>ww</code> improve the formatting a bit (and help for
+parsing on ubuntu). The <code>ps</code> tool accepts different flags and in different
+styles; this is the BSD format which works on a Mac and seems to be supported
+by most Linux distros as well. Providing the pid as an argument limits the
+output to just the process we care about. That command gives output that looks
+like this (abbreviated a bit for this post)</p>
+
+<pre><code class="language-none">  PID   TT  STAT      TIME COMMAND
+79121 s021  S+     0:00.58 vim foo.txt TERM=screen-256color USER=jwalker PAGER=less EDITOR=/usr/local/bin/vim LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 TMUX_PANE=%115 PWD=/Users/jwalker SHELL=/bin/zsh
+</code></pre>
+
+<p>So we can see the process in question and we can see its environment variables.
+The one we care about is called <code>TMUX_PANE</code>. Every time you open a new window
+or split a window the tmux daemon assigns that pane a unique id and sets it in
+this environment variable <code>TMUX_PANE</code>. That is the secret that is going to make
+this all work but we need to extract it.</p>
+
+<p>The next step of the script is to pipe the output of <code>ps</code> to <code>sed</code> with a
+little sed script that first deletes the header line and then deletes
+everything up to and including <code>TMUX_PANE=</code> and then deletes everything after
+the value. At this point all we&rsquo;re left with is the value we want which is
+<code>%115</code>.</p>
+
+<p>Both the <code>ps</code> and <code>sed</code> commands were ran in a subshell <code>$()</code> and the final
+output is assigned to the variable <code>pane</code>. Next we do an evaluation to see if
+<code>pane</code> is empty (perhaps we mistyped the pid). We use <code>[[ -z $pane ]]</code> which
+will succeed if it is empty. In that case we run <code>tmux display-message &quot;could
+not find pid&quot;</code> and we&rsquo;re done.</p>
+
+<p>If <code>pane</code> was not empty we run <code>tmux switch-client -t $pane</code>. That command
+instructs the client to switch to the pane with id <code>%115</code>.</p>
+
+<h2 id="in-conclusion">In conclusion</h2>
+
+<p>I hope this little script makes your tmux experience a little better. I don&rsquo;t
+use it every day myself but when it comes up I am glad to have it. I would also
+like to point out that although I used a vim process in my example there&rsquo;s
+nothing really vim specific about this tip. You could use this command to
+switch to the pane running any process.</p>
+
+
+      
+<hr />
+<div class="row">
+  <div class="col-md-6 text-left">
+    
+    <nav class="prev">
+      <a href="http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html"><i class="fa fa-fw fa-chevron-left"></i> A Note on Recovering from InnoDB Corruption</a>
+    </nav>
+    
+  </div>
+  <div class="col-md-6 text-right">
+    
+  </div>
+</div>
+
+
+    </article>
+
+    
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+(function() {
+  
+  
+  if (window.location.hostname == "localhost") {
+    return;
+  }
+
+  var hr = document.createElement('hr');
+  var t = document.getElementById('disqus_thread');
+  t.parentNode.insertBefore(hr, t);
+
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'jacobwalker0814';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </div>
+
+  <div class="container">
+  <hr>
+  <footer>
+    <p class="pull-left">&copy; Jacob Walker 2016</p>
+    <p class="pull-right">
+    <a href="https://twitter.com/jcbwlkr"                              title="Jacob Walker on Twitter"        class="symbol social-twitter">Jacob Walker on Twitter</a>
+    <a href="https://github.com/jcbwlkr"                               title="Jacob Walker on Github"         class="symbol social-github">Jacob Walker on Github</a>
+    <a href="https://stackoverflow.com/users/859353/jcbwlkr"           title="Jacob Walker on Stack Overflow" class="symbol social-stackoverflow">Jacob Walker on Stack Overflow</a>
+    
+    
+    <a href="https://www.youtube.com/channel/UC5R8ji-vKH6NhUQTozKn5eg" title="Jacob Walker on YouTube"        class="symbol social-youtube">Jacob Walker on YouTube</a>
+    <a href="https://www.linkedin.com/in/jcbwlkr"                      title="Jacob Walker on LinkedIn"       class="symbol social-linkedin">Jacob Walker on LinkedIn</a>
+    </p>
+  </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/javascript">
+(function() {
+  
+  if (window.location.hostname == "localhost") {
+    return;
+  }
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42678895-1', 'auto');
+  ga('send', 'pageview');
+})();
+</script>
+
+
+</body>
+</html>
