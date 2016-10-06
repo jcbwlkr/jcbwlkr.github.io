@@ -140,9 +140,9 @@
 <p>I&rsquo;m a big fan of <a href="https://tmux.github.io/">tmux</a> and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
-used to dread playing &ldquo;find the right window&rdquo; especially if I had backgrounded
-vim. This happened often enough that I spent the time to come up with a little
-tmux keybinding to find that window automatically.</p>
+used to dread playing &ldquo;find the right window,&rdquo; especially if I had backgrounded
+vim. This happened often enough that I spent the time to make a little tmux
+keybinding for finding that window automatically.</p>
 
 <h2 id="the-problem">The problem</h2>
 
@@ -182,12 +182,12 @@ take that pid and ask tmux to find it for us.</p>
 <pre><code class="language-none">bind-key W command-prompt -p &quot;Switch to pane with pid:&quot; &quot;run-shell 'pane=\$(ps eww %% | sed \&quot;1d; s/^.*TMUX_PANE=//;s/ .*//\&quot;); [[ -z \$pane ]] &amp;&amp; tmux display-message \&quot;could not find pid\&quot; || tmux switch-client -t \$pane'&quot;
 </code></pre>
 
-<p>With that in our config and knowing the pid we want to find we hit
+<p>With that in our config, and knowing the pid we want to find, we hit
 <kbd>prefix</kbd> <kbd>W</kbd>. Prefix defaults to <kbd>ctrl-b</kbd> and I
 chose capital <kbd>W</kbd> because I remember this command as <code>Where</code> and
 <kbd>w</kbd> was already taken. When we do this our tmux will prompt <code>Switch to
 pane with pid:</code> so we&rsquo;ll type in <kbd>79121</kbd> <kbd>enter</kbd> and tmux
-automatically switches to the right window even in another session. How cool!
+automatically switches to the right window - even in another session. How cool!
 Let&rsquo;s see it in action!</p>
 
 <div class="text-center">
@@ -200,20 +200,20 @@ Let&rsquo;s see it in action!</p>
 there is a lot of escaping going on because it&rsquo;s a script within a script
 within a string&hellip; but if we split it up it&rsquo;s not hard to follow.</p>
 
-<p>First our key binding runs the tmux command <code>command-prompt</code> with two
-arguments: the prompt to display to the user and the tmux command to run. That
+<p>First, our key binding runs the tmux command <code>command-prompt</code> with two
+arguments: the prompt to display to the user, and the tmux command to run. That
 command is <code>run-shell</code> and the argument we pass to that is the shell script.</p>
 
 <p>The script first runs <code>ps eww %%</code>. The <code>%%</code> gets replaced with whatever you
-typed in the command prompt so in our example it becomes <code>ps eww 79121</code>. Now
-<code>ps</code> is a tool that inspects the process list for information. The flag <code>e</code>
-causes it to include the environment variables that were present when the
-process launched and the flags <code>ww</code> improve the formatting a bit (and help for
-parsing on ubuntu). The <code>ps</code> tool accepts different flags and in different
-styles; this is the BSD format which works on a Mac and seems to be supported
-by most Linux distros as well. Providing the pid as an argument limits the
-output to just the process we care about. That command gives output that looks
-like this (abbreviated a bit for this post)</p>
+typed in the command prompt. In our example it becomes <code>ps eww 79121</code>. <code>ps</code> is
+a tool that inspects the process list for information. The flag <code>e</code> causes it
+to include the environment variables that were present when the process
+launched, and the flags <code>ww</code> improve the formatting a bit (and help for parsing
+on ubuntu). The <code>ps</code> tool accepts different flags and in different styles; this
+is the BSD format which works on a Mac and seems to be supported by most Linux
+distros as well. Providing the pid as an argument limits the output to just the
+process we care about. That command gives output that looks like this
+(abbreviated a bit for this post):</p>
 
 <pre><code class="language-none">  PID   TT  STAT      TIME COMMAND
 79121 s021  S+     0:00.58 vim foo.txt TERM=screen-256color USER=jwalker PAGER=less EDITOR=/usr/local/bin/vim LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 TMUX_PANE=%115 PWD=/Users/jwalker SHELL=/bin/zsh
@@ -222,17 +222,16 @@ like this (abbreviated a bit for this post)</p>
 <p>So we can see the process in question and we can see its environment variables.
 The one we care about is called <code>TMUX_PANE</code>. Every time you open a new window
 or split a window the tmux daemon assigns that pane a unique id and sets it in
-this environment variable <code>TMUX_PANE</code>. That is the secret that is going to make
-this all work but we need to extract it.</p>
+this environment variable <code>TMUX_PANE</code>. That is the secret that will make this
+all work but we need to extract it.</p>
 
 <p>The next step of the script is to pipe the output of <code>ps</code> to <code>sed</code> with a
-little sed script that first deletes the header line and then deletes
-everything up to and including <code>TMUX_PANE=</code> and then deletes everything after
-the value. At this point all we&rsquo;re left with is the value we want which is
-<code>%115</code>.</p>
+little sed script. This script deletes the header line, deletes everything up
+to and including <code>TMUX_PANE=</code>, then deletes everything after the value. At this
+point all we&rsquo;re left with is the value which is <code>%115</code>.</p>
 
 <p>Both the <code>ps</code> and <code>sed</code> commands were ran in a subshell <code>$()</code> and the final
-output is assigned to the variable <code>pane</code>. Next we do an evaluation to see if
+output is assigned to the variable <code>pane</code>. Next, we do an evaluation to see if
 <code>pane</code> is empty (perhaps we mistyped the pid). We use <code>[[ -z $pane ]]</code> which
 will succeed if it is empty. In that case we run <code>tmux display-message &quot;could
 not find pid&quot;</code> and we&rsquo;re done.</p>
