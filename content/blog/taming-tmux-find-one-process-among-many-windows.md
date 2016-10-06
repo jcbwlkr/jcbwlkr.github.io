@@ -11,9 +11,9 @@ title = "Taming tmux: Find One Process Among Many Windows"
 I'm a big fan of [tmux][tmux] and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
-used to dread playing "find the right window" especially if I had backgrounded
-vim. This happened often enough that I spent the time to come up with a little
-tmux keybinding to find that window automatically.
+used to dread playing "find the right window," especially if I had backgrounded
+vim. This happened often enough that I spent the time to make a little tmux
+keybinding for finding that window automatically.
 
 <!--more-->
 
@@ -57,12 +57,12 @@ Add this to your `~/.tmux.conf` file (and reload the config if necessary)
 bind-key W command-prompt -p "Switch to pane with pid:" "run-shell 'pane=\$(ps eww %% | sed \"1d; s/^.*TMUX_PANE=//;s/ .*//\"); [[ -z \$pane ]] && tmux display-message \"could not find pid\" || tmux switch-client -t \$pane'"
 ```
 
-With that in our config and knowing the pid we want to find we hit
+With that in our config, and knowing the pid we want to find, we hit
 <kbd>prefix</kbd> <kbd>W</kbd>. Prefix defaults to <kbd>ctrl-b</kbd> and I
 chose capital <kbd>W</kbd> because I remember this command as `Where` and
 <kbd>w</kbd> was already taken. When we do this our tmux will prompt `Switch to
 pane with pid:` so we'll type in <kbd>79121</kbd> <kbd>enter</kbd> and tmux
-automatically switches to the right window even in another session. How cool!
+automatically switches to the right window - even in another session. How cool!
 Let's see it in action!
 
 <div class="text-center">
@@ -75,20 +75,20 @@ Let's unravel this a bit to see the different pieces. It's all on one line and
 there is a lot of escaping going on because it's a script within a script
 within a string... but if we split it up it's not hard to follow.
 
-First our key binding runs the tmux command `command-prompt` with two
-arguments: the prompt to display to the user and the tmux command to run. That
+First, our key binding runs the tmux command `command-prompt` with two
+arguments: the prompt to display to the user, and the tmux command to run. That
 command is `run-shell` and the argument we pass to that is the shell script.
 
 The script first runs `ps eww %%`. The `%%` gets replaced with whatever you
-typed in the command prompt so in our example it becomes `ps eww 79121`. Now
-`ps` is a tool that inspects the process list for information. The flag `e`
-causes it to include the environment variables that were present when the
-process launched and the flags `ww` improve the formatting a bit (and help for
-parsing on ubuntu). The `ps` tool accepts different flags and in different
-styles; this is the BSD format which works on a Mac and seems to be supported
-by most Linux distros as well. Providing the pid as an argument limits the
-output to just the process we care about. That command gives output that looks
-like this (abbreviated a bit for this post)
+typed in the command prompt. In our example it becomes `ps eww 79121`. `ps` is
+a tool that inspects the process list for information. The flag `e` causes it
+to include the environment variables that were present when the process
+launched, and the flags `ww` improve the formatting a bit (and help for parsing
+on ubuntu). The `ps` tool accepts different flags and in different styles; this
+is the BSD format which works on a Mac and seems to be supported by most Linux
+distros as well. Providing the pid as an argument limits the output to just the
+process we care about. That command gives output that looks like this
+(abbreviated a bit for this post):
 
 ```none
   PID   TT  STAT      TIME COMMAND
@@ -98,17 +98,16 @@ like this (abbreviated a bit for this post)
 So we can see the process in question and we can see its environment variables.
 The one we care about is called `TMUX_PANE`. Every time you open a new window
 or split a window the tmux daemon assigns that pane a unique id and sets it in
-this environment variable `TMUX_PANE`. That is the secret that is going to make
-this all work but we need to extract it.
+this environment variable `TMUX_PANE`. That is the secret that will make this
+all work but we need to extract it.
 
 The next step of the script is to pipe the output of `ps` to `sed` with a
-little sed script that first deletes the header line and then deletes
-everything up to and including `TMUX_PANE=` and then deletes everything after
-the value. At this point all we're left with is the value we want which is
-`%115`.
+little sed script. This script deletes the header line, deletes everything up
+to and including `TMUX_PANE=`, then deletes everything after the value. At this
+point all we're left with is the value which is `%115`.
 
 Both the `ps` and `sed` commands were ran in a subshell `$()` and the final
-output is assigned to the variable `pane`. Next we do an evaluation to see if
+output is assigned to the variable `pane`. Next, we do an evaluation to see if
 `pane` is empty (perhaps we mistyped the pid). We use `[[ -z $pane ]]` which
 will succeed if it is empty. In that case we run `tmux display-message "could
 not find pid"` and we're done.
