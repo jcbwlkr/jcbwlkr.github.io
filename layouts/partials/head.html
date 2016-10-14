@@ -47,5 +47,13 @@
 <meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 
+<meta property="og:title" content="{{ .Title }}" />
+<meta property="og:description" content="{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}" />
+<meta property="og:type" content="{{ if .Params.type }}{{ .Params.type }}{{ else }}website{{ end }}" />
+<meta property="og:url" content="{{ .Permalink }}" />
+<meta property="og:type" content="article" />
+
+<meta property="og:image" content="http://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=300" />
+
 <title>{{ if eq .Title .Site.Title }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
 </head>
