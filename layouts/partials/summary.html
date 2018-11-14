@@ -7,7 +7,11 @@
     </h2>
     {{ partial "post-meta" . }}
   </header>
+  {{ if isset .Params "description" }}
+  <p>{{ .Params.description }} </p>
+  {{ else }}
   <p>{{ .Summary }} </p>
+  {{ end }}
   <footer>
     <a class="btn btn-primary" href="{{ .Permalink }}">
       Read More<i class="fa fa-angle-double-right fa-fw"></i>

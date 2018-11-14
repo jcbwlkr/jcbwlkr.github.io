@@ -6,12 +6,14 @@
       <time>{{ .Date.Format "2006-01-02" }}</time>
     {{ end }}
 
-    {{ $count := len .Params.categories }}
-    {{ if gt $count 0 }}
-      <i class="fa fa-folder fa-fw"></i>
-      {{ range $k, $v := .Params.categories }}
-        <a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}.html" alt="{{ . }}">{{ . }}</a>
-        {{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+    {{ if isset .Params "categories" }}
+      {{ $count := len .Params.categories }}
+      {{ if gt $count 0 }}
+        <i class="fa fa-folder fa-fw"></i>
+        {{ range $k, $v := .Params.categories }}
+          <a href="{{ $.Site.BaseURL }}categories/{{ . | urlize }}.html" alt="{{ . }}">{{ . }}</a>
+          {{ if lt $k (sub $count 1) }}&nbsp;&#47;{{ end }}
+        {{ end }}
       {{ end }}
     {{ end }}
 
