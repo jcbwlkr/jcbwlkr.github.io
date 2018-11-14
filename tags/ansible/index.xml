@@ -6,7 +6,9 @@
     <description>Recent content in Ansible on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://jacob-walker.com/tags/ansible.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jacob-walker.com/tags/ansible/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Wrecking Ball Media</title>
@@ -18,19 +20,7 @@
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;For this project I primarily worked in Go. I developed the server application
-composing middleware, Go templating, a REST API, request contexts, a service
-layer, logger, internationalization, and both unit and integration tests.&lt;/p&gt;
-
-&lt;p&gt;Additionally I constructed the team&amp;rsquo;s Continuous Integration and Continuous
-Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.&lt;/p&gt;
-
-&lt;p&gt;Multiple deployments of the platform were completed during my time including
-the &lt;a href=&#34;https://withmalala.org/&#34;&gt;#WithMalala&lt;/a&gt; project and the &lt;a href=&#34;https://sundanceignitewhatsnext.org&#34;&gt;2015 Sundance Ignite
-Challenge&lt;/a&gt;.&lt;/p&gt;
-</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
   </channel>

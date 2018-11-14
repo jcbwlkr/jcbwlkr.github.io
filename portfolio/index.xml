@@ -6,7 +6,10 @@
     <description>Recent content in Portfolio on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://jacob-walker.com/portfolio.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
+    
+	<atom:link href="http://jacob-walker.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>devICT</title>
@@ -21,20 +24,7 @@ development. Our mission is:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;To educate, empower, and connect software developers in the Wichita area.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;I first joined the group in December of 2012 and took an active role from the
-beginning. I help to organize and promote events, welcome new members, mediate
-conflicts, and give presentations. In July of 2016 the group&amp;rsquo;s founder &lt;a href=&#34;http://sethetter.com/&#34;&gt;Seth
-Etter&lt;/a&gt; switched his focus to running the civic tech group &lt;a href=&#34;https://openwichita.com/&#34;&gt;Open
-Wichita&lt;/a&gt;. I agreed to carry the torch.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://devict.org&#34;&gt;devICT Site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;http://meetup.com/devict&#34;&gt;Meetup Group&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/devict/&#34;&gt;GitHub Organization&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;/blockquote&gt;</description>
     </item>
     
     <item>
@@ -45,15 +35,7 @@ Wichita&lt;/a&gt;. I agreed to carry the torch.&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
-services.&lt;/p&gt;
-
-&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
-100 companies. Projects I have worked on have involved stock market evaluation,
-monitoring and alerting configuration, and integration with various third party
-services and APIs.&lt;/p&gt;
-
-&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
-</description>
+services.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -66,19 +48,7 @@ services and APIs.&lt;/p&gt;
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;For this project I primarily worked in Go. I developed the server application
-composing middleware, Go templating, a REST API, request contexts, a service
-layer, logger, internationalization, and both unit and integration tests.&lt;/p&gt;
-
-&lt;p&gt;Additionally I constructed the team&amp;rsquo;s Continuous Integration and Continuous
-Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.&lt;/p&gt;
-
-&lt;p&gt;Multiple deployments of the platform were completed during my time including
-the &lt;a href=&#34;https://withmalala.org/&#34;&gt;#WithMalala&lt;/a&gt; project and the &lt;a href=&#34;https://sundanceignitewhatsnext.org&#34;&gt;2015 Sundance Ignite
-Challenge&lt;/a&gt;.&lt;/p&gt;
-</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -89,21 +59,7 @@ Challenge&lt;/a&gt;.&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
       <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
 I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
-&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;
-
-&lt;p&gt;The talk introduces &lt;a href=&#34;http://golang.org/&#34;&gt;the Go programming language&lt;/a&gt; by highlighting some
-important features and provides advice on how to be successful in adopting the
-language.&lt;/p&gt;
-
-&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/zVvjpLu6iIo&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/gettingstartedwithgo/raw/master/slides.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/gettingstartedwithgo&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -115,20 +71,7 @@ language.&lt;/p&gt;
       <description>&lt;p&gt;In Go web development the &lt;a href=&#34;http://www.gorillatoolkit.org/&#34;&gt;Gorilla web toolkit&lt;/a&gt; is a very popular
 collection of libraries for common web tasks. The &lt;code&gt;gorilla/sessions&lt;/code&gt; package
 provides an easy interface for using/storing users&amp;rsquo; session data. There was no
-implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt; so I created one.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;gorilla/sessions&lt;/code&gt; package itself relies on implementations of its storage
-interface so developers can store the data in whatever place is best for their
-environment. For an application we were prototyping at work we elected to store
-everything in &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt;. I created the session store and it
-worked well enough for our prototype. We elected not to use Cassandra for
-staffing reasons so my storage implementation never saw production use.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/cqlstore&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://godoc.org/github.com/jcbwlkr/cqlstore&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt; so I created one.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -142,17 +85,7 @@ packages. Gomega specifically provides a collection of matchers for asserting
 that results match expectations. When using these tools to test an API I was
 developing I noticed some common patterns appearing around the assertion of
 HTTP status codes. I created the &lt;code&gt;github.com/jcbwlkr/httpmatchers&lt;/code&gt; package to
-simplify some of those patterns.&lt;/p&gt;
-
-&lt;p&gt;Since writing this I hame moved to just using the standard &lt;code&gt;testing&lt;/code&gt; library. I
-still appreciate the value from &lt;code&gt;ginkgo&lt;/code&gt; and &lt;code&gt;gomega&lt;/code&gt; and would use the library
-again if I was working on a project using that testing framework.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/httpmatchers&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://godoc.org/github.com/jcbwlkr/httpmatchers&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+simplify some of those patterns.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -163,37 +96,7 @@ again if I was working on a project using that testing framework.&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
-thousands of companies around the world.&lt;/p&gt;
-
-&lt;p&gt;TimeIPS is used to&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Track employee hours worked from a variety of hardware and software interfaces&lt;/li&gt;
-&lt;li&gt;Record benefit usages and accruals&lt;/li&gt;
-&lt;li&gt;Monitor employee adherence to schedules&lt;/li&gt;
-&lt;li&gt;Ensure employee coverage for particular tasks or locations&lt;/li&gt;
-&lt;li&gt;Calculate FLSA overtime&lt;/li&gt;
-&lt;li&gt;Record piecework pay such as tips and bonuses&lt;/li&gt;
-&lt;li&gt;Serve company documents to employees and managers&lt;/li&gt;
-&lt;li&gt;Calculate automatic holiday rules&lt;/li&gt;
-&lt;li&gt;And many other things&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At TimeIPS I lead a team of 4 in the development of our products. Some of my
-major accomplishments in this role include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Introducing Test Driven Development with &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Implementing Continuous Integration with &lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;Jenkins-CI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Starting code reviews via &lt;a href=&#34;http://phabricator.org/&#34;&gt;Phabricator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Leading the development of a REST API&lt;/li&gt;
-&lt;li&gt;Working to update legacy code to use the &lt;a href=&#34;http://www.doctrine-project.org/&#34;&gt;Doctrine 2&lt;/a&gt; ORM&lt;/li&gt;
-&lt;li&gt;Implementing a Zero Defect policy&lt;/li&gt;
-&lt;li&gt;Developing a system for managing our farm of QEMU virtual machines&lt;/li&gt;
-&lt;li&gt;Revamped our build process making heavy use of &lt;a href=&#34;https://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;,
-&lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, and &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+thousands of companies around the world.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -204,20 +107,7 @@ major accomplishments in this role include:&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/pysag.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
 from other (great) static site generators like Jekyll by being focused on data
-first and pages second.&lt;/p&gt;
-
-&lt;p&gt;The user defines their data such as blog posts, employees, or products in the
-filesystem as yaml files. This data is first converted to json files to
-generate a read-only &amp;ldquo;API&amp;rdquo;. The ideal usecase here is a JavaScript application
-to render the data. Properties of the yaml files can be paths to
-&lt;a href=&#34;markdown&#34;&gt;Markdown&lt;/a&gt; files for easy authoring. If desired the data can be fed
-to &lt;a href=&#34;jinja2&#34;&gt;Jinja2&lt;/a&gt; templates to create true static pages.&lt;/p&gt;
-
-&lt;p&gt;Check out the &lt;a href=&#34;pysag&#34;&gt;README&lt;/a&gt; on GitHub for a better description.&lt;/p&gt;
-
-&lt;p&gt;I ended up abandoning this project in favor of &lt;a href=&#34;https://gohugo.io&#34;&gt;Hugo&lt;/a&gt;. It was a neat idea
-and a fun experience but ultimately Hugo won out for me :)&lt;/p&gt;
-</description>
+first and pages second.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -230,20 +120,7 @@ and a fun experience but ultimately Hugo won out for me :)&lt;/p&gt;
 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
 talk was just under two hours long and was well received by the audience
 (approximately 25 developers). The presentation was broadcast through Google
-Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;The presentation covers the most commonly used features of regex and some of
-the nicer advanced features like backreferences and assertions. Most of the
-research for the presentation comes from
-&lt;a href=&#34;http://www.regular-expressions.info/&#34;&gt;regular-expressions.info&lt;/a&gt;. Interested readers should check out
-that site&amp;rsquo;s references on some of the crazier things you can do.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/regex-101&#34;&gt;Slides and source&lt;/a&gt;&lt;/p&gt;
-
-&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/4LnyHF8dnIk&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
+Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -256,33 +133,7 @@ that site&amp;rsquo;s references on some of the crazier things you can do.&lt;/p
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
-
-&lt;p&gt;The talk is an hour and a half long. It covers the basic ideas and syntax of
-OOP such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Class vs Object&lt;/li&gt;
-&lt;li&gt;Properties and Methods&lt;/li&gt;
-&lt;li&gt;Access modifiers (public, private, protected)&lt;/li&gt;
-&lt;li&gt;Inheritance&lt;/li&gt;
-&lt;li&gt;Static or Class methods and properties&lt;/li&gt;
-&lt;li&gt;Method overriding&lt;/li&gt;
-&lt;li&gt;Abstract classes&lt;/li&gt;
-&lt;li&gt;Interfaces&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;More info:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jacob-walker.com/implementing-oop/presentation/&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/implementing-oop&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https//www.youtube.com/embed/7QoEfPYULXM&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -293,21 +144,7 @@ OOP such as:&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/twig.html</guid>
       <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
-installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;
-
-&lt;p&gt;The talk is 23 minutes long.&lt;/p&gt;
-
-&lt;p&gt;More info:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jacob-walker.com/twig-talk/presentation/&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/twig-talk&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;//www.youtube.com/embed/deqGYV8P0Nc&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
+installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -318,32 +155,7 @@ installing/configuring Twig, rendering templates, and writing templates.&lt;/p&g
       <guid>http://jacob-walker.com/portfolio/startup-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
 Wichita with local people and resources. In March 2014 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
-hackathon to kick-start development on the community site.&lt;/p&gt;
-
-&lt;p&gt;We decided to build the site on the &lt;a href=&#34;mean&#34;&gt;MEAN stack&lt;/a&gt; (MongoDB, Express,
-Angular, and Node). We provisioned a development environment with
-&lt;a href=&#34;http://puppetlabs.com&#34;&gt;Puppet&lt;/a&gt; and &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;. We split into teams for content,
-design, front end development and back end development. I managed the various
-teams, helped developers set up their environments, and merged pull requests.&lt;/p&gt;
-
-&lt;p&gt;The hackathon laid the ground work for the application but at the end of the
-day there was still a lot of work to be done. Over the next several months
-devICT members met periodically to push the site forward. Progress was slow as
-each developer was only working in their spare time.&lt;/p&gt;
-
-&lt;p&gt;In September (6 months since the hackathon) the Entrepreneurship Task Force of
-the Wichita Metro Chamber of Commerce hired my company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
-LLC&lt;/a&gt; to dedicate development resources towards the completion of the
-site. The first phase milestone was reached on October 21st 2014.&lt;/p&gt;
-
-&lt;p&gt;Additional work included a rewrite to Ruby on Rails. Eventually the project was
-handed over to another organization to finish.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/regex-101&#34;&gt;Startup Wichita on GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+hackathon to kick-start development on the community site.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -352,27 +164,7 @@ handed over to another organization to finish.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://jacob-walker.com/portfolio/find.torrent.html</guid>
-      <description>&lt;p&gt;At home my desktop PC acts as a UPNP media server and is the box I use to
-download torrents. This machine was inconveniently located in my basement. There
-were many times when I would want to start a download but the only device
-nearby is my phone. I found that finding and downloading a torrent file then
-getting it to my torrent machine was a cumbersome process. Furthermore, many
-sites that index torrent files contain advertising that ranges from annoying to
-inappropriate to explicit. I decided to create a service that facilitates the
-process of finding the &lt;code&gt;.torrent&lt;/code&gt; files and triggering their download. The
-service does not download the torrent itself; just the torrent file.&lt;/p&gt;
-
-&lt;p&gt;When I started this project I knew that I wanted to build the service as a REST
-API that I could then consume through various clients. I intend to develop web,
-command line, Android, and iOS applications. The service was written in &lt;a href=&#34;http://bulletphp.com/&#34;&gt;Bullet
-PHP&lt;/a&gt; and serves the API with the &lt;a href=&#34;http://stateless.co/hal_specification.html&#34;&gt;HAL Hypermedia Type&lt;/a&gt;. The
-service was developed using a combination of TDD and BDD practices with tests in
-PHPUnit and Frisby.js.&lt;/p&gt;
-
-&lt;p&gt;This is a collaborative work with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/Tortugas-Consulting-LLC/find.torrent&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
     </item>
     
     <item>
@@ -385,8 +177,7 @@ PHPUnit and Frisby.js.&lt;/p&gt;
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
 README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
-you never wrote that poem Junior year!&lt;/p&gt;
-</description>
+you never wrote that poem Junior year!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -400,16 +191,80 @@ As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
 dozens of time per day. I found an API from the &lt;a href=&#34;http://www.geocommunicator.gov/&#34;&gt;Department of the Interior&amp;rsquo;s
 Bureau of Land Management&lt;/a&gt; which accepts coordinates and responds with the
-exact information my friend needed.&lt;/p&gt;
-
-&lt;p&gt;I created a PHP client that can consume the API and another class that uses
-&lt;a href=&#34;http://phpexcel.codeplex.com/&#34;&gt;PHPExcel&lt;/a&gt; to parse an XLS spreadsheet with coordinates and populate
-it with the additional information.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/geocommunicator-client&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+exact information my friend needed.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Natural Organic Warehouse</title>
+      <link>http://jacob-walker.com/portfolio/now.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/now.html</guid>
+      <description>&lt;p&gt;Natural Organic Warehouse (NOW) is a distributor of organic products for
+farming, gardening, and landscaping purposes. Their slogan is &amp;ldquo;better, cleaner,
+sustainable choices.&amp;rdquo; Through my consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
+LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Norris Training Systems</title>
+      <link>http://jacob-walker.com/portfolio/norris-training.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/norris-training.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://norristraining.com&#34;&gt;Norris Training Systems&lt;/a&gt; provides pre-licensing and continuing
+education training to insurance agents. My consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas
+Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows
+agents to purchase and schedule classes. Additionally agents can download
+documents associated with their course and take related quizzes to prepare for
+their state license exam.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Young Life Wichita</title>
+      <link>http://jacob-walker.com/portfolio/young-life-wichita.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/young-life-wichita.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
+organization. YLW supports local families through various charitable events and
+activities. My consulting company was hired to develop an online application
+where people could RSVP for different activities.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>yagl-js</title>
+      <link>http://jacob-walker.com/portfolio/yagl.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/yagl.html</guid>
+      <description>&lt;p&gt;When I first read about the &lt;a href=&#34;http://www.catb.org/hacker-emblem/&#34;&gt;Universal Hacker Emblem&lt;/a&gt; I got excited
+about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt;. As an experiment I set out to see if I
+could implement the game in only HTML5, Canvas, CSS and pure JavaScript. The
+game works in both desktop and mobile browsers.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>My Dotfiles</title>
+      <link>http://jacob-walker.com/portfolio/dotfiles.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/dotfiles.html</guid>
+      <description>&lt;p&gt;It seems like every *nix developer hosts at least their bashrc file on GitHub
+and I am no exception. My repo uses the Ruby gem &lt;a href=&#34;https://github.com/technicalpickles/homesick&#34;&gt;homesick&lt;/a&gt; to easily
+keep my config files in sync.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Vim Contributions</title>
+      <link>http://jacob-walker.com/portfolio/vim.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/vim.html</guid>
+      <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
+efficiency combined with its extendability have yet to leave me seriously
+wanting for any features. I have made some contributions back to the vim
+ecosystem.&lt;/p&gt;</description>
     </item>
     
   </channel>

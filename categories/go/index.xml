@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
-    <atom:link href="http://jacob-walker.com/categories/go.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jacob-walker.com/categories/go/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Ardan Labs</title>
@@ -17,15 +19,7 @@
       <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
-services.&lt;/p&gt;
-
-&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
-100 companies. Projects I have worked on have involved stock market evaluation,
-monitoring and alerting configuration, and integration with various third party
-services and APIs.&lt;/p&gt;
-
-&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
-</description>
+services.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -36,21 +30,7 @@ services and APIs.&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
       <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
 I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
-&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;
-
-&lt;p&gt;The talk introduces &lt;a href=&#34;http://golang.org/&#34;&gt;the Go programming language&lt;/a&gt; by highlighting some
-important features and provides advice on how to be successful in adopting the
-language.&lt;/p&gt;
-
-&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https://www.youtube.com/embed/zVvjpLu6iIo&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/gettingstartedwithgo/raw/master/slides.pdf&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/gettingstartedwithgo&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -63,19 +43,7 @@ language.&lt;/p&gt;
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;For this project I primarily worked in Go. I developed the server application
-composing middleware, Go templating, a REST API, request contexts, a service
-layer, logger, internationalization, and both unit and integration tests.&lt;/p&gt;
-
-&lt;p&gt;Additionally I constructed the team&amp;rsquo;s Continuous Integration and Continuous
-Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.&lt;/p&gt;
-
-&lt;p&gt;Multiple deployments of the platform were completed during my time including
-the &lt;a href=&#34;https://withmalala.org/&#34;&gt;#WithMalala&lt;/a&gt; project and the &lt;a href=&#34;https://sundanceignitewhatsnext.org&#34;&gt;2015 Sundance Ignite
-Challenge&lt;/a&gt;.&lt;/p&gt;
-</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -87,20 +55,7 @@ Challenge&lt;/a&gt;.&lt;/p&gt;
       <description>&lt;p&gt;In Go web development the &lt;a href=&#34;http://www.gorillatoolkit.org/&#34;&gt;Gorilla web toolkit&lt;/a&gt; is a very popular
 collection of libraries for common web tasks. The &lt;code&gt;gorilla/sessions&lt;/code&gt; package
 provides an easy interface for using/storing users&amp;rsquo; session data. There was no
-implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt; so I created one.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;gorilla/sessions&lt;/code&gt; package itself relies on implementations of its storage
-interface so developers can store the data in whatever place is best for their
-environment. For an application we were prototyping at work we elected to store
-everything in &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt;. I created the session store and it
-worked well enough for our prototype. We elected not to use Cassandra for
-staffing reasons so my storage implementation never saw production use.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/cqlstore&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://godoc.org/github.com/jcbwlkr/cqlstore&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt; so I created one.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -114,17 +69,17 @@ packages. Gomega specifically provides a collection of matchers for asserting
 that results match expectations. When using these tools to test an API I was
 developing I noticed some common patterns appearing around the assertion of
 HTTP status codes. I created the &lt;code&gt;github.com/jcbwlkr/httpmatchers&lt;/code&gt; package to
-simplify some of those patterns.&lt;/p&gt;
-
-&lt;p&gt;Since writing this I hame moved to just using the standard &lt;code&gt;testing&lt;/code&gt; library. I
-still appreciate the value from &lt;code&gt;ginkgo&lt;/code&gt; and &lt;code&gt;gomega&lt;/code&gt; and would use the library
-again if I was working on a project using that testing framework.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/httpmatchers&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://godoc.org/github.com/jcbwlkr/httpmatchers&#34;&gt;Documentation&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+simplify some of those patterns.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Goroutine Leaks - The Forgotten Sender</title>
+      <link>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
+      <description>This post was originally published on the Ardan Labs Blog.
+Introduction Concurrent programming allows developers to solve problems using more than one path of execution and is often used in an attempt to improve performance. Concurrency doesn’t mean these multiple paths are executing in parallel; it means these paths are executing out-of-order instead of sequentially. Historically, this type of programming is facilitated using libraries that are either provided by a standard library or from 3rd party developers.</description>
     </item>
     
   </channel>

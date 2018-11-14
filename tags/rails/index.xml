@@ -6,7 +6,9 @@
     <description>Recent content in Rails on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://jacob-walker.com/tags/rails.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jacob-walker.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Young Life Wichita</title>
@@ -17,19 +19,7 @@
       <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
 organization. YLW supports local families through various charitable events and
 activities. My consulting company was hired to develop an online application
-where people could RSVP for different activities.&lt;/p&gt;
-
-&lt;p&gt;The website was built on Rails 4 with Twitter Bootstrap. Another local agency
-&lt;a href=&#34;http://www.barrettmorgandesignllc.com/&#34;&gt;Barrett Morgan Deisgn LLC &lt;/a&gt; developed the look which we implemented.&lt;/p&gt;
-
-&lt;p&gt;Features implemented included&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;An event creator&lt;/li&gt;
-&lt;li&gt;A reservation management system&lt;/li&gt;
-&lt;li&gt;Hosting, backups, and automated deployment&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+where people could RSVP for different activities.&lt;/p&gt;</description>
     </item>
     
   </channel>

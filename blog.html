@@ -5,7 +5,9 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="generator" content="Hugo 0.16-DEV" />
+<meta name="generator" content="Hugo 0.51" />
+
+
 
 
 
@@ -95,7 +97,7 @@
             
             
           >
-            <a href="/resume/resume.pdf"><i class='fa fa-file'></i> Resume</a>
+            <a href="/resume/resume.pdf"><i class='fa fa-file'></i> Résumé</a>
           </li>
           
         </ul>
@@ -130,22 +132,22 @@
   </div>
   
   <div class="category">
+    <a class="unstyled hidden-xs" href="/categories/go.html">
+      <i class="devicons devicons-go
+"></i>
+    </a>
+    <a class="label label-primary" href="/categories/go.html">
+      go (6)
+    </a>
+  </div>
+  
+  <div class="category">
     <a class="unstyled hidden-xs" href="/categories/bash.html">
       <i class="devicons devicons-terminal
 "></i>
     </a>
     <a class="label label-primary" href="/categories/bash.html">
       bash (5)
-    </a>
-  </div>
-  
-  <div class="category">
-    <a class="unstyled hidden-xs" href="/categories/go.html">
-      <i class="devicons devicons-go
-"></i>
-    </a>
-    <a class="label label-primary" href="/categories/go.html">
-      go (5)
     </a>
   </div>
   
@@ -216,6 +218,56 @@
       <article class="clearfix">
   <header>
     <h2>
+      <a class="unstyled" href="http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html">
+        <i class="fa fa-book"></i> Goroutine Leaks - The Forgotten Sender
+      </a>
+    </h2>
+    <div class="post-meta">
+  
+  <div>
+    
+      <i class="fa fa-calendar fa-fw"></i>
+      <time>2018-11-12</time>
+    
+
+    
+      
+      
+        <i class="fa fa-folder fa-fw"></i>
+        
+          <a href="http://jacob-walker.com/categories/go.html" alt="go">go</a>
+          
+        
+      
+    
+
+    
+      
+      
+        <i class="fa fa-tags fa-fw"></i>
+        
+          <a href="http://jacob-walker.com/tags/concurrency.html">concurrency</a>
+        
+      
+    
+  </div>
+</div>
+
+  </header>
+  
+  <p>Goroutine leaks are a common source of memory leaks in concurrent programs. This post defines Goroutine leaks and provides one example of a leak that is easy to miss in production code. </p>
+  
+  <footer>
+    <a class="btn btn-primary" href="http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html">
+      Read More<i class="fa fa-angle-double-right fa-fw"></i>
+    </a>
+  </footer>
+</article>
+
+    
+      <article class="clearfix">
+  <header>
+    <h2>
       <a class="unstyled" href="http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html">
         <i class="fa fa-book"></i> Taming tmux: Find One Process Among Many Windows
       </a>
@@ -229,13 +281,15 @@
     
 
     
-    
-      <i class="fa fa-folder fa-fw"></i>
       
-        <a href="http://jacob-walker.com/categories/bash.html" alt="bash">bash</a>
-        &nbsp;&#47;
       
-        <a href="http://jacob-walker.com/categories/vim.html" alt="vim">vim</a>
+        <i class="fa fa-folder fa-fw"></i>
+        
+          <a href="http://jacob-walker.com/categories/bash.html" alt="bash">bash</a>
+          &nbsp;&#47;
+        
+          <a href="http://jacob-walker.com/categories/vim.html" alt="vim">vim</a>
+          
         
       
     
@@ -253,13 +307,14 @@
 </div>
 
   </header>
+  
   <p><p>I&rsquo;m a big fan of <a href="https://tmux.github.io/">tmux</a> and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing &ldquo;find the right window,&rdquo; especially if I had backgrounded
 vim. This happened often enough that I spent the time to make a little tmux
-keybinding for finding that window automatically.</p>
- </p>
+keybinding for finding that window automatically.</p> </p>
+  
   <footer>
     <a class="btn btn-primary" href="http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html">
       Read More<i class="fa fa-angle-double-right fa-fw"></i>
@@ -284,10 +339,12 @@ keybinding for finding that window automatically.</p>
     
 
     
-    
-      <i class="fa fa-folder fa-fw"></i>
       
-        <a href="http://jacob-walker.com/categories/mysql.html" alt="mysql">mysql</a>
+      
+        <i class="fa fa-folder fa-fw"></i>
+        
+          <a href="http://jacob-walker.com/categories/mysql.html" alt="mysql">mysql</a>
+          
         
       
     
@@ -305,14 +362,15 @@ keybinding for finding that window automatically.</p>
 </div>
 
   </header>
+  
   <p><p>InnoDB is a great storage engine for MySQL offering, among other things,
 transaction support. One of its drawbacks is the difficulty that you can face
 when corruption inevitably hits.</p>
 
 <p>At work we have dealt with corrupt InnoDB tables often enough to make the
 procedure fairly routine. Last week I was faced with a situation that had me
-pulling my hair out; in fact we almost threw in the towel.</p>
- </p>
+pulling my hair out; in fact we almost threw in the towel.</p> </p>
+  
   <footer>
     <a class="btn btn-primary" href="http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html">
       Read More<i class="fa fa-angle-double-right fa-fw"></i>
@@ -337,10 +395,12 @@ pulling my hair out; in fact we almost threw in the towel.</p>
     
 
     
-    
-      <i class="fa fa-folder fa-fw"></i>
       
-        <a href="http://jacob-walker.com/categories/php.html" alt="php">php</a>
+      
+        <i class="fa fa-folder fa-fw"></i>
+        
+          <a href="http://jacob-walker.com/categories/php.html" alt="php">php</a>
+          
         
       
     
@@ -358,13 +418,14 @@ pulling my hair out; in fact we almost threw in the towel.</p>
 </div>
 
   </header>
+  
   <p><p>Looking through the <a href="https://github.com/PHPOffice/PHPExcel">PHPExcel</a> library
 recently I saw how Mark Baker overrides the magic <code>__clone</code> method with
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use <code>clone</code> and
-the difference between a shallow copy and a deep copy.</p>
- </p>
+the difference between a shallow copy and a deep copy.</p> </p>
+  
   <footer>
     <a class="btn btn-primary" href="http://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html">
       Read More<i class="fa fa-angle-double-right fa-fw"></i>

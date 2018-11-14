@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on jcbwlkr</title>
+    <link>http://jacob-walker.com/tags.html</link>
+    <description>Recent content in Tags on jcbwlkr</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
+    
+	<atom:link href="http://jacob-walker.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Angular</title>
+      <link>http://jacob-walker.com/tags/angular.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/angular.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ansible</title>
+      <link>http://jacob-walker.com/tags/ansible.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/ansible.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Api</title>
+      <link>http://jacob-walker.com/tags/api.html</link>
+      <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/api.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Aws</title>
+      <link>http://jacob-walker.com/tags/aws.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/aws.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bootstrap</title>
+      <link>http://jacob-walker.com/tags/bootstrap.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/bootstrap.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Canvas</title>
+      <link>http://jacob-walker.com/tags/canvas.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/canvas.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Concurrency</title>
+      <link>http://jacob-walker.com/tags/concurrency.html</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/concurrency.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Doctrine</title>
+      <link>http://jacob-walker.com/tags/doctrine.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/doctrine.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>E Commerce</title>
+      <link>http://jacob-walker.com/tags/e-commerce.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/e-commerce.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Html5</title>
+      <link>http://jacob-walker.com/tags/html5.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/html5.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Innodb</title>
+      <link>http://jacob-walker.com/tags/innodb.html</link>
+      <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/innodb.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jenkins</title>
+      <link>http://jacob-walker.com/tags/jenkins.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/jenkins.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jinja2</title>
+      <link>http://jacob-walker.com/tags/jinja2.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/jinja2.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mongo</title>
+      <link>http://jacob-walker.com/tags/mongo.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/mongo.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Oop</title>
+      <link>http://jacob-walker.com/tags/oop.html</link>
+      <pubDate>Sun, 06 Jan 2013 00:00:00 -0600</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/oop.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Phabricator</title>
+      <link>http://jacob-walker.com/tags/phabricator.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/phabricator.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Presentation</title>
+      <link>http://jacob-walker.com/tags/presentation.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/presentation.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Qemu</title>
+      <link>http://jacob-walker.com/tags/qemu.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/qemu.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rails</title>
+      <link>http://jacob-walker.com/tags/rails.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/rails.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Regex</title>
+      <link>http://jacob-walker.com/tags/regex.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/regex.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Symfony</title>
+      <link>http://jacob-walker.com/tags/symfony.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/symfony.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tdd</title>
+      <link>http://jacob-walker.com/tags/tdd.html</link>
+      <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/tdd.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tmux</title>
+      <link>http://jacob-walker.com/tags/tmux.html</link>
+      <pubDate>Tue, 04 Oct 2016 14:27:34 -0500</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/tmux.html</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Twig</title>
+      <link>http://jacob-walker.com/tags/twig.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/tags/twig.html</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,9 @@
     <description>Recent content in Mongo on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <atom:link href="http://jacob-walker.com/tags/mongo.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jacob-walker.com/tags/mongo/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Startup Wichita</title>
@@ -16,32 +18,7 @@
       <guid>http://jacob-walker.com/portfolio/startup-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
 Wichita with local people and resources. In March 2014 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
-hackathon to kick-start development on the community site.&lt;/p&gt;
-
-&lt;p&gt;We decided to build the site on the &lt;a href=&#34;mean&#34;&gt;MEAN stack&lt;/a&gt; (MongoDB, Express,
-Angular, and Node). We provisioned a development environment with
-&lt;a href=&#34;http://puppetlabs.com&#34;&gt;Puppet&lt;/a&gt; and &lt;a href=&#34;http://vagrantup.com&#34;&gt;Vagrant&lt;/a&gt;. We split into teams for content,
-design, front end development and back end development. I managed the various
-teams, helped developers set up their environments, and merged pull requests.&lt;/p&gt;
-
-&lt;p&gt;The hackathon laid the ground work for the application but at the end of the
-day there was still a lot of work to be done. Over the next several months
-devICT members met periodically to push the site forward. Progress was slow as
-each developer was only working in their spare time.&lt;/p&gt;
-
-&lt;p&gt;In September (6 months since the hackathon) the Entrepreneurship Task Force of
-the Wichita Metro Chamber of Commerce hired my company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
-LLC&lt;/a&gt; to dedicate development resources towards the completion of the
-site. The first phase milestone was reached on October 21st 2014.&lt;/p&gt;
-
-&lt;p&gt;Additional work included a rewrite to Ruby on Rails. Eventually the project was
-handed over to another organization to finish.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita site&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/regex-101&#34;&gt;Startup Wichita on GitHub&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+hackathon to kick-start development on the community site.&lt;/p&gt;</description>
     </item>
     
   </channel>

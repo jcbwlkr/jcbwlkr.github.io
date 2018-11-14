@@ -7,7 +7,9 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
-    <atom:link href="http://jacob-walker.com/tags/api.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jacob-walker.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Ardan Labs</title>
@@ -17,15 +19,7 @@
       <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
-services.&lt;/p&gt;
-
-&lt;p&gt;With Ardan I have worked with clients ranging from small start ups to Fortune
-100 companies. Projects I have worked on have involved stock market evaluation,
-monitoring and alerting configuration, and integration with various third party
-services and APIs.&lt;/p&gt;
-
-&lt;p&gt;We are available to offer training, consulting, or to help you with your project.&lt;/p&gt;
-</description>
+services.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -39,16 +33,7 @@ As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
 dozens of time per day. I found an API from the &lt;a href=&#34;http://www.geocommunicator.gov/&#34;&gt;Department of the Interior&amp;rsquo;s
 Bureau of Land Management&lt;/a&gt; which accepts coordinates and responds with the
-exact information my friend needed.&lt;/p&gt;
-
-&lt;p&gt;I created a PHP client that can consume the API and another class that uses
-&lt;a href=&#34;http://phpexcel.codeplex.com/&#34;&gt;PHPExcel&lt;/a&gt; to parse an XLS spreadsheet with coordinates and populate
-it with the additional information.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/geocommunicator-client&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+exact information my friend needed.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,8 +46,7 @@ it with the additional information.&lt;/p&gt;
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
 README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
-you never wrote that poem Junior year!&lt;/p&gt;
-</description>
+you never wrote that poem Junior year!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -73,37 +57,7 @@ you never wrote that poem Junior year!&lt;/p&gt;
       <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
-thousands of companies around the world.&lt;/p&gt;
-
-&lt;p&gt;TimeIPS is used to&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Track employee hours worked from a variety of hardware and software interfaces&lt;/li&gt;
-&lt;li&gt;Record benefit usages and accruals&lt;/li&gt;
-&lt;li&gt;Monitor employee adherence to schedules&lt;/li&gt;
-&lt;li&gt;Ensure employee coverage for particular tasks or locations&lt;/li&gt;
-&lt;li&gt;Calculate FLSA overtime&lt;/li&gt;
-&lt;li&gt;Record piecework pay such as tips and bonuses&lt;/li&gt;
-&lt;li&gt;Serve company documents to employees and managers&lt;/li&gt;
-&lt;li&gt;Calculate automatic holiday rules&lt;/li&gt;
-&lt;li&gt;And many other things&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;At TimeIPS I lead a team of 4 in the development of our products. Some of my
-major accomplishments in this role include:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Introducing Test Driven Development with &lt;a href=&#34;https://phpunit.de/&#34;&gt;PHPUnit&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Implementing Continuous Integration with &lt;a href=&#34;http://jenkins-ci.org/&#34;&gt;Jenkins-CI&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Starting code reviews via &lt;a href=&#34;http://phabricator.org/&#34;&gt;Phabricator&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;Leading the development of a REST API&lt;/li&gt;
-&lt;li&gt;Working to update legacy code to use the &lt;a href=&#34;http://www.doctrine-project.org/&#34;&gt;Doctrine 2&lt;/a&gt; ORM&lt;/li&gt;
-&lt;li&gt;Implementing a Zero Defect policy&lt;/li&gt;
-&lt;li&gt;Developing a system for managing our farm of QEMU virtual machines&lt;/li&gt;
-&lt;li&gt;Revamped our build process making heavy use of &lt;a href=&#34;https://getcomposer.org/&#34;&gt;Composer&lt;/a&gt;,
-&lt;a href=&#34;http://gulpjs.com/&#34;&gt;Gulp&lt;/a&gt;, and &lt;a href=&#34;http://bower.io/&#34;&gt;Bower&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
+thousands of companies around the world.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -116,19 +70,7 @@ major accomplishments in this role include:&lt;/p&gt;
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;For this project I primarily worked in Go. I developed the server application
-composing middleware, Go templating, a REST API, request contexts, a service
-layer, logger, internationalization, and both unit and integration tests.&lt;/p&gt;
-
-&lt;p&gt;Additionally I constructed the team&amp;rsquo;s Continuous Integration and Continuous
-Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.&lt;/p&gt;
-
-&lt;p&gt;Multiple deployments of the platform were completed during my time including
-the &lt;a href=&#34;https://withmalala.org/&#34;&gt;#WithMalala&lt;/a&gt; project and the &lt;a href=&#34;https://sundanceignitewhatsnext.org&#34;&gt;2015 Sundance Ignite
-Challenge&lt;/a&gt;.&lt;/p&gt;
-</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -137,27 +79,7 @@ Challenge&lt;/a&gt;.&lt;/p&gt;
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://jacob-walker.com/portfolio/find.torrent.html</guid>
-      <description>&lt;p&gt;At home my desktop PC acts as a UPNP media server and is the box I use to
-download torrents. This machine was inconveniently located in my basement. There
-were many times when I would want to start a download but the only device
-nearby is my phone. I found that finding and downloading a torrent file then
-getting it to my torrent machine was a cumbersome process. Furthermore, many
-sites that index torrent files contain advertising that ranges from annoying to
-inappropriate to explicit. I decided to create a service that facilitates the
-process of finding the &lt;code&gt;.torrent&lt;/code&gt; files and triggering their download. The
-service does not download the torrent itself; just the torrent file.&lt;/p&gt;
-
-&lt;p&gt;When I started this project I knew that I wanted to build the service as a REST
-API that I could then consume through various clients. I intend to develop web,
-command line, Android, and iOS applications. The service was written in &lt;a href=&#34;http://bulletphp.com/&#34;&gt;Bullet
-PHP&lt;/a&gt; and serves the API with the &lt;a href=&#34;http://stateless.co/hal_specification.html&#34;&gt;HAL Hypermedia Type&lt;/a&gt;. The
-service was developed using a combination of TDD and BDD practices with tests in
-PHPUnit and Frisby.js.&lt;/p&gt;
-
-&lt;p&gt;This is a collaborative work with my friend &lt;a href=&#34;http://cupfullofcode.com&#34;&gt;Matthew M. Keeler&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/Tortugas-Consulting-LLC/find.torrent&#34;&gt;Source&lt;/a&gt;&lt;/p&gt;
-</description>
+      <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
     </item>
     
   </channel>

@@ -7,7 +7,22 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Jan 2013 00:00:00 -0600</lastBuildDate>
-    <atom:link href="http://jacob-walker.com/tags/oop.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="http://jacob-walker.com/tags/oop/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Implementing OOP</title>
+      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
+      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
+Object Oriented Programming in PHP and Ruby. I chose this topic when I was
+explaining inheritance to a friend and realized others would be interested. I
+chose PHP and Ruby for examples because I was already familiar with OOP in PHP
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>PHP Clone and Shallow vs Deep Copying</title>
@@ -20,257 +35,7 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;
-
-&lt;p&gt;First I examined how you might copy variables in general. Let&amp;rsquo;s start with the
-basics.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;// Example 1
-$foo = 1;
-$bar = $foo; // Copy by value
-++$bar;
-print $bar; // Outputs 2
-print $foo; // Outputs 1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;$bar&lt;/code&gt; is a copy of &lt;code&gt;$foo&lt;/code&gt;. Incrementing &lt;code&gt;$bar&lt;/code&gt; has no effect on &lt;code&gt;$foo&lt;/code&gt;. If we
-wanted different behavior we would need to copy by reference with the use of an
-ampersand.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;// Example 2
-$foo = 1;
-$bar =&amp;amp; $foo; // Copy by reference
-++$bar;
-print $bar; // Outputs 2
-print $foo; // Outputs 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now when we increment &lt;code&gt;$bar&lt;/code&gt; we are also incrementing &lt;code&gt;$foo&lt;/code&gt;. Well, not really.
-&lt;code&gt;$foo&lt;/code&gt;, the variable, is a handle or reference to where the data is stored in
-memory. In the first example we copy by value which (more or less) makes a new
-entry in memory and &lt;code&gt;$bar&lt;/code&gt; is a handle to that new location. In the second
-example &lt;code&gt;$bar&lt;/code&gt; simply copies the handle. There is only one entry in memory and
-both &lt;code&gt;$foo&lt;/code&gt; and &lt;code&gt;$bar&lt;/code&gt; point to the same location. What we are actually doing
-when we increment &lt;code&gt;$bar&lt;/code&gt; is incrementing the data referenced by &lt;code&gt;$bar&lt;/code&gt;. &lt;code&gt;$foo&lt;/code&gt;
-references the same data.&lt;/p&gt;
-
-&lt;p&gt;Next I looked at how to copy objects. I started with this simple class Project.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
-
-class Project {
-    protected $description;
-
-    public function setDescription($description) {
-        $this-&amp;gt;description = $description;
-
-        return $this;
-    }
-
-    public function getDescription() {
-        return $this-&amp;gt;description;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I repeated the same copy assignment from Example 1.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$project_one = new Project();
-$project_one-&amp;gt;setDescription(&amp;quot;This is my first test project&amp;quot;);
-$project_two = $project_one; // Copying by value?
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the previous examples we would have two completely distinct variables that
-reference two different addresses in memory. So to see if this holds true we
-can make a change in &lt;code&gt;$project_two&lt;/code&gt; and see the impact.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$project_two-&amp;gt;setDescription(&amp;quot;A new description for my copied project&amp;quot;);
-print $project_one-&amp;gt;getDescription();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Based on Example 1 we might expect that this would print the original
-description we set in &lt;code&gt;$project_one&lt;/code&gt;. In fact, it will actually print the new
-description. It appears that the objects are copied by reference. One of the
-things you will often hear is that in PHP 5 objects are copied by reference by
-default. Some research shows that isn&amp;rsquo;t quite true either. Consider this
-explanation from
-&lt;a href=&#34;http://php.net/manual/en/language.oop5.references.php&#34;&gt;PHP.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A PHP reference is an alias, which allows two different variables to write to
-the same value. As of PHP 5, an object variable doesn&amp;rsquo;t contain the object
-itself as value anymore. It only contains an object identifier which allows
-object accessors to find the actual object. When an object is sent by
-argument, returned or assigned to another variable, the different variables
-are not aliases: they hold a copy of the identifier, which points to the same
-object.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This means copying an object by value will copy the identifier&amp;hellip; by value.
-This behaves very similarly to copying by reference because the copied
-identifier points to the same object but is not exactly the same. For a more
-detailed explanation of the difference you can visit the source link.&lt;/p&gt;
-
-&lt;p&gt;So what if you don&amp;rsquo;t want this behavior? Here enters the &lt;code&gt;clone&lt;/code&gt; keyword.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$project_one = new Project();
-$project_one-&amp;gt;setDescription(&amp;quot;This is my first test project&amp;quot;);
-$project_two = clone $project_one; // Cloning to get a new object
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now $project_two is a clone of &lt;code&gt;$project_one&lt;/code&gt; and is its own honest object.
-When we repeat the test with the descriptions we will see that monkeying around
-with &lt;code&gt;$project_two&lt;/code&gt;&amp;rsquo;s description has no effect on &lt;code&gt;$project_one&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;What happens if the property of a Project is another object? To test this I
-created a new class Person and modified Project to hold a Person&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
-
-class Person {
-    protected $name;
-
-    public function setName($name) {
-        $this-&amp;gt;name = $name;
-
-        return $this;
-    }
-
-    public function getName() {
-        return $this-&amp;gt;name;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
-
-class Project {
-    protected $leadDeveloper;
-
-    public function setLeadDeveloper(Person $developer) {
-        $this-&amp;gt;leadDeveloper = $developer;
-
-        return $this;
-    }
-
-    public function getLeadDeveloper() {
-        return $this-&amp;gt;leadDeveloper;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I then made a Project and set its Lead Developer.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$jacob = new Person();
-$jacob-&amp;gt;setName(&amp;quot;Jacob&amp;quot;);
-
-$project_one = new Project();
-$project_one-&amp;gt;setLeadDeveloper($jacob);
-$project_two = clone $project_one;
-
-$matthew = new Person();
-$matthew-&amp;gt;setName(&amp;quot;Matthew&amp;quot;);
-$project_two-&amp;gt;setLeadDeveloper($matthew);
-
-print $project_one-&amp;gt;getLeadDeveloper()-&amp;gt;getName(); // Outputs &amp;quot;Jacob&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As &lt;code&gt;$project_two&lt;/code&gt; is a clone, setting a new value for
-&lt;code&gt;$project_two-&amp;gt;leadDeveloper&lt;/code&gt; did not change &lt;code&gt;$project_one&lt;/code&gt;. Great, right?
-Let&amp;rsquo;s look at this from a different angle.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$jacob = new Person();
-$jacob-&amp;gt;setName(&amp;quot;Jacob&amp;quot;);
-
-$project_one = new Project();
-$project_one-&amp;gt;setLeadDeveloper($jacob);
-$project_two = clone $project_one;
-
-$project_two-&amp;gt;getLeadDeveloper()-&amp;gt;setName(&amp;quot;Matthew&amp;quot;);
-
-print $project_one-&amp;gt;getLeadDeveloper()-&amp;gt;getName(); // Outputs &amp;quot;Matthew&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The plot thickens. Here we can see that &lt;code&gt;$project_one-&amp;gt;leadDeveloper&lt;/code&gt; and
-&lt;code&gt;$project_two-&amp;gt;leadDeveloper&lt;/code&gt; both point to the same object. $project_one
-and $project_two are both unique objects but they do not have unique values for
-properties that are references or object identifiers. This is what is meant by
-a shallow copy. If we wanted the two projects to be completely separate we
-would need to change the default behavior of clone to perform a deep copy
-instead of a shallow copy. To do this I define the magic &lt;code&gt;__clone&lt;/code&gt; method.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class Project {
-    // Snip properties, getters, and setters
-
-    public function __clone() {
-        $this-&amp;gt;leadDeveloper = clone $this-&amp;gt;leadDeveloper;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After PHP clones an object it will attempt to call the &lt;code&gt;__clone&lt;/code&gt; method on
-&lt;strong&gt;the new cloned object&lt;/strong&gt;. Now when we perform the previous test we can see
-that &lt;code&gt;$project_one-&amp;gt;leadDeveloper&lt;/code&gt; and &lt;code&gt;$project_two-&amp;gt;leadDeveloper&lt;/code&gt;
-point to two completely different objects. This is a deep copy.&lt;/p&gt;
-
-&lt;p&gt;Note that a common technique for ensuring a deep copy is to serialize then
-immediately unserialize each of a class&amp;rsquo;s object properties. Take for example
-this code from PHPExcel&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;public function __clone() {
-    foreach($this as $key =&amp;gt; $val) {
-        if (is_object($val) || (is_array($val))) {
-            $this-&amp;gt;{$key} = unserialize(serialize($val));
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This method forces PHP to split apart any object properties from their
-references and return new instances.&lt;/p&gt;
-
-&lt;p&gt;Additional information and examples about cloning can be found on
-&lt;a href=&#34;http://php.net/manual/en/language.oop5.cloning.php&#34;&gt;php.net&lt;/a&gt;&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Implementing OOP</title>
-      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
-      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
-Object Oriented Programming in PHP and Ruby. I chose this topic when I was
-explaining inheritance to a friend and realized others would be interested. I
-chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
-
-&lt;p&gt;The talk is an hour and a half long. It covers the basic ideas and syntax of
-OOP such as:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Class vs Object&lt;/li&gt;
-&lt;li&gt;Properties and Methods&lt;/li&gt;
-&lt;li&gt;Access modifiers (public, private, protected)&lt;/li&gt;
-&lt;li&gt;Inheritance&lt;/li&gt;
-&lt;li&gt;Static or Class methods and properties&lt;/li&gt;
-&lt;li&gt;Method overriding&lt;/li&gt;
-&lt;li&gt;Abstract classes&lt;/li&gt;
-&lt;li&gt;Interfaces&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;More info:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://jacob-walker.com/implementing-oop/presentation/&#34;&gt;Slides&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/jcbwlkr/implementing-oop&#34;&gt;Source&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;div class=&#34;embed-responsive embed-responsive-4by3&#34;&gt;
-  &lt;iframe class=&#34;embed-responsive-item&#34; src=&#34;https//www.youtube.com/embed/7QoEfPYULXM&#34; allowfullscreen&gt;&lt;/iframe&gt;
-&lt;/div&gt;
-</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
     </item>
     
   </channel>

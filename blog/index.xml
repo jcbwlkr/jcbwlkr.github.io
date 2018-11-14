@@ -6,8 +6,20 @@
     <description>Recent content in Blog on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 04 Oct 2016 14:27:34 -0500</lastBuildDate>
-    <atom:link href="http://jacob-walker.com/blog.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 12 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="http://jacob-walker.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Goroutine Leaks - The Forgotten Sender</title>
+      <link>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
+      <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
+      <description>This post was originally published on the Ardan Labs Blog.
+Introduction Concurrent programming allows developers to solve problems using more than one path of execution and is often used in an attempt to improve performance. Concurrency doesn’t mean these multiple paths are executing in parallel; it means these paths are executing out-of-order instead of sequentially. Historically, this type of programming is facilitated using libraries that are either provided by a standard library or from 3rd party developers.</description>
+    </item>
     
     <item>
       <title>Taming tmux: Find One Process Among Many Windows</title>
@@ -15,118 +27,12 @@
       <pubDate>Tue, 04 Oct 2016 14:27:34 -0500</pubDate>
       
       <guid>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
-      <description>
-
-&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; and I use it daily. Over time I will open more
+      <description>&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing &amp;ldquo;find the right window,&amp;rdquo; especially if I had backgrounded
 vim. This happened often enough that I spent the time to make a little tmux
-keybinding for finding that window automatically.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-problem&#34;&gt;The problem&lt;/h2&gt;
-
-&lt;p&gt;Vim users will be used to seeing this screen and may even dread it.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-none&#34;&gt;E325: ATTENTION
-Found a swap file by the name &amp;quot;~/.vim/swaps/foo.txt.swp&amp;quot;
-          owned by: jwalker   dated: Wed Oct  5 18:10:25 2016
-         file name: ~jwalker/foo.txt
-          modified: no
-         user name: jwalker   host name: jacobs-mbp
-        process ID: 79121 (still running)
-While opening file &amp;quot;foo.txt&amp;quot;
-             dated: Wed Oct  5 18:10:25 2016
-
-(1) Another program may be editing the same file.  If this is the case,
-    be careful not to end up with two different instances of the same
-    file when making changes.  Quit, or continue with caution.
-(2) An edit session for this file crashed.
-    If this is the case, use &amp;quot;:recover&amp;quot; or &amp;quot;vim -r foo.txt&amp;quot;
-    to recover the changes (see &amp;quot;:help recovery&amp;quot;).
-    If you did this already, delete the swap file &amp;quot;/Users/jwalker/.vim/swaps/foo.txt.swp&amp;quot;
-    to avoid this message.
-
-Swap file &amp;quot;~/.vim/swaps/foo.txt.swp&amp;quot; already exists!
-[O]pen Read-Only, (E)dit anyway, (R)ecover, (Q)uit, (A)bort:
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Do you see the line that says &lt;code&gt;process ID: 79121&lt;/code&gt;? That gives us the process id
-(pid for short) of the vim process that&amp;rsquo;s editing this file. What we&amp;rsquo;ll do is
-take that pid and ask tmux to find it for us.&lt;/p&gt;
-
-&lt;h2 id=&#34;the-solution&#34;&gt;The solution&lt;/h2&gt;
-
-&lt;p&gt;Add this to your &lt;code&gt;~/.tmux.conf&lt;/code&gt; file (and reload the config if necessary)&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-none&#34;&gt;bind-key W command-prompt -p &amp;quot;Switch to pane with pid:&amp;quot; &amp;quot;run-shell &#39;pane=\$(ps eww %% | sed \&amp;quot;1d; s/^.*TMUX_PANE=//;s/ .*//\&amp;quot;); [[ -z \$pane ]] &amp;amp;&amp;amp; tmux display-message \&amp;quot;could not find pid\&amp;quot; || tmux switch-client -t \$pane&#39;&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;With that in our config, and knowing the pid we want to find, we hit
-&lt;kbd&gt;prefix&lt;/kbd&gt; &lt;kbd&gt;W&lt;/kbd&gt;. Prefix defaults to &lt;kbd&gt;ctrl-b&lt;/kbd&gt; and I
-chose capital &lt;kbd&gt;W&lt;/kbd&gt; because I remember this command as &lt;code&gt;Where&lt;/code&gt; and
-&lt;kbd&gt;w&lt;/kbd&gt; was already taken. When we do this our tmux will prompt &lt;code&gt;Switch to
-pane with pid:&lt;/code&gt; so we&amp;rsquo;ll type in &lt;kbd&gt;79121&lt;/kbd&gt; &lt;kbd&gt;enter&lt;/kbd&gt; and tmux
-automatically switches to the right window - even in another session. How cool!
-Let&amp;rsquo;s see it in action!&lt;/p&gt;
-
-&lt;div class=&#34;text-center&#34;&gt;
-  &lt;img class=&#34;img-responsive img-thumbnail&#34; alt=&#34;finding tmux window containing pid&#34; src=&#34;https://cldup.com/pDEQFB-8Iy.gif&#34; /&gt;
-&lt;/div&gt;
-
-&lt;h2 id=&#34;break-it-down-now&#34;&gt;Break it down now&lt;/h2&gt;
-
-&lt;p&gt;Let&amp;rsquo;s unravel this a bit to see the different pieces. It&amp;rsquo;s all on one line and
-there is a lot of escaping going on because it&amp;rsquo;s a script within a script
-within a string&amp;hellip; but if we split it up it&amp;rsquo;s not hard to follow.&lt;/p&gt;
-
-&lt;p&gt;First, our key binding runs the tmux command &lt;code&gt;command-prompt&lt;/code&gt; with two
-arguments: the prompt to display to the user, and the tmux command to run. That
-command is &lt;code&gt;run-shell&lt;/code&gt; and the argument we pass to that is the shell script.&lt;/p&gt;
-
-&lt;p&gt;The script first runs &lt;code&gt;ps eww %%&lt;/code&gt;. The &lt;code&gt;%%&lt;/code&gt; gets replaced with whatever you
-typed in the command prompt. In our example it becomes &lt;code&gt;ps eww 79121&lt;/code&gt;. &lt;code&gt;ps&lt;/code&gt; is
-a tool that inspects the process list for information. The flag &lt;code&gt;e&lt;/code&gt; causes it
-to include the environment variables that were present when the process
-launched, and the flags &lt;code&gt;ww&lt;/code&gt; improve the formatting a bit (and help for parsing
-on ubuntu). The &lt;code&gt;ps&lt;/code&gt; tool accepts different flags and in different styles; this
-is the BSD format which works on a Mac and seems to be supported by most Linux
-distros as well. Providing the pid as an argument limits the output to just the
-process we care about. That command gives output that looks like this
-(abbreviated a bit for this post):&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-none&#34;&gt;  PID   TT  STAT      TIME COMMAND
-79121 s021  S+     0:00.58 vim foo.txt TERM=screen-256color USER=jwalker PAGER=less EDITOR=/usr/local/bin/vim LANG=en_US.UTF-8 LC_CTYPE=en_US.UTF-8 TMUX_PANE=%115 PWD=/Users/jwalker SHELL=/bin/zsh
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;So we can see the process in question and we can see its environment variables.
-The one we care about is called &lt;code&gt;TMUX_PANE&lt;/code&gt;. Every time you open a new window
-or split a window the tmux daemon assigns that pane a unique id and sets it in
-this environment variable &lt;code&gt;TMUX_PANE&lt;/code&gt;. That is the secret that will make this
-all work but we need to extract it.&lt;/p&gt;
-
-&lt;p&gt;The next step of the script is to pipe the output of &lt;code&gt;ps&lt;/code&gt; to &lt;code&gt;sed&lt;/code&gt; with a
-little sed script. This script deletes the header line, deletes everything up
-to and including &lt;code&gt;TMUX_PANE=&lt;/code&gt;, then deletes everything after the value. At this
-point all we&amp;rsquo;re left with is the value which is &lt;code&gt;%115&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;Both the &lt;code&gt;ps&lt;/code&gt; and &lt;code&gt;sed&lt;/code&gt; commands were ran in a subshell &lt;code&gt;$()&lt;/code&gt; and the final
-output is assigned to the variable &lt;code&gt;pane&lt;/code&gt;. Next, we do an evaluation to see if
-&lt;code&gt;pane&lt;/code&gt; is empty (perhaps we mistyped the pid). We use &lt;code&gt;[[ -z $pane ]]&lt;/code&gt; which
-will succeed if it is empty. In that case we run &lt;code&gt;tmux display-message &amp;quot;could
-not find pid&amp;quot;&lt;/code&gt; and we&amp;rsquo;re done.&lt;/p&gt;
-
-&lt;p&gt;If &lt;code&gt;pane&lt;/code&gt; was not empty we run &lt;code&gt;tmux switch-client -t $pane&lt;/code&gt;. That command
-instructs the client to switch to the pane with id &lt;code&gt;%115&lt;/code&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;in-conclusion&#34;&gt;In conclusion&lt;/h2&gt;
-
-&lt;p&gt;I hope this little script makes your tmux experience a little better. I don&amp;rsquo;t
-use it every day myself but when it comes up I am glad to have it. I would also
-like to point out that although I used a vim process in my example there&amp;rsquo;s
-nothing really vim specific about this tip. You could use this command to
-switch to the pane running any process.&lt;/p&gt;
-</description>
+keybinding for finding that window automatically.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -141,35 +47,7 @@ when corruption inevitably hits.&lt;/p&gt;
 
 &lt;p&gt;At work we have dealt with corrupt InnoDB tables often enough to make the
 procedure fairly routine. Last week I was faced with a situation that had me
-pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;
-
-&lt;p&gt;In this particular instance I was connecting to the database with the standard
-command line client &lt;code&gt;mysql&lt;/code&gt;. Every time I ran any query (against the corrupt
-table or not) I was slapped in the face with the annoying &amp;ldquo;MySQL Server Has
-Gone Away&amp;rdquo; message. Even queries like &lt;code&gt;SHOW PROCESSLIST;&lt;/code&gt; would trigger the
-problem.&lt;/p&gt;
-
-&lt;p&gt;Right before we gave up I had an idea. When you start the client it gives you
-the following message:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-nohighlight&#34;&gt;Reading table information for completion of table and column names
-You can turn off this feature to get a quicker startup with -A
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;What this means is that the client looks up meta information about the tables
-and columns in your selected database so that when you hit &lt;kbd&gt;TAB&lt;/kbd&gt; it
-will auto fill the table names like you would get on the command line. The list
-of tables and columns is rebuilt any time you change databases or issue the
-&lt;code&gt;REHASH;&lt;/code&gt; command.&lt;/p&gt;
-
-&lt;p&gt;On a hunch I tried starting the client with the &lt;code&gt;-A&lt;/code&gt; flag to prevent this table
-scanning. I don&amp;rsquo;t know the technical reason within MySQL&amp;rsquo;s binaries but with
-this option enabled my problem went away. I can only assume that when the
-client scans the tables (including the corrupt table) something goes horribly
-wrong.&lt;/p&gt;
-
-&lt;p&gt;So just file that away in your DBA utility belt :)&lt;/p&gt;
-</description>
+pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -183,218 +61,7 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;
-
-&lt;p&gt;First I examined how you might copy variables in general. Let&amp;rsquo;s start with the
-basics.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;// Example 1
-$foo = 1;
-$bar = $foo; // Copy by value
-++$bar;
-print $bar; // Outputs 2
-print $foo; // Outputs 1
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;$bar&lt;/code&gt; is a copy of &lt;code&gt;$foo&lt;/code&gt;. Incrementing &lt;code&gt;$bar&lt;/code&gt; has no effect on &lt;code&gt;$foo&lt;/code&gt;. If we
-wanted different behavior we would need to copy by reference with the use of an
-ampersand.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;// Example 2
-$foo = 1;
-$bar =&amp;amp; $foo; // Copy by reference
-++$bar;
-print $bar; // Outputs 2
-print $foo; // Outputs 2
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now when we increment &lt;code&gt;$bar&lt;/code&gt; we are also incrementing &lt;code&gt;$foo&lt;/code&gt;. Well, not really.
-&lt;code&gt;$foo&lt;/code&gt;, the variable, is a handle or reference to where the data is stored in
-memory. In the first example we copy by value which (more or less) makes a new
-entry in memory and &lt;code&gt;$bar&lt;/code&gt; is a handle to that new location. In the second
-example &lt;code&gt;$bar&lt;/code&gt; simply copies the handle. There is only one entry in memory and
-both &lt;code&gt;$foo&lt;/code&gt; and &lt;code&gt;$bar&lt;/code&gt; point to the same location. What we are actually doing
-when we increment &lt;code&gt;$bar&lt;/code&gt; is incrementing the data referenced by &lt;code&gt;$bar&lt;/code&gt;. &lt;code&gt;$foo&lt;/code&gt;
-references the same data.&lt;/p&gt;
-
-&lt;p&gt;Next I looked at how to copy objects. I started with this simple class Project.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
-
-class Project {
-    protected $description;
-
-    public function setDescription($description) {
-        $this-&amp;gt;description = $description;
-
-        return $this;
-    }
-
-    public function getDescription() {
-        return $this-&amp;gt;description;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I repeated the same copy assignment from Example 1.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$project_one = new Project();
-$project_one-&amp;gt;setDescription(&amp;quot;This is my first test project&amp;quot;);
-$project_two = $project_one; // Copying by value?
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;In the previous examples we would have two completely distinct variables that
-reference two different addresses in memory. So to see if this holds true we
-can make a change in &lt;code&gt;$project_two&lt;/code&gt; and see the impact.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$project_two-&amp;gt;setDescription(&amp;quot;A new description for my copied project&amp;quot;);
-print $project_one-&amp;gt;getDescription();
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Based on Example 1 we might expect that this would print the original
-description we set in &lt;code&gt;$project_one&lt;/code&gt;. In fact, it will actually print the new
-description. It appears that the objects are copied by reference. One of the
-things you will often hear is that in PHP 5 objects are copied by reference by
-default. Some research shows that isn&amp;rsquo;t quite true either. Consider this
-explanation from
-&lt;a href=&#34;http://php.net/manual/en/language.oop5.references.php&#34;&gt;PHP.net&lt;/a&gt;&lt;/p&gt;
-
-&lt;blockquote&gt;
-&lt;p&gt;A PHP reference is an alias, which allows two different variables to write to
-the same value. As of PHP 5, an object variable doesn&amp;rsquo;t contain the object
-itself as value anymore. It only contains an object identifier which allows
-object accessors to find the actual object. When an object is sent by
-argument, returned or assigned to another variable, the different variables
-are not aliases: they hold a copy of the identifier, which points to the same
-object.&lt;/p&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;This means copying an object by value will copy the identifier&amp;hellip; by value.
-This behaves very similarly to copying by reference because the copied
-identifier points to the same object but is not exactly the same. For a more
-detailed explanation of the difference you can visit the source link.&lt;/p&gt;
-
-&lt;p&gt;So what if you don&amp;rsquo;t want this behavior? Here enters the &lt;code&gt;clone&lt;/code&gt; keyword.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$project_one = new Project();
-$project_one-&amp;gt;setDescription(&amp;quot;This is my first test project&amp;quot;);
-$project_two = clone $project_one; // Cloning to get a new object
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now $project_two is a clone of &lt;code&gt;$project_one&lt;/code&gt; and is its own honest object.
-When we repeat the test with the descriptions we will see that monkeying around
-with &lt;code&gt;$project_two&lt;/code&gt;&amp;rsquo;s description has no effect on &lt;code&gt;$project_one&lt;/code&gt;.&lt;/p&gt;
-
-&lt;p&gt;What happens if the property of a Project is another object? To test this I
-created a new class Person and modified Project to hold a Person&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
-
-class Person {
-    protected $name;
-
-    public function setName($name) {
-        $this-&amp;gt;name = $name;
-
-        return $this;
-    }
-
-    public function getName() {
-        return $this-&amp;gt;name;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;&amp;lt;?php
-
-class Project {
-    protected $leadDeveloper;
-
-    public function setLeadDeveloper(Person $developer) {
-        $this-&amp;gt;leadDeveloper = $developer;
-
-        return $this;
-    }
-
-    public function getLeadDeveloper() {
-        return $this-&amp;gt;leadDeveloper;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I then made a Project and set its Lead Developer.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$jacob = new Person();
-$jacob-&amp;gt;setName(&amp;quot;Jacob&amp;quot;);
-
-$project_one = new Project();
-$project_one-&amp;gt;setLeadDeveloper($jacob);
-$project_two = clone $project_one;
-
-$matthew = new Person();
-$matthew-&amp;gt;setName(&amp;quot;Matthew&amp;quot;);
-$project_two-&amp;gt;setLeadDeveloper($matthew);
-
-print $project_one-&amp;gt;getLeadDeveloper()-&amp;gt;getName(); // Outputs &amp;quot;Jacob&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As &lt;code&gt;$project_two&lt;/code&gt; is a clone, setting a new value for
-&lt;code&gt;$project_two-&amp;gt;leadDeveloper&lt;/code&gt; did not change &lt;code&gt;$project_one&lt;/code&gt;. Great, right?
-Let&amp;rsquo;s look at this from a different angle.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;$jacob = new Person();
-$jacob-&amp;gt;setName(&amp;quot;Jacob&amp;quot;);
-
-$project_one = new Project();
-$project_one-&amp;gt;setLeadDeveloper($jacob);
-$project_two = clone $project_one;
-
-$project_two-&amp;gt;getLeadDeveloper()-&amp;gt;setName(&amp;quot;Matthew&amp;quot;);
-
-print $project_one-&amp;gt;getLeadDeveloper()-&amp;gt;getName(); // Outputs &amp;quot;Matthew&amp;quot;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The plot thickens. Here we can see that &lt;code&gt;$project_one-&amp;gt;leadDeveloper&lt;/code&gt; and
-&lt;code&gt;$project_two-&amp;gt;leadDeveloper&lt;/code&gt; both point to the same object. $project_one
-and $project_two are both unique objects but they do not have unique values for
-properties that are references or object identifiers. This is what is meant by
-a shallow copy. If we wanted the two projects to be completely separate we
-would need to change the default behavior of clone to perform a deep copy
-instead of a shallow copy. To do this I define the magic &lt;code&gt;__clone&lt;/code&gt; method.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;class Project {
-    // Snip properties, getters, and setters
-
-    public function __clone() {
-        $this-&amp;gt;leadDeveloper = clone $this-&amp;gt;leadDeveloper;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;After PHP clones an object it will attempt to call the &lt;code&gt;__clone&lt;/code&gt; method on
-&lt;strong&gt;the new cloned object&lt;/strong&gt;. Now when we perform the previous test we can see
-that &lt;code&gt;$project_one-&amp;gt;leadDeveloper&lt;/code&gt; and &lt;code&gt;$project_two-&amp;gt;leadDeveloper&lt;/code&gt;
-point to two completely different objects. This is a deep copy.&lt;/p&gt;
-
-&lt;p&gt;Note that a common technique for ensuring a deep copy is to serialize then
-immediately unserialize each of a class&amp;rsquo;s object properties. Take for example
-this code from PHPExcel&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-php&#34;&gt;public function __clone() {
-    foreach($this as $key =&amp;gt; $val) {
-        if (is_object($val) || (is_array($val))) {
-            $this-&amp;gt;{$key} = unserialize(serialize($val));
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This method forces PHP to split apart any object properties from their
-references and return new instances.&lt;/p&gt;
-
-&lt;p&gt;Additional information and examples about cloning can be found on
-&lt;a href=&#34;http://php.net/manual/en/language.oop5.cloning.php&#34;&gt;php.net&lt;/a&gt;&lt;/p&gt;
-</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
     </item>
     
   </channel>
