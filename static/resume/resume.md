@@ -43,8 +43,9 @@ participated in projects aimed at improving public transit and reducing infant
 mortality. These projects are in Go and Meteor.js.
 
 ## Conferences and User Groups
-* Attended **Gophercon** in Denver in 2015.
-* Presented *Getting Started with Go* at the first annual **Kansas Linux Fest** in 2015.
+* Attended **Gophercon** in Denver in 2015, 2016, 2017, and 2018.
+* Presented at the **Kansas Linux Fest** in 2015 and 2016.
+* Taught a workshop at **GolangUK** in London in 2017.
 * Attended the **Lone Star PHP** conference in Dallas in 2012, 2013 and 2014.
 * Attended the **200 OK** Web conference in Tulsa in 2013.
 
@@ -61,11 +62,7 @@ Graduated Magna Cum Laude December 2008
 Cumulative undergraduate GPA 3.83 (4=A)
 
 ## Honors and Awards
-* MBA Student of the year 2010
-* University high score: MBA Major Field Test Spring 2010
-* Dean's List: Recognized six out of nine undergraduate semesters
-* Recipient, CFSS Scholarship for excellence in business (2004-2010)
-* Member, Beta Gamma Sigma (business honorary society) 2007-2010
+MBA Student of the year 2010 | University high score: MBA Major Field Test Spring 2010 | Dean's List: Recognized six out of nine undergraduate semesters | Recipient, CFSS Scholarship for excellence in business (2004-2010) | Member, Beta Gamma Sigma (business honorary society) 2007-2010
 
 # Work Experience
 ## [Wrecking Ball Media Group](http://wreckingballmediagroup.com)
@@ -73,15 +70,14 @@ Cumulative undergraduate GPA 3.83 (4=A)
 
 Primary **Go** server engineer for **Adobe Project 1324** which is a web
 platform engaging creative youths to share original pieces of work related to a
-particular cause. One exhibit is currently live on the platform at
-[withmalala.org](withmalala.org) which invites youth to stand with Malala
-Yousafzai in her campaign for girls' rights to education. The platform is
-currently being extended to host other exhibits on various topics.
+particular cause. One exhibit launched on the platform was #withmalala which
+invited youth to stand with Malala Yousafzai in her campaign for girls' rights
+to education. A second exhibit was the 2015 Sundance Ignite Challenge. In this role I:
 
-* Developing the server application composing a REST API, middleware, Go
+* Developed the server application composing a REST API, middleware, Go
   templating, a service layer, SQS job queues, logging to an ELK stack,
   internationalization, and unit and integration tests.
-* Integrate with the APIs of several Adobe systems.
+* Integrated with the APIs of several Adobe systems.
 * Constructed the team's Continuous Integration and Continuous Deployment
   pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.
 
@@ -90,26 +86,26 @@ currently being extended to host other exhibits on various topics.
 
 Custom software development and consulting services.
 
-* Various custom projects with Symfony 2, Ruby on Rails, and Node.js
-* Maintained and extended a complicated proprietary commission tracking system
-* Developed an e-commerce business based on OpenCart
-* Provided security and best practices advice for various clients
-* Provided software development advice to aircraft parts finishing company
+Various custom projects with Symfony 2, Ruby on Rails, and Node.js.
+Maintained and extended a complicated proprietary commission tracking system.
+Developed an e-commerce business based on OpenCart.
+Provided security and best practices advice for various clients.
+Provided software development advice to aircraft parts finishing company.
 
 ## [TimeIPS, Inc](http://timeips.com)
 **Lead Developer (November 2013 - February 2015)**  
 **Application Developer (October 2010 - November 2013)**  
 *5445 E 85TH ST N, Valley Center, KS 67147 Phone: 877-864-3256*
 
-* Managed a team of 4 developers
-* Introduced Test Driven Development with PHPUnit
-* Implemented Continuous Integration with Jenkins
-* Started code reviews via Phabricator
-* Lead the development of a REST API
-* Updated legacy code to use the Doctrine 2 ORM
-* Implemented a Zero Defect policy
-* Developed a system for managing our farm of QEMU virtual machines
-* Revamped our build process making heavy use of Composer, Gulp, and Bower
+* Managed a team of 4 developers.
+* Introduced Test Driven Development with PHPUnit.
+* Implemented Continuous Integration with Jenkins.
+* Started code reviews via Phabricator.
+* Lead the development of a REST API.
+* Updated legacy code to use the Doctrine 2 ORM.
+* Implemented a Zero Defect policy.
+* Developed a system for managing our farm of QEMU virtual machines.
+* Revamped our build process making heavy use of Composer, Gulp, and Bower.
 
 ## [Kansas Life, Insurance Agency Inc](http://kslifeinc.com/)
 **Information Technology Specialist (November 2009 - October 2010)**  
@@ -117,8 +113,7 @@ Custom software development and consulting services.
 
 * Significantly improved payroll accuracy and transparency through development
   of a PHP application
-* Reduced time required to process new business by several days by optimizing
-  work flows
+* Reduced time required to process new business by several days by optimizing work flows
 * Provided desktop and networking support
 
 ## Emporia State University - Richel Computer Lab
