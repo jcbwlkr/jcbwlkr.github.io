@@ -15,7 +15,6 @@ farming, gardening, and landscaping purposes. Their slogan is "better, cleaner,
 sustainable choices." Through my consulting company [Tortugas Consulting,
 LLC][tortugas] I helped to develop their online presence.
 
-
 <!--more-->
 
 The site started with an open source e-commerce solution and has grown

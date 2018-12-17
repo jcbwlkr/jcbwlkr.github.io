@@ -8,8 +8,6 @@ tags = ["aws", "jenkins", "ansible", "tdd", "api"]
 
 [wbm]: http://wreckingballmedia.com/
 [adobe]: http://www.adobe.com/
-[malala]: https://withmalala.org/
-[sundance]: https://sundanceignitewhatsnext.org
 
 From February 2015 to February 2016 I was a contracting engineer at [Wrecking
 Ball Media Group][wbm]. As a part of this team I worked on a web based
@@ -27,5 +25,7 @@ Additionally I constructed the team's Continuous Integration and Continuous
 Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.
 
 Multiple deployments of the platform were completed during my time including
-the [#WithMalala][malala] project and the [2015 Sundance Ignite
-Challenge][sundance].
+the #WithMalala project and the 2015 Sundance Ignite Challenge.
+
+<!--[malala]: https://withmalala.org/-->
+<!--[sundance]: https://sundanceignitewhatsnext.org-->

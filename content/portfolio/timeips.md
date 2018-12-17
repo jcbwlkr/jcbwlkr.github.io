@@ -24,7 +24,7 @@ TimeIPS is used to
 * Calculate automatic holiday rules
 * And many other things
 
-At TimeIPS I lead a team of 4 in the development of our products. Some of my
+At TimeIPS I led a team of 4 in the development of our products. Some of my
 major accomplishments in this role include:
 
 * Introducing Test Driven Development with [PHPUnit][phpunit]

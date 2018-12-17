@@ -18,11 +18,11 @@ newcontenteditor = "vim"
     weight = 20
     url = "/portfolio.html"
 [[menu.main]]
-    name = "Résumé"
+    name = "Resume"
     identifier = "resume"
     pre = "<i class='fa fa-file'></i>"
     weight = 30
-    url = "/resume/Resume.pdf"
+    url = "/resume/resume.pdf"
 
 
 [params]
