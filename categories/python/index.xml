@@ -27,7 +27,7 @@ thousands of companies around the world.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://jacob-walker.com/portfolio/pysag.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
+      <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
 from other (great) static site generators like Jekyll by being focused on data
 first and pages second.&lt;/p&gt;</description>
     </item>

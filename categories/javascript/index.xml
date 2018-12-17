@@ -63,10 +63,10 @@ and empowering creative youth.&lt;/p&gt;</description>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>http://jacob-walker.com/portfolio/yagl.html</guid>
-      <description>&lt;p&gt;When I first read about the &lt;a href=&#34;http://www.catb.org/hacker-emblem/&#34;&gt;Universal Hacker Emblem&lt;/a&gt; I got excited
-about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt;. As an experiment I set out to see if I
-could implement the game in only HTML5, Canvas, CSS and pure JavaScript. The
-game works in both desktop and mobile browsers.&lt;/p&gt;</description>
+      <description>&lt;p&gt;When I first read about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; I was intrigued. As an
+experiment I set out to see if I could implement the game in only HTML5,
+Canvas, CSS and pure JavaScript. The game works in both desktop and mobile
+browsers.&lt;/p&gt;</description>
     </item>
     
   </channel>
