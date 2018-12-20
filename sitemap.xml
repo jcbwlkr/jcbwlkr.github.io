@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</loc>
+    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</loc>
     <lastmod>2018-11-12T00:00:00+00:00</lastmod>
   </url>
@@ -136,7 +141,7 @@
   
   <url>
     <loc>http://jacob-walker.com/blog.html</loc>
-    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -163,7 +168,7 @@
   
   <url>
     <loc>http://jacob-walker.com/tags/concurrency.html</loc>
-    <lastmod>2018-11-12T00:00:00+00:00</lastmod>
+    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

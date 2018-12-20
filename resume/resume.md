@@ -68,18 +68,11 @@ MBA Student of the year 2010 | University high score: MBA Major Field Test Sprin
 ## [Wrecking Ball Media Group](http://wreckingballmediagroup.com)
 **Contracting Engineer (February 2015 - Present)**  
 
-Primary **Go** server engineer for **Adobe Project 1324** which is a web
-platform engaging creative youths to share original pieces of work related to a
-particular cause. One exhibit launched on the platform was #withmalala which
-invited youth to stand with Malala Yousafzai in her campaign for girls' rights
-to education. A second exhibit was the 2015 Sundance Ignite Challenge. In this role I:
+Primary Go server engineer for Adobe Project 1324 which is a web platform engaging creative youths to share original pieces of work related to a particular cause. One exhibit launched on the platform was #withmalala which invited youth to stand with Malala Yousafzai in her campaign for girls' rights to education. A second exhibit was the 2015 Sundance Ignite Challenge. In this role I:
 
-* Developed the server application composing a REST API, middleware, Go
-  templating, a service layer, SQS job queues, logging to an ELK stack,
-  internationalization, and unit and integration tests.
-* Integrated with the APIs of several Adobe systems.
-* Constructed the team's Continuous Integration and Continuous Deployment
-  pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.
+Developed the server application composing a REST API, middleware, Go templating, a service layer, SQS job queues, logging to an ELK stack, internationalization, and unit and integration tests.
+Integrated with the APIs of several Adobe systems.
+Constructed the team's Continuous Integration and Continuous Deployment pipelines using Ansible, Docker, Jenkins, Hipchat, and AWS.
 
 ## [Tortugas Consulting, LLC](http://tortugas-llc.com)
 **Partner (October 2011 - February 2015)**  
