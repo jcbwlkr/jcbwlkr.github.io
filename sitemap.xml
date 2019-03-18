@@ -113,6 +113,10 @@
   </url>
   
   <url>
+    <loc>http://jacob-walker.com/blog/arrested-dnd.html</loc>
+  </url>
+  
+  <url>
     <loc>http://jacob-walker.com/tags/angular.html</loc>
     <priority>0</priority>
   </url>
@@ -169,6 +173,11 @@
   <url>
     <loc>http://jacob-walker.com/tags/concurrency.html</loc>
     <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://jacob-walker.com/categories/dnd.html</loc>
     <priority>0</priority>
   </url>
   
