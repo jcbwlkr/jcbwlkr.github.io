@@ -18,6 +18,7 @@ type event struct {
 	Host      string
 	Event     string
 	Type      string
+	Language  string
 	Topic     string
 	Attendees int
 	URL       string
@@ -59,9 +60,10 @@ func main() {
 			Host:      strings.TrimSpace(row[4]),
 			Event:     strings.TrimSpace(row[5]),
 			Type:      strings.TrimSpace(row[6]),
-			Topic:     strings.TrimSpace(row[7]),
-			Attendees: parseInt(row[8]),
-			URL:       strings.TrimSpace(row[9]),
+			Language:  strings.TrimSpace(row[7]),
+			Topic:     strings.TrimSpace(row[8]),
+			Attendees: parseInt(row[9]),
+			URL:       strings.TrimSpace(row[10]),
 		}
 
 		doc.Events = append(doc.Events, e)

@@ -1,8 +1,8 @@
 {
-	"Students": 912,
-	"Count": 38,
+	"Students": 970,
+	"Count": 40,
 	"Companies": 23,
-	"Cities": 18,
+	"Cities": 19,
 	"Countries": 4,
 	"Events": [
 		{
@@ -13,7 +13,8 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
-			"Topic": "RegEx",
+			"Language": "RegEx",
+			"Topic": "Any",
 			"Attendees": 20,
 			"URL": "https://www.youtube.com/watch?v=4LnyHF8dnIk"
 		},
@@ -25,7 +26,8 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
-			"Topic": "Twig",
+			"Language": "Twig",
+			"Topic": "PHP",
 			"Attendees": 20,
 			"URL": "https://www.youtube.com/watch?v=deqGYV8P0Nc"
 		},
@@ -37,7 +39,8 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
-			"Topic": "OOP",
+			"Language": "OOP",
+			"Topic": "PHP,Ruby",
 			"Attendees": 20,
 			"URL": "https://www.youtube.com/watch?v=7QoEfPYULXM"
 		},
@@ -49,6 +52,7 @@
 			"Host": "Kansas LinuxFest",
 			"Event": "Conference",
 			"Type": "Talk",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -61,6 +65,7 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 20,
 			"URL": "https://www.youtube.com/watch?v=zVvjpLu6iIo"
@@ -73,6 +78,7 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
+			"Language": "Vim",
 			"Topic": "Vim",
 			"Attendees": 30,
 			"URL": "https://www.youtube.com/watch?v=SaGgc8xnO1U"
@@ -85,6 +91,7 @@
 			"Host": "Women Who Code, Wichita",
 			"Event": "Community",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
@@ -97,7 +104,8 @@
 			"Host": "Kansas LinuxFest",
 			"Event": "Conference",
 			"Type": "Talk",
-			"Topic": "exercism.io",
+			"Language": "exercism.io",
+			"Topic": "Any",
 			"Attendees": 25,
 			"URL": ""
 		},
@@ -109,7 +117,8 @@
 			"Host": "GoBridge",
 			"Event": "Community",
 			"Type": "Training",
-			"Topic": "Go Web",
+			"Language": "Go Web",
+			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
 		},
@@ -121,7 +130,8 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
-			"Topic": "Docker",
+			"Language": "Docker",
+			"Topic": "Any",
 			"Attendees": 15,
 			"URL": "https://www.youtube.com/watch?v=xYNJ_IAj35Q"
 		},
@@ -133,7 +143,8 @@
 			"Host": "Women Who Go",
 			"Event": "Community",
 			"Type": "Training",
-			"Topic": "Go Web",
+			"Language": "Go Web",
+			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
 		},
@@ -145,7 +156,8 @@
 			"Host": "Women Who Go",
 			"Event": "Community",
 			"Type": "Training",
-			"Topic": "Go Web",
+			"Language": "Go Web",
+			"Topic": "Go",
 			"Attendees": 15,
 			"URL": ""
 		},
@@ -157,7 +169,8 @@
 			"Host": "GolangUK",
 			"Event": "Conference",
 			"Type": "Training",
-			"Topic": "Go Web",
+			"Language": "Go Web",
+			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
 		},
@@ -169,7 +182,8 @@
 			"Host": "Visa",
 			"Event": "Corporate",
 			"Type": "Training",
-			"Topic": "Go Web",
+			"Language": "Go Web",
+			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
 		},
@@ -181,7 +195,8 @@
 			"Host": "Visa",
 			"Event": "Corporate",
 			"Type": "Training",
-			"Topic": "Go Web",
+			"Language": "Go Web",
+			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
 		},
@@ -193,7 +208,8 @@
 			"Host": "devICT",
 			"Event": "Community",
 			"Type": "Talk",
-			"Topic": "Allies",
+			"Language": "Allies",
+			"Topic": "Any",
 			"Attendees": 15,
 			"URL": "https://www.youtube.com/watch?v=PWheG9CyUAY"
 		},
@@ -205,6 +221,7 @@
 			"Host": "Nutanix",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -217,6 +234,7 @@
 			"Host": "Centene",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -229,6 +247,7 @@
 			"Host": "Spectra Logic",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -241,6 +260,7 @@
 			"Host": "Hallmark Labs",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -253,6 +273,7 @@
 			"Host": "Centene",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -265,6 +286,7 @@
 			"Host": "Centene",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -277,6 +299,7 @@
 			"Host": "Centene",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -289,6 +312,7 @@
 			"Host": "Intel",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -301,6 +325,7 @@
 			"Host": "Juniper",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -313,6 +338,7 @@
 			"Host": "Chotot",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
@@ -325,6 +351,7 @@
 			"Host": "Enova",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -337,6 +364,7 @@
 			"Host": "Centene",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -349,6 +377,7 @@
 			"Host": "ZipRecruiter",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -361,6 +390,7 @@
 			"Host": "Oracle",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -373,6 +403,7 @@
 			"Host": "Dollar Shave Club",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 20,
 			"URL": ""
@@ -385,6 +416,7 @@
 			"Host": "Centene",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -397,6 +429,7 @@
 			"Host": "Intel",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -409,6 +442,7 @@
 			"Host": "New Relic",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -421,6 +455,7 @@
 			"Host": "Shipt",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -433,6 +468,7 @@
 			"Host": "Bethesda",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 30,
 			"URL": ""
@@ -445,6 +481,7 @@
 			"Host": "Lob",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 25,
 			"URL": ""
@@ -457,8 +494,35 @@
 			"Host": "eBay",
 			"Event": "Corporate",
 			"Type": "Training",
+			"Language": "Go",
 			"Topic": "Go",
-			"Attendees": 2,
+			"Attendees": 25,
+			"URL": ""
+		},
+		{
+			"Start": "2019-03-23T00:00:00Z",
+			"End": "2019-03-24T00:00:00Z",
+			"Location": "Boston, MA",
+			"Country": "US",
+			"Host": "GoBridge",
+			"Event": "Community",
+			"Type": "Training",
+			"Language": "Service",
+			"Topic": "Go",
+			"Attendees": 10,
+			"URL": "https://www.meetup.com/gobridge/events/258872479/"
+		},
+		{
+			"Start": "2019-03-26T00:00:00Z",
+			"End": "2019-03-28T00:00:00Z",
+			"Location": "Rockville, MD",
+			"Country": "US",
+			"Host": "Bethesda",
+			"Event": "Corporate",
+			"Type": "Training",
+			"Language": "Service",
+			"Topic": "Go",
+			"Attendees": 25,
 			"URL": ""
 		}
 	]
