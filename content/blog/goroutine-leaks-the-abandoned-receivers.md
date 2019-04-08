@@ -11,7 +11,7 @@ This post was originally published on the [Ardan Labs Blog](https://www.ardanlab
 
 ### Introduction
 
-Goroutine Leaks are a common cause of memory leaks in Go programs. In my [previous post](http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html), I presented an introduction to Goroutine leaks and provided one example of a common mistake that many Go developers make. Continuing that work, this post presents another scenario on how Goroutines could be leaked.
+Goroutine Leaks are a common cause of memory leaks in Go programs. In my [previous post](https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html), I presented an introduction to Goroutine leaks and provided one example of a common mistake that many Go developers make. Continuing that work, this post presents another scenario on how Goroutines could be leaked.
 
 ### Leak: The Abandoned Receivers
 
