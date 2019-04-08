@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Go on jcbwlkr</title>
-    <link>http://jacob-walker.com/categories/go.html</link>
+    <link>https://jacob-walker.com/categories/go.html</link>
     <description>Recent content in Go on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/categories/go/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/categories/go/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ardan Labs</title>
-      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <link>https://jacob-walker.com/portfolio/ardan-labs.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
 services.&lt;/p&gt;</description>
@@ -24,21 +24,21 @@ services.&lt;/p&gt;</description>
     
     <item>
       <title>Getting Started With Go</title>
-      <link>http://jacob-walker.com/portfolio/getting-started-with-go.html</link>
+      <link>https://jacob-walker.com/portfolio/getting-started-with-go.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
+      <guid>https://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
       <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
 I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
-&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
+&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Wrecking Ball Media</title>
-      <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
+      <link>https://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
+      <guid>https://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
       <description>&lt;p&gt;From February 2015 to February 2016 I was a contracting engineer at &lt;a href=&#34;http://wreckingballmedia.com/&#34;&gt;Wrecking
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
@@ -48,10 +48,10 @@ and empowering creative youth.&lt;/p&gt;</description>
     
     <item>
       <title>cqlstore</title>
-      <link>http://jacob-walker.com/portfolio/cqlstore.html</link>
+      <link>https://jacob-walker.com/portfolio/cqlstore.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/cqlstore.html</guid>
+      <guid>https://jacob-walker.com/portfolio/cqlstore.html</guid>
       <description>&lt;p&gt;In Go web development the &lt;a href=&#34;http://www.gorillatoolkit.org/&#34;&gt;Gorilla web toolkit&lt;/a&gt; is a very popular
 collection of libraries for common web tasks. The &lt;code&gt;gorilla/sessions&lt;/code&gt; package
 provides an easy interface for using/storing users&amp;rsquo; session data. There was no
@@ -60,10 +60,10 @@ implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandr
     
     <item>
       <title>httpmatchers</title>
-      <link>http://jacob-walker.com/portfolio/httpmatchers.html</link>
+      <link>https://jacob-walker.com/portfolio/httpmatchers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/httpmatchers.html</guid>
+      <guid>https://jacob-walker.com/portfolio/httpmatchers.html</guid>
       <description>&lt;p&gt;BDD in Go is made easier using the &lt;a href=&#34;http://onsi.github.io/ginkgo/&#34;&gt;Ginkgo&lt;/a&gt; and &lt;a href=&#34;http://onsi.github.io/gomega/&#34;&gt;Gomega&lt;/a&gt;
 packages. Gomega specifically provides a collection of matchers for asserting
 that results match expectations. When using these tools to test an API I was
@@ -74,10 +74,10 @@ simplify some of those patterns.&lt;/p&gt;</description>
     
     <item>
       <title>Goroutine Leaks - The Abandoned Receivers</title>
-      <link>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</link>
+      <link>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</link>
       <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</guid>
+      <guid>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</guid>
       <description>This post was originally published on the Ardan Labs Blog.
 Introduction Goroutine Leaks are a common cause of memory leaks in Go programs. In my previous post, I presented an introduction to Goroutine leaks and provided one example of a common mistake that many Go developers make. Continuing that work, this post presents another scenario on how Goroutines could be leaked.
 Leak: The Abandoned Receivers For this leak example you will see multiple Goroutines blocked waiting to receive values that will never be sent.</description>
@@ -85,10 +85,10 @@ Leak: The Abandoned Receivers For this leak example you will see multiple Gorout
     
     <item>
       <title>Goroutine Leaks - The Forgotten Sender</title>
-      <link>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
+      <link>https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
+      <guid>https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
       <description>This post was originally published on the Ardan Labs Blog.
 Introduction Concurrent programming allows developers to solve problems using more than one path of execution and is often used in an attempt to improve performance. Concurrency doesn’t mean these multiple paths are executing in parallel; it means these paths are executing out-of-order instead of sequentially. Historically, this type of programming is facilitated using libraries that are either provided by a standard library or from 3rd party developers.</description>
     </item>

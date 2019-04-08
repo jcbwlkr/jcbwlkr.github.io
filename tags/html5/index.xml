@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Html5 on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/html5.html</link>
+    <link>https://jacob-walker.com/tags/html5.html</link>
     <description>Recent content in Html5 on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://jacob-walker.com/tags/html5/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/html5/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>yagl-js</title>
-      <link>http://jacob-walker.com/portfolio/yagl.html</link>
+      <link>https://jacob-walker.com/portfolio/yagl.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/yagl.html</guid>
+      <guid>https://jacob-walker.com/portfolio/yagl.html</guid>
       <description>&lt;p&gt;When I first read about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; I was intrigued. As an
 experiment I set out to see if I could implement the game in only HTML5,
 Canvas, CSS and pure JavaScript. The game works in both desktop and mobile

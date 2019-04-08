@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Bash on jcbwlkr</title>
-    <link>http://jacob-walker.com/categories/bash.html</link>
+    <link>https://jacob-walker.com/categories/bash.html</link>
     <description>Recent content in Bash on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/categories/bash/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/categories/bash/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ardan Labs</title>
-      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <link>https://jacob-walker.com/portfolio/ardan-labs.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
 services.&lt;/p&gt;</description>
@@ -24,10 +24,10 @@ services.&lt;/p&gt;</description>
     
     <item>
       <title>My Dotfiles</title>
-      <link>http://jacob-walker.com/portfolio/dotfiles.html</link>
+      <link>https://jacob-walker.com/portfolio/dotfiles.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/dotfiles.html</guid>
+      <guid>https://jacob-walker.com/portfolio/dotfiles.html</guid>
       <description>&lt;p&gt;It seems like every *nix developer hosts at least their bashrc file on GitHub
 and I am no exception. My repo uses the Ruby gem &lt;a href=&#34;https://github.com/technicalpickles/homesick&#34;&gt;homesick&lt;/a&gt; to easily
 keep my config files in sync.&lt;/p&gt;</description>
@@ -35,10 +35,10 @@ keep my config files in sync.&lt;/p&gt;</description>
     
     <item>
       <title>TimeIPS</title>
-      <link>http://jacob-walker.com/portfolio/timeips.html</link>
+      <link>https://jacob-walker.com/portfolio/timeips.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
+      <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
 thousands of companies around the world.&lt;/p&gt;</description>
@@ -46,10 +46,10 @@ thousands of companies around the world.&lt;/p&gt;</description>
     
     <item>
       <title>Wrecking Ball Media</title>
-      <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
+      <link>https://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
+      <guid>https://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
       <description>&lt;p&gt;From February 2015 to February 2016 I was a contracting engineer at &lt;a href=&#34;http://wreckingballmedia.com/&#34;&gt;Wrecking
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
@@ -59,10 +59,10 @@ and empowering creative youth.&lt;/p&gt;</description>
     
     <item>
       <title>Taming tmux: Find One Process Among Many Windows</title>
-      <link>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</link>
+      <link>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</link>
       <pubDate>Tue, 04 Oct 2016 14:27:34 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
+      <guid>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I

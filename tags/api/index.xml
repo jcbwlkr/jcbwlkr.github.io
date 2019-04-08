@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/api.html</link>
+    <link>https://jacob-walker.com/tags/api.html</link>
     <description>Recent content in Api on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/api/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ardan Labs</title>
-      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <link>https://jacob-walker.com/portfolio/ardan-labs.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
 services.&lt;/p&gt;</description>
@@ -24,10 +24,10 @@ services.&lt;/p&gt;</description>
     
     <item>
       <title>Geocommunicator API Client</title>
-      <link>http://jacob-walker.com/portfolio/geocommunicator.html</link>
+      <link>https://jacob-walker.com/portfolio/geocommunicator.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/geocommunicator.html</guid>
+      <guid>https://jacob-walker.com/portfolio/geocommunicator.html</guid>
       <description>&lt;p&gt;I have a friend who travels around the country servicing natural gas pipelines.
 As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
@@ -38,10 +38,10 @@ exact information my friend needed.&lt;/p&gt;</description>
     
     <item>
       <title>LiveJournal Amnesia</title>
-      <link>http://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
+      <link>https://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
+      <guid>https://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;LiveJournal Amnesia&lt;/a&gt; is a quick script I wrote to automate the
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
@@ -51,10 +51,10 @@ you never wrote that poem Junior year!&lt;/p&gt;</description>
     
     <item>
       <title>TimeIPS</title>
-      <link>http://jacob-walker.com/portfolio/timeips.html</link>
+      <link>https://jacob-walker.com/portfolio/timeips.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
+      <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
 thousands of companies around the world.&lt;/p&gt;</description>
@@ -62,10 +62,10 @@ thousands of companies around the world.&lt;/p&gt;</description>
     
     <item>
       <title>Wrecking Ball Media</title>
-      <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
+      <link>https://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
+      <guid>https://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
       <description>&lt;p&gt;From February 2015 to February 2016 I was a contracting engineer at &lt;a href=&#34;http://wreckingballmedia.com/&#34;&gt;Wrecking
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
@@ -75,10 +75,10 @@ and empowering creative youth.&lt;/p&gt;</description>
     
     <item>
       <title>find.torrent</title>
-      <link>http://jacob-walker.com/portfolio/find.torrent.html</link>
+      <link>https://jacob-walker.com/portfolio/find.torrent.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/find.torrent.html</guid>
+      <guid>https://jacob-walker.com/portfolio/find.torrent.html</guid>
       <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
     </item>
     

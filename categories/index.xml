@@ -2,102 +2,102 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on jcbwlkr</title>
-    <link>http://jacob-walker.com/categories.html</link>
+    <link>https://jacob-walker.com/categories.html</link>
     <description>Recent content in Categories on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Bash</title>
-      <link>http://jacob-walker.com/categories/bash.html</link>
+      <link>https://jacob-walker.com/categories/bash.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/categories/bash.html</guid>
+      <guid>https://jacob-walker.com/categories/bash.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Community</title>
-      <link>http://jacob-walker.com/categories/community.html</link>
+      <link>https://jacob-walker.com/categories/community.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/categories/community.html</guid>
+      <guid>https://jacob-walker.com/categories/community.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Docker</title>
-      <link>http://jacob-walker.com/categories/docker.html</link>
+      <link>https://jacob-walker.com/categories/docker.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/categories/docker.html</guid>
+      <guid>https://jacob-walker.com/categories/docker.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Go</title>
-      <link>http://jacob-walker.com/categories/go.html</link>
+      <link>https://jacob-walker.com/categories/go.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/categories/go.html</guid>
+      <guid>https://jacob-walker.com/categories/go.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Javascript</title>
-      <link>http://jacob-walker.com/categories/javascript.html</link>
+      <link>https://jacob-walker.com/categories/javascript.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/categories/javascript.html</guid>
+      <guid>https://jacob-walker.com/categories/javascript.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Mysql</title>
-      <link>http://jacob-walker.com/categories/mysql.html</link>
+      <link>https://jacob-walker.com/categories/mysql.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/categories/mysql.html</guid>
+      <guid>https://jacob-walker.com/categories/mysql.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Php</title>
-      <link>http://jacob-walker.com/categories/php.html</link>
+      <link>https://jacob-walker.com/categories/php.html</link>
       <pubDate>Sun, 06 Jan 2013 00:00:00 -0600</pubDate>
       
-      <guid>http://jacob-walker.com/categories/php.html</guid>
+      <guid>https://jacob-walker.com/categories/php.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Python</title>
-      <link>http://jacob-walker.com/categories/python.html</link>
+      <link>https://jacob-walker.com/categories/python.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/categories/python.html</guid>
+      <guid>https://jacob-walker.com/categories/python.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Ruby</title>
-      <link>http://jacob-walker.com/categories/ruby.html</link>
+      <link>https://jacob-walker.com/categories/ruby.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/categories/ruby.html</guid>
+      <guid>https://jacob-walker.com/categories/ruby.html</guid>
       <description></description>
     </item>
     
     <item>
       <title>Vim</title>
-      <link>http://jacob-walker.com/categories/vim.html</link>
+      <link>https://jacob-walker.com/categories/vim.html</link>
       <pubDate>Tue, 04 Oct 2016 14:27:34 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/categories/vim.html</guid>
+      <guid>https://jacob-walker.com/categories/vim.html</guid>
       <description></description>
     </item>
     

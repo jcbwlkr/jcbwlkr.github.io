@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on jcbwlkr</title>
-    <link>http://jacob-walker.com/blog.html</link>
+    <link>https://jacob-walker.com/blog.html</link>
     <description>Recent content in Blog on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Goroutine Leaks - The Abandoned Receivers</title>
-      <link>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</link>
+      <link>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</link>
       <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</guid>
+      <guid>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</guid>
       <description>This post was originally published on the Ardan Labs Blog.
 Introduction Goroutine Leaks are a common cause of memory leaks in Go programs. In my previous post, I presented an introduction to Goroutine leaks and provided one example of a common mistake that many Go developers make. Continuing that work, this post presents another scenario on how Goroutines could be leaked.
 Leak: The Abandoned Receivers For this leak example you will see multiple Goroutines blocked waiting to receive values that will never be sent.</description>
@@ -24,20 +24,20 @@ Leak: The Abandoned Receivers For this leak example you will see multiple Gorout
     
     <item>
       <title>Goroutine Leaks - The Forgotten Sender</title>
-      <link>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
+      <link>https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
+      <guid>https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
       <description>This post was originally published on the Ardan Labs Blog.
 Introduction Concurrent programming allows developers to solve problems using more than one path of execution and is often used in an attempt to improve performance. Concurrency doesn’t mean these multiple paths are executing in parallel; it means these paths are executing out-of-order instead of sequentially. Historically, this type of programming is facilitated using libraries that are either provided by a standard library or from 3rd party developers.</description>
     </item>
     
     <item>
       <title>Taming tmux: Find One Process Among Many Windows</title>
-      <link>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</link>
+      <link>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</link>
       <pubDate>Tue, 04 Oct 2016 14:27:34 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
+      <guid>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
@@ -48,10 +48,10 @@ keybinding for finding that window automatically.&lt;/p&gt;</description>
     
     <item>
       <title>A Note on Recovering from InnoDB Corruption</title>
-      <link>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</link>
+      <link>https://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</link>
       <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</guid>
+      <guid>https://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</guid>
       <description>&lt;p&gt;InnoDB is a great storage engine for MySQL offering, among other things,
 transaction support. One of its drawbacks is the difficulty that you can face
 when corruption inevitably hits.&lt;/p&gt;
@@ -63,10 +63,10 @@ pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;</descriptio
     
     <item>
       <title>PHP Clone and Shallow vs Deep Copying</title>
-      <link>http://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</link>
+      <link>https://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</link>
       <pubDate>Sun, 06 Jan 2013 00:00:00 -0600</pubDate>
       
-      <guid>http://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</guid>
+      <guid>https://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</guid>
       <description>&lt;p&gt;Looking through the &lt;a href=&#34;https://github.com/PHPOffice/PHPExcel&#34;&gt;PHPExcel&lt;/a&gt; library
 recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&gt; method with
 comments about ensuring that cloning will perform a deep copy instead of a

@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Aws on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/aws.html</link>
+    <link>https://jacob-walker.com/tags/aws.html</link>
     <description>Recent content in Aws on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://jacob-walker.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Wrecking Ball Media</title>
-      <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
+      <link>https://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
+      <guid>https://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
       <description>&lt;p&gt;From February 2015 to February 2016 I was a contracting engineer at &lt;a href=&#34;http://wreckingballmedia.com/&#34;&gt;Wrecking
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different

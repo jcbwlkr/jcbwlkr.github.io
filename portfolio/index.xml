@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Portfolio on jcbwlkr</title>
-    <link>http://jacob-walker.com/portfolio.html</link>
+    <link>https://jacob-walker.com/portfolio.html</link>
     <description>Recent content in Portfolio on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/portfolio/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>devICT</title>
-      <link>http://jacob-walker.com/portfolio/devict.html</link>
+      <link>https://jacob-walker.com/portfolio/devict.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/devict.html</guid>
+      <guid>https://jacob-walker.com/portfolio/devict.html</guid>
       <description>&lt;p&gt;devICT is the largest software development community in Wichita boasting over
 500 registered members. Since joining in 2012 I have taken on the
 responsibility of being the director. The group covers all aspects of software
@@ -29,10 +29,10 @@ development. Our mission is:&lt;/p&gt;
     
     <item>
       <title>Ardan Labs</title>
-      <link>http://jacob-walker.com/portfolio/ardan-labs.html</link>
+      <link>https://jacob-walker.com/portfolio/ardan-labs.html</link>
       <pubDate>Mon, 19 Sep 2016 22:26:33 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/ardan-labs.html</guid>
+      <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
 services.&lt;/p&gt;</description>
@@ -40,10 +40,10 @@ services.&lt;/p&gt;</description>
     
     <item>
       <title>Wrecking Ball Media</title>
-      <link>http://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
+      <link>https://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
+      <guid>https://jacob-walker.com/portfolio/wrecking-ball-media.html</guid>
       <description>&lt;p&gt;From February 2015 to February 2016 I was a contracting engineer at &lt;a href=&#34;http://wreckingballmedia.com/&#34;&gt;Wrecking
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
@@ -53,21 +53,21 @@ and empowering creative youth.&lt;/p&gt;</description>
     
     <item>
       <title>Getting Started With Go</title>
-      <link>http://jacob-walker.com/portfolio/getting-started-with-go.html</link>
+      <link>https://jacob-walker.com/portfolio/getting-started-with-go.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
+      <guid>https://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
       <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
 I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
-&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
+&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>cqlstore</title>
-      <link>http://jacob-walker.com/portfolio/cqlstore.html</link>
+      <link>https://jacob-walker.com/portfolio/cqlstore.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/cqlstore.html</guid>
+      <guid>https://jacob-walker.com/portfolio/cqlstore.html</guid>
       <description>&lt;p&gt;In Go web development the &lt;a href=&#34;http://www.gorillatoolkit.org/&#34;&gt;Gorilla web toolkit&lt;/a&gt; is a very popular
 collection of libraries for common web tasks. The &lt;code&gt;gorilla/sessions&lt;/code&gt; package
 provides an easy interface for using/storing users&amp;rsquo; session data. There was no
@@ -76,10 +76,10 @@ implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandr
     
     <item>
       <title>httpmatchers</title>
-      <link>http://jacob-walker.com/portfolio/httpmatchers.html</link>
+      <link>https://jacob-walker.com/portfolio/httpmatchers.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/httpmatchers.html</guid>
+      <guid>https://jacob-walker.com/portfolio/httpmatchers.html</guid>
       <description>&lt;p&gt;BDD in Go is made easier using the &lt;a href=&#34;http://onsi.github.io/ginkgo/&#34;&gt;Ginkgo&lt;/a&gt; and &lt;a href=&#34;http://onsi.github.io/gomega/&#34;&gt;Gomega&lt;/a&gt;
 packages. Gomega specifically provides a collection of matchers for asserting
 that results match expectations. When using these tools to test an API I was
@@ -90,10 +90,10 @@ simplify some of those patterns.&lt;/p&gt;</description>
     
     <item>
       <title>TimeIPS</title>
-      <link>http://jacob-walker.com/portfolio/timeips.html</link>
+      <link>https://jacob-walker.com/portfolio/timeips.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
+      <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
 thousands of companies around the world.&lt;/p&gt;</description>
@@ -101,10 +101,10 @@ thousands of companies around the world.&lt;/p&gt;</description>
     
     <item>
       <title>pysag</title>
-      <link>http://jacob-walker.com/portfolio/pysag.html</link>
+      <link>https://jacob-walker.com/portfolio/pysag.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/pysag.html</guid>
+      <guid>https://jacob-walker.com/portfolio/pysag.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
 from other (great) static site generators like Jekyll by being focused on data
 first and pages second.&lt;/p&gt;</description>
@@ -112,12 +112,12 @@ first and pages second.&lt;/p&gt;</description>
     
     <item>
       <title>Regular Expressions 101</title>
-      <link>http://jacob-walker.com/portfolio/regex-101.html</link>
+      <link>https://jacob-walker.com/portfolio/regex-101.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/regex-101.html</guid>
+      <guid>https://jacob-walker.com/portfolio/regex-101.html</guid>
       <description>&lt;p&gt;In March 2013 I gave a presentation to my local development group
-&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
+&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
 talk was just under two hours long and was well received by the audience
 (approximately 25 developers). The presentation was broadcast through Google
 Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;</description>
@@ -125,11 +125,11 @@ Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4L
     
     <item>
       <title>Implementing OOP</title>
-      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
+      <link>https://jacob-walker.com/portfolio/implementing-oop.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
-      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
+      <guid>https://jacob-walker.com/portfolio/implementing-oop.html</guid>
+      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
@@ -138,41 +138,41 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</descr
     
     <item>
       <title>Templating In PHP With Twig</title>
-      <link>http://jacob-walker.com/portfolio/twig.html</link>
+      <link>https://jacob-walker.com/portfolio/twig.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/twig.html</guid>
-      <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
+      <guid>https://jacob-walker.com/portfolio/twig.html</guid>
+      <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
 installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Startup Wichita</title>
-      <link>http://jacob-walker.com/portfolio/startup-wichita.html</link>
+      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/startup-wichita.html</guid>
+      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
-Wichita with local people and resources. In March 2014 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
+Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
 hackathon to kick-start development on the community site.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>find.torrent</title>
-      <link>http://jacob-walker.com/portfolio/find.torrent.html</link>
+      <link>https://jacob-walker.com/portfolio/find.torrent.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/find.torrent.html</guid>
+      <guid>https://jacob-walker.com/portfolio/find.torrent.html</guid>
       <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
     </item>
     
     <item>
       <title>LiveJournal Amnesia</title>
-      <link>http://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
+      <link>https://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
+      <guid>https://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;LiveJournal Amnesia&lt;/a&gt; is a quick script I wrote to automate the
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
@@ -182,10 +182,10 @@ you never wrote that poem Junior year!&lt;/p&gt;</description>
     
     <item>
       <title>Geocommunicator API Client</title>
-      <link>http://jacob-walker.com/portfolio/geocommunicator.html</link>
+      <link>https://jacob-walker.com/portfolio/geocommunicator.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/geocommunicator.html</guid>
+      <guid>https://jacob-walker.com/portfolio/geocommunicator.html</guid>
       <description>&lt;p&gt;I have a friend who travels around the country servicing natural gas pipelines.
 As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
@@ -196,10 +196,10 @@ exact information my friend needed.&lt;/p&gt;</description>
     
     <item>
       <title>Natural Organic Warehouse</title>
-      <link>http://jacob-walker.com/portfolio/now.html</link>
+      <link>https://jacob-walker.com/portfolio/now.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/now.html</guid>
+      <guid>https://jacob-walker.com/portfolio/now.html</guid>
       <description>&lt;p&gt;Natural Organic Warehouse (NOW) is a distributor of organic products for
 farming, gardening, and landscaping purposes. Their slogan is &amp;ldquo;better, cleaner,
 sustainable choices.&amp;rdquo; Through my consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
@@ -208,10 +208,10 @@ LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;</description>
     
     <item>
       <title>Norris Training Systems</title>
-      <link>http://jacob-walker.com/portfolio/norris-training.html</link>
+      <link>https://jacob-walker.com/portfolio/norris-training.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/norris-training.html</guid>
+      <guid>https://jacob-walker.com/portfolio/norris-training.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://norristraining.com&#34;&gt;Norris Training Systems&lt;/a&gt; provides pre-licensing and continuing
 education training to insurance agents. My consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas
 Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows
@@ -222,10 +222,10 @@ their state license exam.&lt;/p&gt;</description>
     
     <item>
       <title>Young Life Wichita</title>
-      <link>http://jacob-walker.com/portfolio/young-life-wichita.html</link>
+      <link>https://jacob-walker.com/portfolio/young-life-wichita.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/young-life-wichita.html</guid>
+      <guid>https://jacob-walker.com/portfolio/young-life-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
 organization. YLW supports local families through various charitable events and
 activities. My consulting company was hired to develop an online application
@@ -234,10 +234,10 @@ where people could RSVP for different activities.&lt;/p&gt;</description>
     
     <item>
       <title>yagl-js</title>
-      <link>http://jacob-walker.com/portfolio/yagl.html</link>
+      <link>https://jacob-walker.com/portfolio/yagl.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/yagl.html</guid>
+      <guid>https://jacob-walker.com/portfolio/yagl.html</guid>
       <description>&lt;p&gt;When I first read about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; I was intrigued. As an
 experiment I set out to see if I could implement the game in only HTML5,
 Canvas, CSS and pure JavaScript. The game works in both desktop and mobile
@@ -246,10 +246,10 @@ browsers.&lt;/p&gt;</description>
     
     <item>
       <title>My Dotfiles</title>
-      <link>http://jacob-walker.com/portfolio/dotfiles.html</link>
+      <link>https://jacob-walker.com/portfolio/dotfiles.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/dotfiles.html</guid>
+      <guid>https://jacob-walker.com/portfolio/dotfiles.html</guid>
       <description>&lt;p&gt;It seems like every *nix developer hosts at least their bashrc file on GitHub
 and I am no exception. My repo uses the Ruby gem &lt;a href=&#34;https://github.com/technicalpickles/homesick&#34;&gt;homesick&lt;/a&gt; to easily
 keep my config files in sync.&lt;/p&gt;</description>
@@ -257,10 +257,10 @@ keep my config files in sync.&lt;/p&gt;</description>
     
     <item>
       <title>Vim Contributions</title>
-      <link>http://jacob-walker.com/portfolio/vim.html</link>
+      <link>https://jacob-walker.com/portfolio/vim.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/vim.html</guid>
+      <guid>https://jacob-walker.com/portfolio/vim.html</guid>
       <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
 efficiency combined with its extendability have yet to leave me seriously
 wanting for any features. I have made some contributions back to the vim

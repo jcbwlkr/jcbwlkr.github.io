@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mongo on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/mongo.html</link>
+    <link>https://jacob-walker.com/tags/mongo.html</link>
     <description>Recent content in Mongo on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://jacob-walker.com/tags/mongo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/mongo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Startup Wichita</title>
-      <link>http://jacob-walker.com/portfolio/startup-wichita.html</link>
+      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/startup-wichita.html</guid>
+      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
-Wichita with local people and resources. In March 2014 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
+Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
 hackathon to kick-start development on the community site.&lt;/p&gt;</description>
     </item>
     

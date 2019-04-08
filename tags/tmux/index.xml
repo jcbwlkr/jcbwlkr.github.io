@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tmux on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/tmux.html</link>
+    <link>https://jacob-walker.com/tags/tmux.html</link>
     <description>Recent content in Tmux on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 04 Oct 2016 14:27:34 -0500</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/tmux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Taming tmux: Find One Process Among Many Windows</title>
-      <link>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</link>
+      <link>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</link>
       <pubDate>Tue, 04 Oct 2016 14:27:34 -0500</pubDate>
       
-      <guid>http://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
+      <guid>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</guid>
       <description>&lt;p&gt;I&amp;rsquo;m a big fan of &lt;a href=&#34;https://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; and I use it daily. Over time I will open more
 and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I

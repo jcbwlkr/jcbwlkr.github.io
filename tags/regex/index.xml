@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Regex on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/regex.html</link>
+    <link>https://jacob-walker.com/tags/regex.html</link>
     <description>Recent content in Regex on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://jacob-walker.com/tags/regex/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/regex/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Regular Expressions 101</title>
-      <link>http://jacob-walker.com/portfolio/regex-101.html</link>
+      <link>https://jacob-walker.com/portfolio/regex-101.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/regex-101.html</guid>
+      <guid>https://jacob-walker.com/portfolio/regex-101.html</guid>
       <description>&lt;p&gt;In March 2013 I gave a presentation to my local development group
-&lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
+&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
 talk was just under two hours long and was well received by the audience
 (approximately 25 developers). The presentation was broadcast through Google
 Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;</description>

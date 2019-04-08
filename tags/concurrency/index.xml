@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Concurrency on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/concurrency.html</link>
+    <link>https://jacob-walker.com/tags/concurrency.html</link>
     <description>Recent content in Concurrency on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 19 Dec 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Goroutine Leaks - The Abandoned Receivers</title>
-      <link>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</link>
+      <link>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</link>
       <pubDate>Wed, 19 Dec 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</guid>
+      <guid>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</guid>
       <description>This post was originally published on the Ardan Labs Blog.
 Introduction Goroutine Leaks are a common cause of memory leaks in Go programs. In my previous post, I presented an introduction to Goroutine leaks and provided one example of a common mistake that many Go developers make. Continuing that work, this post presents another scenario on how Goroutines could be leaked.
 Leak: The Abandoned Receivers For this leak example you will see multiple Goroutines blocked waiting to receive values that will never be sent.</description>
@@ -24,10 +24,10 @@ Leak: The Abandoned Receivers For this leak example you will see multiple Gorout
     
     <item>
       <title>Goroutine Leaks - The Forgotten Sender</title>
-      <link>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
+      <link>https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</link>
       <pubDate>Mon, 12 Nov 2018 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
+      <guid>https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html</guid>
       <description>This post was originally published on the Ardan Labs Blog.
 Introduction Concurrent programming allows developers to solve problems using more than one path of execution and is often used in an attempt to improve performance. Concurrency doesn’t mean these multiple paths are executing in parallel; it means these paths are executing out-of-order instead of sequentially. Historically, this type of programming is facilitated using libraries that are either provided by a standard library or from 3rd party developers.</description>
     </item>

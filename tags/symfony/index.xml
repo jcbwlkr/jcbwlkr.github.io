@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Symfony on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/symfony.html</link>
+    <link>https://jacob-walker.com/tags/symfony.html</link>
     <description>Recent content in Symfony on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://jacob-walker.com/tags/symfony/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/symfony/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Norris Training Systems</title>
-      <link>http://jacob-walker.com/portfolio/norris-training.html</link>
+      <link>https://jacob-walker.com/portfolio/norris-training.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/norris-training.html</guid>
+      <guid>https://jacob-walker.com/portfolio/norris-training.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://norristraining.com&#34;&gt;Norris Training Systems&lt;/a&gt; provides pre-licensing and continuing
 education training to insurance agents. My consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas
 Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows

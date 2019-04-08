@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Php on jcbwlkr</title>
-    <link>http://jacob-walker.com/categories/php.html</link>
+    <link>https://jacob-walker.com/categories/php.html</link>
     <description>Recent content in Php on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 06 Jan 2013 00:00:00 -0600</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/categories/php/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/categories/php/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Geocommunicator API Client</title>
-      <link>http://jacob-walker.com/portfolio/geocommunicator.html</link>
+      <link>https://jacob-walker.com/portfolio/geocommunicator.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/geocommunicator.html</guid>
+      <guid>https://jacob-walker.com/portfolio/geocommunicator.html</guid>
       <description>&lt;p&gt;I have a friend who travels around the country servicing natural gas pipelines.
 As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
@@ -27,11 +27,11 @@ exact information my friend needed.&lt;/p&gt;</description>
     
     <item>
       <title>Implementing OOP</title>
-      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
+      <link>https://jacob-walker.com/portfolio/implementing-oop.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
-      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
+      <guid>https://jacob-walker.com/portfolio/implementing-oop.html</guid>
+      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
@@ -40,10 +40,10 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</descr
     
     <item>
       <title>Natural Organic Warehouse</title>
-      <link>http://jacob-walker.com/portfolio/now.html</link>
+      <link>https://jacob-walker.com/portfolio/now.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/now.html</guid>
+      <guid>https://jacob-walker.com/portfolio/now.html</guid>
       <description>&lt;p&gt;Natural Organic Warehouse (NOW) is a distributor of organic products for
 farming, gardening, and landscaping purposes. Their slogan is &amp;ldquo;better, cleaner,
 sustainable choices.&amp;rdquo; Through my consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
@@ -52,10 +52,10 @@ LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;</description>
     
     <item>
       <title>Norris Training Systems</title>
-      <link>http://jacob-walker.com/portfolio/norris-training.html</link>
+      <link>https://jacob-walker.com/portfolio/norris-training.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/norris-training.html</guid>
+      <guid>https://jacob-walker.com/portfolio/norris-training.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://norristraining.com&#34;&gt;Norris Training Systems&lt;/a&gt; provides pre-licensing and continuing
 education training to insurance agents. My consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas
 Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows
@@ -66,21 +66,21 @@ their state license exam.&lt;/p&gt;</description>
     
     <item>
       <title>Templating In PHP With Twig</title>
-      <link>http://jacob-walker.com/portfolio/twig.html</link>
+      <link>https://jacob-walker.com/portfolio/twig.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/twig.html</guid>
-      <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
+      <guid>https://jacob-walker.com/portfolio/twig.html</guid>
+      <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
 installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>TimeIPS</title>
-      <link>http://jacob-walker.com/portfolio/timeips.html</link>
+      <link>https://jacob-walker.com/portfolio/timeips.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/timeips.html</guid>
+      <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
 thousands of companies around the world.&lt;/p&gt;</description>
@@ -88,19 +88,19 @@ thousands of companies around the world.&lt;/p&gt;</description>
     
     <item>
       <title>find.torrent</title>
-      <link>http://jacob-walker.com/portfolio/find.torrent.html</link>
+      <link>https://jacob-walker.com/portfolio/find.torrent.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/find.torrent.html</guid>
+      <guid>https://jacob-walker.com/portfolio/find.torrent.html</guid>
       <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
     </item>
     
     <item>
       <title>PHP Clone and Shallow vs Deep Copying</title>
-      <link>http://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</link>
+      <link>https://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</link>
       <pubDate>Sun, 06 Jan 2013 00:00:00 -0600</pubDate>
       
-      <guid>http://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</guid>
+      <guid>https://jacob-walker.com/blog/php-clone-and-shallow-vs-deep-copying.html</guid>
       <description>&lt;p&gt;Looking through the &lt;a href=&#34;https://github.com/PHPOffice/PHPExcel&#34;&gt;PHPExcel&lt;/a&gt; library
 recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&gt; method with
 comments about ensuring that cloning will perform a deep copy instead of a

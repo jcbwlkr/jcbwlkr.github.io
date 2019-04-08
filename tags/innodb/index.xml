@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Innodb on jcbwlkr</title>
-    <link>http://jacob-walker.com/tags/innodb.html</link>
+    <link>https://jacob-walker.com/tags/innodb.html</link>
     <description>Recent content in Innodb on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 27 Jun 2013 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="http://jacob-walker.com/tags/innodb/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/tags/innodb/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>A Note on Recovering from InnoDB Corruption</title>
-      <link>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</link>
+      <link>https://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</link>
       <pubDate>Thu, 27 Jun 2013 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</guid>
+      <guid>https://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</guid>
       <description>&lt;p&gt;InnoDB is a great storage engine for MySQL offering, among other things,
 transaction support. One of its drawbacks is the difficulty that you can face
 when corruption inevitably hits.&lt;/p&gt;

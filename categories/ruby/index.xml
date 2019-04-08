@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Ruby on jcbwlkr</title>
-    <link>http://jacob-walker.com/categories/ruby.html</link>
+    <link>https://jacob-walker.com/categories/ruby.html</link>
     <description>Recent content in Ruby on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://jacob-walker.com/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://jacob-walker.com/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Implementing OOP</title>
-      <link>http://jacob-walker.com/portfolio/implementing-oop.html</link>
+      <link>https://jacob-walker.com/portfolio/implementing-oop.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/implementing-oop.html</guid>
-      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
+      <guid>https://jacob-walker.com/portfolio/implementing-oop.html</guid>
+      <description>&lt;p&gt;Back in June 2014 I gave a presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about how to use
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
@@ -25,10 +25,10 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</descr
     
     <item>
       <title>LiveJournal Amnesia</title>
-      <link>http://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
+      <link>https://jacob-walker.com/portfolio/livejournal-amnesia.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
+      <guid>https://jacob-walker.com/portfolio/livejournal-amnesia.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;LiveJournal Amnesia&lt;/a&gt; is a quick script I wrote to automate the
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
@@ -38,21 +38,21 @@ you never wrote that poem Junior year!&lt;/p&gt;</description>
     
     <item>
       <title>Startup Wichita</title>
-      <link>http://jacob-walker.com/portfolio/startup-wichita.html</link>
+      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/startup-wichita.html</guid>
+      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
-Wichita with local people and resources. In March 2014 &lt;a href=&#34;http://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
+Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
 hackathon to kick-start development on the community site.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Young Life Wichita</title>
-      <link>http://jacob-walker.com/portfolio/young-life-wichita.html</link>
+      <link>https://jacob-walker.com/portfolio/young-life-wichita.html</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>http://jacob-walker.com/portfolio/young-life-wichita.html</guid>
+      <guid>https://jacob-walker.com/portfolio/young-life-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
 organization. YLW supports local families through various charitable events and
 activities. My consulting company was hired to develop an online application
