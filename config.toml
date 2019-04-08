@@ -22,7 +22,7 @@ newcontenteditor = "vim"
     identifier = "resume"
     pre = "<i class='fa fa-file'></i>"
     weight = 30
-    url = "/resume/resume.pdf"
+    url = "/resume/JacobWalkerResume.pdf"
 
 
 [params]
