@@ -6,10 +6,20 @@
     <description>Recent content in Blog on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 19 Dec 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://jacob-walker.com/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Concurrency Trap #2: Incomplete Work</title>
+      <link>https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html</link>
+      <pubDate>Thu, 18 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html</guid>
+      <description>This post was originally published on the Ardan Labs Blog.
+Introduction In my first post on Goroutine Leaks, I mentioned that concurrency is a useful tool but it comes with certain traps that don&amp;rsquo;t exist in synchronous programs. To continue with this theme, I will introduce a new trap called incomplete work. Incomplete work occurs when a program terminates before outstanding Goroutines (non-main goroutines) complete. Depending on the nature of the Goroutine that is being terminated forcefully, this may be a serious problem.</description>
+    </item>
     
     <item>
       <title>Goroutine Leaks - The Abandoned Receivers</title>
@@ -43,7 +53,9 @@ and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing &amp;ldquo;find the right window,&amp;rdquo; especially if I had backgrounded
 vim. This happened often enough that I spent the time to make a little tmux
-keybinding for finding that window automatically.&lt;/p&gt;</description>
+keybinding for finding that window automatically.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -58,7 +70,9 @@ when corruption inevitably hits.&lt;/p&gt;
 
 &lt;p&gt;At work we have dealt with corrupt InnoDB tables often enough to make the
 procedure fairly routine. Last week I was faced with a situation that had me
-pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;</description>
+pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,7 +86,9 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

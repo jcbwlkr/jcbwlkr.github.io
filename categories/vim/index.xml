@@ -19,7 +19,9 @@
       <guid>https://jacob-walker.com/portfolio/dotfiles.html</guid>
       <description>&lt;p&gt;It seems like every *nix developer hosts at least their bashrc file on GitHub
 and I am no exception. My repo uses the Ruby gem &lt;a href=&#34;https://github.com/technicalpickles/homesick&#34;&gt;homesick&lt;/a&gt; to easily
-keep my config files in sync.&lt;/p&gt;</description>
+keep my config files in sync.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +33,9 @@ keep my config files in sync.&lt;/p&gt;</description>
       <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
 efficiency combined with its extendability have yet to leave me seriously
 wanting for any features. I have made some contributions back to the vim
-ecosystem.&lt;/p&gt;</description>
+ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -45,7 +49,9 @@ and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing &amp;ldquo;find the right window,&amp;rdquo; especially if I had backgrounded
 vim. This happened often enough that I spent the time to make a little tmux
-keybinding for finding that window automatically.&lt;/p&gt;</description>
+keybinding for finding that window automatically.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -24,7 +24,9 @@ development. Our mission is:&lt;/p&gt;
 
 &lt;blockquote&gt;
 &lt;p&gt;To educate, empower, and connect software developers in the Wichita area.&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +37,9 @@ development. Our mission is:&lt;/p&gt;
       <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
-services.&lt;/p&gt;</description>
+services.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -48,7 +52,9 @@ services.&lt;/p&gt;</description>
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;</description>
+and empowering creative youth.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -59,7 +65,9 @@ and empowering creative youth.&lt;/p&gt;</description>
       <guid>https://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
       <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
 I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
-&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
+&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -71,7 +79,9 @@ I gave it again that month at my company&amp;rsquo;s internal roundtable and aga
       <description>&lt;p&gt;In Go web development the &lt;a href=&#34;http://www.gorillatoolkit.org/&#34;&gt;Gorilla web toolkit&lt;/a&gt; is a very popular
 collection of libraries for common web tasks. The &lt;code&gt;gorilla/sessions&lt;/code&gt; package
 provides an easy interface for using/storing users&amp;rsquo; session data. There was no
-implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt; so I created one.&lt;/p&gt;</description>
+implementation for &lt;a href=&#34;http://cassandra.apache.org/&#34;&gt;Cassandra DB&lt;/a&gt; so I created one.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,7 +95,9 @@ packages. Gomega specifically provides a collection of matchers for asserting
 that results match expectations. When using these tools to test an API I was
 developing I noticed some common patterns appearing around the assertion of
 HTTP status codes. I created the &lt;code&gt;github.com/jcbwlkr/httpmatchers&lt;/code&gt; package to
-simplify some of those patterns.&lt;/p&gt;</description>
+simplify some of those patterns.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -96,7 +108,9 @@ simplify some of those patterns.&lt;/p&gt;</description>
       <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
-thousands of companies around the world.&lt;/p&gt;</description>
+thousands of companies around the world.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -107,7 +121,9 @@ thousands of companies around the world.&lt;/p&gt;</description>
       <guid>https://jacob-walker.com/portfolio/pysag.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
 from other (great) static site generators like Jekyll by being focused on data
-first and pages second.&lt;/p&gt;</description>
+first and pages second.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -120,7 +136,9 @@ first and pages second.&lt;/p&gt;</description>
 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
 talk was just under two hours long and was well received by the audience
 (approximately 25 developers). The presentation was broadcast through Google
-Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;</description>
+Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -133,7 +151,9 @@ Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4L
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -144,7 +164,9 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</descr
       <guid>https://jacob-walker.com/portfolio/twig.html</guid>
       <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
-installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
+installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -155,7 +177,9 @@ installing/configuring Twig, rendering templates, and writing templates.&lt;/p&g
       <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
 Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
-hackathon to kick-start development on the community site.&lt;/p&gt;</description>
+hackathon to kick-start development on the community site.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -177,7 +201,9 @@ hackathon to kick-start development on the community site.&lt;/p&gt;</descriptio
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
 README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
-you never wrote that poem Junior year!&lt;/p&gt;</description>
+you never wrote that poem Junior year!&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -191,7 +217,9 @@ As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
 dozens of time per day. I found an API from the &lt;a href=&#34;http://www.geocommunicator.gov/&#34;&gt;Department of the Interior&amp;rsquo;s
 Bureau of Land Management&lt;/a&gt; which accepts coordinates and responds with the
-exact information my friend needed.&lt;/p&gt;</description>
+exact information my friend needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -203,7 +231,9 @@ exact information my friend needed.&lt;/p&gt;</description>
       <description>&lt;p&gt;Natural Organic Warehouse (NOW) is a distributor of organic products for
 farming, gardening, and landscaping purposes. Their slogan is &amp;ldquo;better, cleaner,
 sustainable choices.&amp;rdquo; Through my consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
-LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;</description>
+LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -217,7 +247,9 @@ education training to insurance agents. My consulting company &lt;a href=&#34;ht
 Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows
 agents to purchase and schedule classes. Additionally agents can download
 documents associated with their course and take related quizzes to prepare for
-their state license exam.&lt;/p&gt;</description>
+their state license exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -229,7 +261,9 @@ their state license exam.&lt;/p&gt;</description>
       <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
 organization. YLW supports local families through various charitable events and
 activities. My consulting company was hired to develop an online application
-where people could RSVP for different activities.&lt;/p&gt;</description>
+where people could RSVP for different activities.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -241,7 +275,9 @@ where people could RSVP for different activities.&lt;/p&gt;</description>
       <description>&lt;p&gt;When I first read about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; I was intrigued. As an
 experiment I set out to see if I could implement the game in only HTML5,
 Canvas, CSS and pure JavaScript. The game works in both desktop and mobile
-browsers.&lt;/p&gt;</description>
+browsers.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -252,7 +288,9 @@ browsers.&lt;/p&gt;</description>
       <guid>https://jacob-walker.com/portfolio/dotfiles.html</guid>
       <description>&lt;p&gt;It seems like every *nix developer hosts at least their bashrc file on GitHub
 and I am no exception. My repo uses the Ruby gem &lt;a href=&#34;https://github.com/technicalpickles/homesick&#34;&gt;homesick&lt;/a&gt; to easily
-keep my config files in sync.&lt;/p&gt;</description>
+keep my config files in sync.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -264,7 +302,9 @@ keep my config files in sync.&lt;/p&gt;</description>
       <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
 efficiency combined with its extendability have yet to leave me seriously
 wanting for any features. I have made some contributions back to the vim
-ecosystem.&lt;/p&gt;</description>
+ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

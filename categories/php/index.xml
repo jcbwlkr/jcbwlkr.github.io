@@ -22,7 +22,9 @@ As part of his duties he has to translate latitude / longitude coordinates into
 state, township, range, and section information. He was doing this by hand
 dozens of time per day. I found an API from the &lt;a href=&#34;http://www.geocommunicator.gov/&#34;&gt;Department of the Interior&amp;rsquo;s
 Bureau of Land Management&lt;/a&gt; which accepts coordinates and responds with the
-exact information my friend needed.&lt;/p&gt;</description>
+exact information my friend needed.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +37,9 @@ exact information my friend needed.&lt;/p&gt;</description>
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -47,7 +51,9 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</descr
       <description>&lt;p&gt;Natural Organic Warehouse (NOW) is a distributor of organic products for
 farming, gardening, and landscaping purposes. Their slogan is &amp;ldquo;better, cleaner,
 sustainable choices.&amp;rdquo; Through my consulting company &lt;a href=&#34;http://tortugas-llc.com&#34;&gt;Tortugas Consulting,
-LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;</description>
+LLC&lt;/a&gt; I helped to develop their online presence.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -61,7 +67,9 @@ education training to insurance agents. My consulting company &lt;a href=&#34;ht
 Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows
 agents to purchase and schedule classes. Additionally agents can download
 documents associated with their course and take related quizzes to prepare for
-their state license exam.&lt;/p&gt;</description>
+their state license exam.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -72,7 +80,9 @@ their state license exam.&lt;/p&gt;</description>
       <guid>https://jacob-walker.com/portfolio/twig.html</guid>
       <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
-installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
+installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -83,7 +93,9 @@ installing/configuring Twig, rendering templates, and writing templates.&lt;/p&g
       <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
-thousands of companies around the world.&lt;/p&gt;</description>
+thousands of companies around the world.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -106,7 +118,9 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

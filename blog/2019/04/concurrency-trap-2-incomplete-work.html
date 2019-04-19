@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+<meta name="generator" content="Hugo 0.47" />
+
+
+<link rel="canonical" url="https://www.ardanlabs.com/blog/2019/04/concurrency-trap-2-incomplete-work.html" />
+
+
+
+
+
+
+
+
+
+
+<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/readable/bootstrap.min.css" rel="stylesheet" integrity="sha384-Li5uVfY2bSkD3WQyiHX8tJd0aMF91rMrQP5aAewFkHkVSTT2TmD2PehZeMmm7aiL" crossorigin="anonymous">
+
+
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" rel="stylesheet" crossorigin="anonymous">
+
+
+
+<link rel="stylesheet" href="/css/highlight.js/vs.css">
+
+
+<link rel="stylesheet" href="/css/main.css" >
+
+
+<link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="/images/icons/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="/images/icons/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/images/icons/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+
+<meta property="og:title" content="Concurrency Trap #2: Incomplete Work" />
+<meta property="og:description" content="One of the traps of concurrency is &#34;incomplete work&#34; which occurs when a program terminates before outstanding Goroutines complete. Depending on the program, this may be a serious problem. This post demonstrates the trap and discusses possible solutions." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html" />
+<meta property="og:type" content="article" />
+
+<meta property="og:image" content="https://www.gravatar.com/avatar/0ee0ed1d5c1b450c2c76651dd62f38c4.png?s=300" />
+
+<title>Concurrency Trap #2: Incomplete Work &middot; jcbwlkr</title>
+</head>
+
+
+<body>
+  <div class="container">
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="container">
+      <div class="navbar-header">
+        <a href="/" class="navbar-brand">jcbwlkr</a>
+        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse navbar-right collapse" id="navbar-main">
+        <ul class="nav navbar-nav">
+          
+          <li
+            class="active"
+            
+          >
+            <a href="/blog.html"><i class='fa fa-book'></i> Blog</a>
+          </li>
+          
+          <li
+            
+            
+          >
+            <a href="/portfolio.html"><i class='fa fa-briefcase'></i> Portfolio</a>
+          </li>
+          
+          <li
+            
+            
+          >
+            <a href="/resume/jacob_walker_resume.pdf"><i class='fa fa-file'></i> Resume</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container">
+    <article>
+      <header>
+        <h1>Concurrency Trap #2: Incomplete Work</h1>
+        <div class="post-meta">
+  
+  <div>
+    
+      <i class="fa fa-calendar fa-fw"></i>
+      <time>2019-04-18</time>
+    
+
+    
+      
+      
+        <i class="fa fa-folder fa-fw"></i>
+        
+          <a href="https://jacob-walker.com/categories/go.html" alt="go">go</a>
+          
+        
+      
+    
+
+    
+      
+      
+        <i class="fa fa-tags fa-fw"></i>
+        
+          <a href="https://jacob-walker.com/tags/concurrency.html">concurrency</a>
+        
+      
+    
+  </div>
+</div>
+
+      </header>
+
+      
+
+<p>This post was originally published on the <a href="https://www.ardanlabs.com/blog/2019/04/concurrency-trap-2-incomplete-work.html">Ardan Labs Blog</a>.</p>
+
+<h3 id="introduction">Introduction</h3>
+
+<p>In my first post on <a href="https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html">Goroutine Leaks</a>, I mentioned that concurrency is a useful tool but it comes with certain traps that don&rsquo;t exist in synchronous programs. To continue with this theme, I will introduce a new trap called incomplete work. Incomplete work occurs when a program terminates before outstanding Goroutines (non-main goroutines) complete. Depending on the nature of the Goroutine that is being terminated forcefully, this may be a serious problem.</p>
+
+<h3 id="incomplete-work">Incomplete Work</h3>
+
+<p>To see a simple example of incomplete work, examine this program.</p>
+
+<p><strong>Listing 1</strong><br />
+<a href="https://play.golang.org/p/VORJoAD2oAh">https://play.golang.org/p/VORJoAD2oAh</a></p>
+
+<pre><code class="language-go">5 func main() {
+6     fmt.Println(&quot;Hello&quot;)
+7     go fmt.Println(&quot;Goodbye&quot;)
+8 }
+</code></pre>
+
+<p>The program in Listing 1 prints <code>&quot;Hello&quot;</code> on line 6 and then on line 7, the program calls <code>fmt.Println</code> again but does so within the scope of a different Goroutine. Immediately after scheduling this new Goroutine, the program reaches the end of the <code>main</code> function and terminates. If you run this program you won&rsquo;t see the &ldquo;Goodbye&rdquo; message because in the <a href="https://golang.org/ref/spec#Program_execution">Go specification</a> there is a rule:</p>
+
+<blockquote>
+<p><em>&ldquo;Program execution begins by initializing the main package and then invoking the function <code>main</code>. When that function invocation returns, the program exits. It does not wait for other (non-main) goroutines to complete.&rdquo;</em></p>
+</blockquote>
+
+<p>The spec is clear that your program will not wait for any outstanding Goroutines to finish when the program returns from the <code>main</code> function. This is a good thing! Consider how easy it is to let a Goroutine leak or have a Goroutine run for a very long time. If your program waited for non-main Goroutines to finish before it could be terminated, it could be stuck in some kind of zombie state and never terminate.</p>
+
+<p>However, this termination behavior becomes a problem when you start a Goroutine to do something important, but the <code>main</code> function does not know to wait for it to complete. This type of scenario can lead to integrity issues such as corrupting databases, file systems, or losing data.</p>
+
+<h3 id="a-real-example">A Real Example</h3>
+
+<p>At Ardan Labs, my team built a web service for a client that required certain events to be tracked. The system for recording events had a method similar to the type <code>Tracker</code> shown below in Listing 2:</p>
+
+<p><strong>Listing 2</strong><br />
+<a href="https://play.golang.org/p/8LoUoCdrT7T">https://play.golang.org/p/8LoUoCdrT7T</a></p>
+
+<pre><code class="language-go"> 9 // Tracker knows how to track events for the application.
+10 type Tracker struct{}
+11 
+12 // Event records an event to a database or stream.
+13 func (t *Tracker) Event(data string) {
+14     time.Sleep(time.Millisecond) // Simulate network write latency.
+15     log.Println(data)
+16 }
+</code></pre>
+
+<p>The client was concerned that tracking these events would add unnecessary latency to response times and wanted to perform the tracking asynchronously. <strong>It is unwise to make assumptions about performance</strong>, so our first task was to measure latency of the service with events tracked in a straight-forward and synchronous approach. In this case, the latency was unacceptably high and the team decided an asynchronous approach was needed. If the synchronous approach was fast enough then this story would be over as we would have moved on to more important things.</p>
+
+<p>With that in mind, the handlers that tracked events were initially written like this:</p>
+
+<p><strong>Listing 3</strong><br />
+<a href="https://play.golang.org/p/8LoUoCdrT7T">https://play.golang.org/p/8LoUoCdrT7T</a></p>
+
+<pre><code class="language-go">18 // App holds application state.
+19 type App struct {
+20     track Tracker
+21 }
+22 
+23 // Handle represents an example handler for the web service.
+24 func (a *App) Handle(w http.ResponseWriter, r *http.Request) {
+25 
+26     // Do some actual work.
+27 
+28     // Respond to the client.
+29     w.WriteHeader(http.StatusCreated)
+30 
+31     // Fire and Hope.
+32     // BUG: We are not managing this goroutine.
+33     go a.track.Event(&quot;this event&quot;)
+34 }
+</code></pre>
+
+<p>The significant part of the code in listing 3 is line 33. This is where the <code>a.track.Event</code> method is being called within the scope of a new Goroutine. This had the desired effect of tracking events asynchronously without adding latency to the request. However, this code falls into the <em>incomplete work</em> trap and must be refactored. Any Goroutine created on line 33 has no guarantee of running or finishing. This is an integrity issue as events can be lost when the server shuts down.</p>
+
+<h3 id="refactor-for-guarantees">Refactor For Guarantees</h3>
+
+<p>To avoid the trap, the team modified the <code>Tracker</code> type to manage the Goroutines itself. The type uses a <code>sync.WaitGroup</code> to keep a count of open Goroutines and provides a <code>Shutdown</code> method for the <code>main</code> function to call which waits until all Goroutines have finished.</p>
+
+<p>First the handlers were modified to not create Goroutines directly. The only change in Listing 4 is line 53 which no longer includes the <code>go</code> keyword.</p>
+
+<p><strong>Listing 4</strong><br />
+<a href="https://play.golang.org/p/BMah6_C57-l">https://play.golang.org/p/BMah6_C57-l</a></p>
+
+<pre><code class="language-go">44 // Handle represents an example handler for the web service.
+45 func (a *App) Handle(w http.ResponseWriter, r *http.Request) {
+46 
+47     // Do some actual work.
+48 
+49     // Respond to the client.
+50     w.WriteHeader(http.StatusCreated)
+51 
+52     // Track the event.
+53     a.track.Event(&quot;this event&quot;)
+54 }
+</code></pre>
+
+<p>Next the <code>Tracker</code> type was rewritten to manage Goroutines itself.</p>
+
+<p><strong>Listing 5</strong><br />
+<a href="https://play.golang.org/p/BMah6_C57-l">https://play.golang.org/p/BMah6_C57-l</a></p>
+
+<pre><code class="language-go">10 // Tracker knows how to track events for the application.
+11 type Tracker struct {
+12     wg sync.WaitGroup
+13 }
+14 
+15 // Event starts tracking an event. It runs asynchronously to
+16 // not block the caller. Be sure to call the Shutdown function
+17 // before the program exits so all tracked events finish.
+18 func (t *Tracker) Event(data string) {
+19 
+20     // Increment counter so Shutdown knows to wait for this event.
+21     t.wg.Add(1)
+22 
+23     // Track event in a goroutine so caller is not blocked.
+24     go func() {
+25 
+26         // Decrement counter to tell Shutdown this goroutine finished.
+27         defer t.wg.Done()
+28 
+29         time.Sleep(time.Millisecond) // Simulate network write latency.
+30         log.Println(data)
+31     }()
+32 }
+33 
+34 // Shutdown waits for all tracked events to finish processing.
+35 func (t *Tracker) Shutdown() {
+36     t.wg.Wait()
+37 }
+</code></pre>
+
+<p>In listing 5, line 12 adds a <code>sync.WaitGroup</code> to the type definition of <code>Tracker</code>. Inside the <code>Event</code> method on line 21, <code>t.wg.Add(1)</code> is called. This increments the counter to account for the Goroutine that is created on line 24. As soon as that Goroutine is created, the <code>Event</code> function returns which is what satisfies the client&rsquo;s requirement of minimizing event tracking latency. The Goroutine that is created does its work and when it&rsquo;s done it calls <code>t.wg.Done()</code> on line 27. Calling the <code>Done</code> method decrements the counter so the WaitGroup knows this Goroutine has finished.</p>
+
+<p>The calls to <code>Add</code> and <code>Done</code> are useful for tracking the number of active Goroutines but the program must still be instructed to wait for them to finish. To allow this, the <code>Tracker</code> type gains a new method <code>Shutdown</code> on line 35. The simplest implementation of this function is to call <code>t.wg.Wait()</code>, which blocks until the Goroutine count is reduced to 0. Finally this method must be called from <code>func main</code> as in listing 6:</p>
+
+<p><strong>Listing 6</strong><br />
+<a href="https://play.golang.org/p/BMah6_C57-l">https://play.golang.org/p/BMah6_C57-l</a></p>
+
+<pre><code class="language-go">56 func main() {
+57 
+58     // Start a server.
+59     // Details not shown...
+60     var a App
+61 
+62     // Shut the server down.
+63     // Details not shown...
+64 
+65     // Wait for all event goroutines to finish.
+66     a.track.Shutdown()
+67 }
+</code></pre>
+
+<p>The important part of listing 6 is line 66 which blocks <code>func main</code> from terminating until <code>a.track.Shutdown()</code> finishes.</p>
+
+<h3 id="but-maybe-don-t-wait-too-long">But maybe don&rsquo;t wait too long</h3>
+
+<p>The implementation shown for the <code>Shutdown</code> method is simple and does the job needed; it waits for the Goroutines to finish. Unfortunately, there is no limit on how long it will wait. Depending on your production environment you might not be willing to wait indefinitely for your program to shut down. To add a deadline to the <code>Shutdown</code> method, the team changed it to this:</p>
+
+<p><strong>Listing 7</strong><br />
+<a href="https://play.golang.org/p/p4gsDkpw1Gh">https://play.golang.org/p/p4gsDkpw1Gh</a></p>
+
+<pre><code class="language-go">36 // Shutdown waits for all tracked events to finish processing
+37 // or for the provided context to be canceled.
+38 func (t *Tracker) Shutdown(ctx context.Context) error {
+39 
+40     // Create a channel to signal when the waitgroup is finished.
+41     ch := make(chan struct{})
+42 
+43     // Create a goroutine to wait for all other goroutines to
+44     // be done then close the channel to unblock the select.
+45     go func() {
+46         t.wg.Wait()
+47         close(ch)
+48     }()
+49 
+50     // Block this function from returning. Wait for either the
+51     // waitgroup to finish or the context to expire.
+52     select {
+53     case &lt;-ch:
+54         return nil
+55     case &lt;-ctx.Done():
+56         return errors.New(&quot;timeout&quot;)
+57     }
+58 }
+</code></pre>
+
+<p>Now in Listing 7 on line 38 the <code>Shutdown</code> method takes a <code>context.Context</code> as input. This is how the caller will limit the time that <code>Shutdown</code> is allowed to wait. In the function on line 41, a channel is created and then on line 45 a Goroutine is launched. This new Goroutine&rsquo;s only job is to wait for the WaitGroup to finish and then close the channel. Finally line 52 starts a <code>select</code> block which waits for either the context to be canceled or the channel to be closed.</p>
+
+<p>Next the team changed the call in <code>func main</code> to this:</p>
+
+<p><strong>Listing 8</strong><br />
+<a href="https://play.golang.org/p/p4gsDkpw1Gh">https://play.golang.org/p/p4gsDkpw1Gh</a></p>
+
+<pre><code class="language-go">86     // Wait up to 5 seconds for all event goroutines to finish.
+87     const timeout = 5 * time.Second
+88     ctx, cancel := context.WithTimeout(context.Background(), timeout)
+89     defer cancel()
+90 
+91     err := a.track.Shutdown(ctx)
+</code></pre>
+
+<p>In listing 8 a context is created in the <code>main</code> function with a 5 second timeout. This is passed to <code>a.track.Shutdown</code> to set the limit on how long <code>main</code> is willing to wait.</p>
+
+<h3 id="conclusion">Conclusion</h3>
+
+<p>With the introduction of Goroutines, the handlers for this server were able to minimize the latency cost for API clients that needed to track events. It would have been easy to just use the <code>go</code> keyword to run this work in the background but that solution has integrity issues. Doing this properly requires putting in the effort to ensure all relevant Goroutines have terminated before letting the program shut down.</p>
+
+<p><em><strong>Concurrency is a useful tool, but it must be used with caution.</strong></em></p>
+
+
+      
+<hr />
+<div class="row">
+  <div class="col-md-6 text-left">
+    
+    <nav class="prev">
+      <a href="https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html"><i class="fa fa-fw fa-chevron-left"></i> Goroutine Leaks - The Abandoned Receivers</a>
+    </nav>
+    
+  </div>
+  <div class="col-md-6 text-right">
+    
+  </div>
+</div>
+
+
+    </article>
+
+    
+<div id="disqus_thread"></div>
+
+<script type="text/javascript">
+(function() {
+  
+  
+  if (window.location.hostname == "localhost") {
+    return;
+  }
+
+  var hr = document.createElement('hr');
+  var t = document.getElementById('disqus_thread');
+  t.parentNode.insertBefore(hr, t);
+
+  var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+  var disqus_shortname = 'jacobwalker0814';
+  dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+  </div>
+
+  <div class="container">
+  <hr>
+  <footer>
+    <p class="pull-left">&copy; Jacob Walker 2018</p>
+    <p class="pull-right">
+      <a href="https://twitter.com/jcbwlkr" class="fa-stack" title="Jacob Walker on Twitter">
+        <i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-twitter fa-stack-1x" aria-hidden="true"></i>
+      </a>
+      <a href="https://github.com/jcbwlkr" class="fa-stack" title="Jacob Walker on Github">
+        <i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-github fa-stack-1x" aria-hidden="true"></i>
+      </a>
+      <a href="https://stackoverflow.com/users/859353/jcbwlkr" class="fa-stack" title="Jacob Walker on Stack Overflow">
+        <i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-stack-overflow fa-stack-1x" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.youtube.com/channel/UC5R8ji-vKH6NhUQTozKn5eg" class="fa-stack" title="Jacob Walker on YouTube">
+        <i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-youtube fa-stack-1x" aria-hidden="true"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/jcbwlkr" class="fa-stack" title="Jacob Walker on LinkedIn">
+        <i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-linkedin fa-stack-1x" aria-hidden="true"></i>
+      </a>
+      <a href="/blog/index.xml" class="fa-stack" title="Blog RSS Feed">
+        <i class="fa fa-square-o fa-stack-2x" aria-hidden="true"></i>
+        <i class="fa fa-rss fa-stack-1x" aria-hidden="true"></i>
+      </a>
+    </p>
+  </footer>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<script src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script type="text/javascript">
+(function() {
+  
+  if (window.location.hostname == "localhost") {
+    return;
+  }
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42678895-1', 'auto');
+  ga('send', 'pageview');
+})();
+</script>
+
+
+</body>
+</html>

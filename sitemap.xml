@@ -88,6 +88,11 @@
   </url>
   
   <url>
+    <loc>https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jacob-walker.com/blog/goroutine-leaks-the-abandoned-receivers.html</loc>
     <lastmod>2018-12-19T00:00:00+00:00</lastmod>
   </url>
@@ -141,7 +146,7 @@
   
   <url>
     <loc>https://jacob-walker.com/blog.html</loc>
-    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -168,7 +173,7 @@
   
   <url>
     <loc>https://jacob-walker.com/tags/concurrency.html</loc>
-    <lastmod>2018-12-19T00:00:00+00:00</lastmod>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   

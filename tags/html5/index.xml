@@ -19,7 +19,9 @@
       <description>&lt;p&gt;When I first read about &lt;a href=&#34;http://en.wikipedia.org/wiki/Conway_game&#34;&gt;Conway&amp;rsquo;s Game of Life&lt;/a&gt; I was intrigued. As an
 experiment I set out to see if I could implement the game in only HTML5,
 Canvas, CSS and pure JavaScript. The game works in both desktop and mobile
-browsers.&lt;/p&gt;</description>
+browsers.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

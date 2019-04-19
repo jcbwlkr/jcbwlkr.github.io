@@ -18,7 +18,9 @@
       <guid>https://jacob-walker.com/portfolio/getting-started-with-go.html</guid>
       <description>&lt;p&gt;This is a talk I presented at the first &lt;a href=&#34;http://lanyrd.com/2015/klf15/&#34;&gt;Kansas Linux Fest&lt;/a&gt; in March 2015.
 I gave it again that month at my company&amp;rsquo;s internal roundtable and again for
-&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;</description>
+&lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; that July.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -31,7 +33,9 @@ I gave it again that month at my company&amp;rsquo;s internal roundtable and aga
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -44,7 +48,9 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</descr
 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; over the different forms and uses of Regular Expressions. The
 talk was just under two hours long and was well received by the audience
 (approximately 25 developers). The presentation was broadcast through Google
-Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;</description>
+Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4LnyHF8dnIk&#34;&gt;YouTube&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -55,7 +61,9 @@ Hangouts On Air and the video is available on &lt;a href=&#34;http://youtu.be/4L
       <guid>https://jacob-walker.com/portfolio/twig.html</guid>
       <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
-installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
+installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -67,7 +75,9 @@ installing/configuring Twig, rendering templates, and writing templates.&lt;/p&g
       <description>&lt;p&gt;When I started using Vim as my primary editor I found my second love. Its pure
 efficiency combined with its extendability have yet to leave me seriously
 wanting for any features. I have made some contributions back to the vim
-ecosystem.&lt;/p&gt;</description>
+ecosystem.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

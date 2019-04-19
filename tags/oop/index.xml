@@ -21,7 +21,9 @@
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,7 +37,9 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>
