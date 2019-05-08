@@ -1,9 +1,23 @@
 {
-	"Students": 970,
-	"Count": 40,
-	"Companies": 23,
-	"Cities": 19,
-	"Countries": 4,
+	"Students": 1397,
+	"StudentsByType": {
+		"Community/Talk": 140,
+		"Community/Training": 85,
+		"Conference/Talk": 355,
+		"Conference/Training": 131,
+		"Corporate/Training": 686
+	},
+	"EventsByType": {
+		"Community/Talk": 7,
+		"Community/Training": 5,
+		"Conference/Talk": 3,
+		"Conference/Training": 2,
+		"Corporate/Training": 26
+	},
+	"Count": 43,
+	"Companies": 25,
+	"Cities": 20,
+	"Countries": 5,
 	"Events": [
 		{
 			"Start": "2013-03-29T00:00:00Z",
@@ -523,6 +537,45 @@
 			"Language": "Service",
 			"Topic": "Go",
 			"Attendees": 25,
+			"URL": ""
+		},
+		{
+			"Start": "2019-04-24T00:00:00Z",
+			"End": "2019-04-26T00:00:00Z",
+			"Location": "Singapore",
+			"Country": "Singapore",
+			"Host": "Singapore Power",
+			"Event": "Corporate",
+			"Type": "Training",
+			"Language": "Go",
+			"Topic": "Go",
+			"Attendees": 26,
+			"URL": ""
+		},
+		{
+			"Start": "2019-04-29T00:00:00Z",
+			"End": "2019-04-30T00:00:00Z",
+			"Location": "Singapore",
+			"Country": "Singapore",
+			"Host": "GopherCon Singapore",
+			"Event": "Conference",
+			"Type": "Training",
+			"Language": "Go",
+			"Topic": "Go",
+			"Attendees": 101,
+			"URL": ""
+		},
+		{
+			"Start": "2019-05-03T00:00:00Z",
+			"End": "2019-05-03T00:00:00Z",
+			"Location": "Singapore",
+			"Country": "Singapore",
+			"Host": "GopherCon Singapore",
+			"Event": "Conference",
+			"Type": "Talk",
+			"Language": "Go",
+			"Topic": "Go",
+			"Attendees": 300,
 			"URL": ""
 		}
 	]

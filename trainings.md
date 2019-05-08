@@ -39,9 +39,10 @@ Dec 11, 2018 | Dec 13, 2018 | San Francisco, CA      | US        | Shipt        
 Feb 12, 2019 | Feb 14, 2019 | Rockville, MD          | US        | Bethesda                | Corporate  | Training            | Go          | Go | 30        |
 Feb 26, 2019 | Feb 28, 2019 | San Francisco, CA      | US        | Lob                     | Corporate  | Training            | Go          | Go | 25        |
 Mar 12, 2019 | Mar 14, 2019 | San Jose, CA           | US        | eBay                    | Corporate  | Training            | Go          | Go | 25        |
-Mar 23, 2019 | Mar 24, 2019 | Boston, MA             | US        | GoBridge                | Community  | Training            | Service     | Go | 10         | https://www.meetup.com/gobridge/events/258872479/
-Mar 26, 2019 | Mar 28, 2019 | Rockville, MD          | US        | Bethesda                | Corporate  | Training            | Service     | Go | 25         |
-# Apr 24, 2019 | Apr 26, 2019 | Singapore              | Singapore | Singapore Power         | Corporate  | Training            | Go          | 0         |
-# Apr 29, 2019 | Apr 30, 2019 | Singapore              | Singapore | GopherCon Singapore     | Conference | Training            | Go          | 0         |
-# May 03, 2019 | May 03, 2019 | Singapore              | Singapore | GopherCon Singapore     | Conference | Talk                | Go          | 0         |
-# Sep 23, 2019 | Sep 25, 2019 | Miami, FL              | US        | OpenGo                  | Conference | Training            | Go          | 0         | https://opengo.io/
+Mar 23, 2019 | Mar 24, 2019 | Boston, MA             | US        | GoBridge                | Community  | Training            | Service     | Go | 10        | https://www.meetup.com/gobridge/events/258872479/
+Mar 26, 2019 | Mar 28, 2019 | Rockville, MD          | US        | Bethesda                | Corporate  | Training            | Service     | Go | 25        |
+Apr 24, 2019 | Apr 26, 2019 | Singapore              | Singapore | Singapore Power         | Corporate  | Training            | Go          | Go | 26        |
+Apr 29, 2019 | Apr 30, 2019 | Singapore              | Singapore | GopherCon Singapore     | Conference | Training            | Go          | Go | 101       |
+May 03, 2019 | May 03, 2019 | Singapore              | Singapore | GopherCon Singapore     | Conference | Talk                | Go          | Go | 300         |
+# May 14, 2019 | May 16, 2019 | Boston, MA             | US        | Wayfair                 | Corporate  | Training            | Service     | Go | 0         |
+# Jun 04, 2019 | Jun 06, 2019 | Boston, MA             | US        | ???????                 | Corporate  | Training            | ??          | Go | 0         |

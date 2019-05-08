@@ -10,6 +10,7 @@ import (
 	"time"
 )
 
+// event is each row in the input.
 type event struct {
 	Start     time.Time
 	End       time.Time
@@ -24,13 +25,16 @@ type event struct {
 	URL       string
 }
 
+// document is the final output
 type document struct {
-	Students  int
-	Count     int
-	Companies int
-	Cities    int
-	Countries int
-	Events    []event
+	Students       int
+	StudentsByType map[string]int
+	EventsByType   map[string]int
+	Count          int
+	Companies      int
+	Cities         int
+	Countries      int
+	Events         []event
 }
 
 func main() {
@@ -50,7 +54,11 @@ func main() {
 		log.Fatal(err)
 	}
 
-	var doc document
+	doc := document{
+		StudentsByType: make(map[string]int),
+		EventsByType:   make(map[string]int),
+	}
+
 	for _, row := range rows[2:] {
 		e := event{
 			Start:     parseTime(row[0]),
@@ -78,6 +86,8 @@ func main() {
 		countries[e.Country]++
 		companies[e.Host]++
 		doc.Students += e.Attendees
+		doc.StudentsByType[e.Event+"/"+e.Type] += e.Attendees
+		doc.EventsByType[e.Event+"/"+e.Type]++
 	}
 
 	doc.Cities = len(cities)
