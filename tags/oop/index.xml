@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Oop on jcbwlkr</title>
+    <title>oop on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/oop.html</link>
-    <description>Recent content in Oop on jcbwlkr</description>
+    <description>Recent content in oop on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Jan 2013 00:00:00 -0600</lastBuildDate>
-    
-	<atom:link href="https://jacob-walker.com/tags/oop/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Sun, 06 Jan 2013 00:00:00 -0600</lastBuildDate><atom:link href="https://jacob-walker.com/tags/oop/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing OOP</title>
       <link>https://jacob-walker.com/portfolio/implementing-oop.html</link>
@@ -21,9 +17,7 @@
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -37,9 +31,7 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
     </item>
     
   </channel>

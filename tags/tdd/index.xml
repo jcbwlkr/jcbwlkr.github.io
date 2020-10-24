@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tdd on jcbwlkr</title>
+    <title>tdd on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/tdd.html</link>
-    <description>Recent content in Tdd on jcbwlkr</description>
+    <description>Recent content in tdd on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
-    
-	<atom:link href="https://jacob-walker.com/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate><atom:link href="https://jacob-walker.com/tags/tdd/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ardan Labs</title>
       <link>https://jacob-walker.com/portfolio/ardan-labs.html</link>
@@ -19,35 +15,7 @@
       <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
-services.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Startup Wichita</title>
-      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
-Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
-hackathon to kick-start development on the community site.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>TimeIPS</title>
-      <link>https://jacob-walker.com/portfolio/timeips.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
-      <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
-with my employer TimeIPS. We made a time and attendance system which is used by
-thousands of companies around the world.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+services.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -60,18 +28,7 @@ thousands of companies around the world.&lt;/p&gt;
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>find.torrent</title>
-      <link>https://jacob-walker.com/portfolio/find.torrent.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacob-walker.com/portfolio/find.torrent.html</guid>
-      <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -85,9 +42,38 @@ packages. Gomega specifically provides a collection of matchers for asserting
 that results match expectations. When using these tools to test an API I was
 developing I noticed some common patterns appearing around the assertion of
 HTTP status codes. I created the &lt;code&gt;github.com/jcbwlkr/httpmatchers&lt;/code&gt; package to
-simplify some of those patterns.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+simplify some of those patterns.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>TimeIPS</title>
+      <link>https://jacob-walker.com/portfolio/timeips.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
+      <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
+with my employer TimeIPS. We made a time and attendance system which is used by
+thousands of companies around the world.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Startup Wichita</title>
+      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
+Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
+hackathon to kick-start development on the community site.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>find.torrent</title>
+      <link>https://jacob-walker.com/portfolio/find.torrent.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacob-walker.com/portfolio/find.torrent.html</guid>
+      <description>At home my desktop PC acts as a UPNP media server and is the box I use to download torrents. This machine was inconveniently located in my basement. There were many times when I would want to start a download but the only device nearby is my phone. I found that finding and downloading a torrent file then getting it to my torrent machine was a cumbersome process. Furthermore, many sites that index torrent files contain advertising that ranges from annoying to inappropriate to explicit.</description>
     </item>
     
   </channel>

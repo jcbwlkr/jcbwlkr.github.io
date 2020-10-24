@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Rails on jcbwlkr</title>
+    <title>rails on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/rails.html</link>
-    <description>Recent content in Rails on jcbwlkr</description>
+    <description>Recent content in rails on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/tags/rails/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Young Life Wichita</title>
       <link>https://jacob-walker.com/portfolio/young-life-wichita.html</link>
@@ -19,9 +15,7 @@
       <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
 organization. YLW supports local families through various charitable events and
 activities. My consulting company was hired to develop an online application
-where people could RSVP for different activities.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+where people could RSVP for different activities.&lt;/p&gt;</description>
     </item>
     
   </channel>

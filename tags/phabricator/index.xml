@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Phabricator on jcbwlkr</title>
+    <title>phabricator on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/phabricator.html</link>
-    <description>Recent content in Phabricator on jcbwlkr</description>
+    <description>Recent content in phabricator on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/tags/phabricator/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/tags/phabricator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>TimeIPS</title>
       <link>https://jacob-walker.com/portfolio/timeips.html</link>
@@ -18,9 +14,7 @@
       <guid>https://jacob-walker.com/portfolio/timeips.html</guid>
       <description>&lt;p&gt;From October 2010 to February 2015 the majority of my development focus was
 with my employer TimeIPS. We made a time and attendance system which is used by
-thousands of companies around the world.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+thousands of companies around the world.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="generator" content="Hugo 0.47" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
 
@@ -150,33 +150,24 @@ comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use <code>clone</code> and
 the difference between a shallow copy and a deep copy.</p>
-
-<p></p>
-
 <p>First I examined how you might copy variables in general. Let&rsquo;s start with the
 basics.</p>
-
-<pre><code class="language-php">// Example 1
-$foo = 1;
-$bar = $foo; // Copy by value
-++$bar;
-print $bar; // Outputs 2
-print $foo; // Outputs 1
-</code></pre>
-
-<p><code>$bar</code> is a copy of <code>$foo</code>. Incrementing <code>$bar</code> has no effect on <code>$foo</code>. If we
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Example 1
+</span><span style="color:#75715e"></span>$foo <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+$bar <span style="color:#f92672">=</span> $foo; <span style="color:#75715e">// Copy by value
+</span><span style="color:#75715e"></span><span style="color:#f92672">++</span>$bar;
+<span style="color:#66d9ef">print</span> $bar; <span style="color:#75715e">// Outputs 2
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">print</span> $foo; <span style="color:#75715e">// Outputs 1
+</span></code></pre></div><p><code>$bar</code> is a copy of <code>$foo</code>. Incrementing <code>$bar</code> has no effect on <code>$foo</code>. If we
 wanted different behavior we would need to copy by reference with the use of an
 ampersand.</p>
-
-<pre><code class="language-php">// Example 2
-$foo = 1;
-$bar =&amp; $foo; // Copy by reference
-++$bar;
-print $bar; // Outputs 2
-print $foo; // Outputs 2
-</code></pre>
-
-<p>Now when we increment <code>$bar</code> we are also incrementing <code>$foo</code>. Well, not really.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#75715e">// Example 2
+</span><span style="color:#75715e"></span>$foo <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+$bar <span style="color:#f92672">=&amp;</span> $foo; <span style="color:#75715e">// Copy by reference
+</span><span style="color:#75715e"></span><span style="color:#f92672">++</span>$bar;
+<span style="color:#66d9ef">print</span> $bar; <span style="color:#75715e">// Outputs 2
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">print</span> $foo; <span style="color:#75715e">// Outputs 2
+</span></code></pre></div><p>Now when we increment <code>$bar</code> we are also incrementing <code>$foo</code>. Well, not really.
 <code>$foo</code>, the variable, is a handle or reference to where the data is stored in
 memory. In the first example we copy by value which (more or less) makes a new
 entry in memory and <code>$bar</code> is a handle to that new location. In the second
@@ -184,49 +175,38 @@ example <code>$bar</code> simply copies the handle. There is only one entry in m
 both <code>$foo</code> and <code>$bar</code> point to the same location. What we are actually doing
 when we increment <code>$bar</code> is incrementing the data referenced by <code>$bar</code>. <code>$foo</code>
 references the same data.</p>
-
 <p>Next I looked at how to copy objects. I started with this simple class Project.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
-<pre><code class="language-php">&lt;?php
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Project</span> {
+    <span style="color:#66d9ef">protected</span> $description;
 
-class Project {
-    protected $description;
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setDescription</span>($description) {
+        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">description</span> <span style="color:#f92672">=</span> $description;
 
-    public function setDescription($description) {
-        $this-&gt;description = $description;
-
-        return $this;
+        <span style="color:#66d9ef">return</span> $this;
     }
 
-    public function getDescription() {
-        return $this-&gt;description;
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getDescription</span>() {
+        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">description</span>;
     }
 }
-</code></pre>
-
-<p>I repeated the same copy assignment from Example 1.</p>
-
-<pre><code class="language-php">$project_one = new Project();
-$project_one-&gt;setDescription(&quot;This is my first test project&quot;);
-$project_two = $project_one; // Copying by value?
-</code></pre>
-
-<p>In the previous examples we would have two completely distinct variables that
+</code></pre></div><p>I repeated the same copy assignment from Example 1.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$project_one <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Project</span>();
+$project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setDescription</span>(<span style="color:#e6db74">&#34;This is my first test project&#34;</span>);
+$project_two <span style="color:#f92672">=</span> $project_one; <span style="color:#75715e">// Copying by value?
+</span></code></pre></div><p>In the previous examples we would have two completely distinct variables that
 reference two different addresses in memory. So to see if this holds true we
 can make a change in <code>$project_two</code> and see the impact.</p>
-
-<pre><code class="language-php">$project_two-&gt;setDescription(&quot;A new description for my copied project&quot;);
-print $project_one-&gt;getDescription();
-</code></pre>
-
-<p>Based on Example 1 we might expect that this would print the original
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$project_two<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setDescription</span>(<span style="color:#e6db74">&#34;A new description for my copied project&#34;</span>);
+<span style="color:#66d9ef">print</span> $project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getDescription</span>();
+</code></pre></div><p>Based on Example 1 we might expect that this would print the original
 description we set in <code>$project_one</code>. In fact, it will actually print the new
 description. It appears that the objects are copied by reference. One of the
 things you will often hear is that in PHP 5 objects are copied by reference by
 default. Some research shows that isn&rsquo;t quite true either. Consider this
 explanation from
 <a href="http://php.net/manual/en/language.oop5.references.php">PHP.net</a></p>
-
 <blockquote>
 <p>A PHP reference is an alias, which allows two different variables to write to
 the same value. As of PHP 5, an object variable doesn&rsquo;t contain the object
@@ -236,130 +216,105 @@ argument, returned or assigned to another variable, the different variables
 are not aliases: they hold a copy of the identifier, which points to the same
 object.</p>
 </blockquote>
-
 <p>This means copying an object by value will copy the identifier&hellip; by value.
 This behaves very similarly to copying by reference because the copied
 identifier points to the same object but is not exactly the same. For a more
 detailed explanation of the difference you can visit the source link.</p>
-
 <p>So what if you don&rsquo;t want this behavior? Here enters the <code>clone</code> keyword.</p>
-
-<pre><code class="language-php">$project_one = new Project();
-$project_one-&gt;setDescription(&quot;This is my first test project&quot;);
-$project_two = clone $project_one; // Cloning to get a new object
-</code></pre>
-
-<p>Now $project_two is a clone of <code>$project_one</code> and is its own honest object.
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$project_one <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Project</span>();
+$project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setDescription</span>(<span style="color:#e6db74">&#34;This is my first test project&#34;</span>);
+$project_two <span style="color:#f92672">=</span> <span style="color:#66d9ef">clone</span> $project_one; <span style="color:#75715e">// Cloning to get a new object
+</span></code></pre></div><p>Now $project_two is a clone of <code>$project_one</code> and is its own honest object.
 When we repeat the test with the descriptions we will see that monkeying around
 with <code>$project_two</code>&rsquo;s description has no effect on <code>$project_one</code>.</p>
-
 <p>What happens if the property of a Project is another object? To test this I
 created a new class Person and modified Project to hold a Person</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
-<pre><code class="language-php">&lt;?php
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span> {
+    <span style="color:#66d9ef">protected</span> $name;
 
-class Person {
-    protected $name;
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setName</span>($name) {
+        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">name</span> <span style="color:#f92672">=</span> $name;
 
-    public function setName($name) {
-        $this-&gt;name = $name;
-
-        return $this;
+        <span style="color:#66d9ef">return</span> $this;
     }
 
-    public function getName() {
-        return $this-&gt;name;
-    }
-}
-</code></pre>
-
-<pre><code class="language-php">&lt;?php
-
-class Project {
-    protected $leadDeveloper;
-
-    public function setLeadDeveloper(Person $developer) {
-        $this-&gt;leadDeveloper = $developer;
-
-        return $this;
-    }
-
-    public function getLeadDeveloper() {
-        return $this-&gt;leadDeveloper;
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getName</span>() {
+        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">name</span>;
     }
 }
-</code></pre>
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#f92672">&lt;?</span><span style="color:#a6e22e">php</span>
 
-<p>I then made a Project and set its Lead Developer.</p>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Project</span> {
+    <span style="color:#66d9ef">protected</span> $leadDeveloper;
 
-<pre><code class="language-php">$jacob = new Person();
-$jacob-&gt;setName(&quot;Jacob&quot;);
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">setLeadDeveloper</span>(<span style="color:#a6e22e">Person</span> $developer) {
+        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">leadDeveloper</span> <span style="color:#f92672">=</span> $developer;
 
-$project_one = new Project();
-$project_one-&gt;setLeadDeveloper($jacob);
-$project_two = clone $project_one;
+        <span style="color:#66d9ef">return</span> $this;
+    }
 
-$matthew = new Person();
-$matthew-&gt;setName(&quot;Matthew&quot;);
-$project_two-&gt;setLeadDeveloper($matthew);
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> <span style="color:#a6e22e">getLeadDeveloper</span>() {
+        <span style="color:#66d9ef">return</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">leadDeveloper</span>;
+    }
+}
+</code></pre></div><p>I then made a Project and set its Lead Developer.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$jacob <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>();
+$jacob<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setName</span>(<span style="color:#e6db74">&#34;Jacob&#34;</span>);
 
-print $project_one-&gt;getLeadDeveloper()-&gt;getName(); // Outputs &quot;Jacob&quot;
-</code></pre>
+$project_one <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Project</span>();
+$project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setLeadDeveloper</span>($jacob);
+$project_two <span style="color:#f92672">=</span> <span style="color:#66d9ef">clone</span> $project_one;
 
-<p>As <code>$project_two</code> is a clone, setting a new value for
+$matthew <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>();
+$matthew<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setName</span>(<span style="color:#e6db74">&#34;Matthew&#34;</span>);
+$project_two<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setLeadDeveloper</span>($matthew);
+
+<span style="color:#66d9ef">print</span> $project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getLeadDeveloper</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getName</span>(); <span style="color:#75715e">// Outputs &#34;Jacob&#34;
+</span></code></pre></div><p>As <code>$project_two</code> is a clone, setting a new value for
 <code>$project_two-&gt;leadDeveloper</code> did not change <code>$project_one</code>. Great, right?
 Let&rsquo;s look at this from a different angle.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">$jacob <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Person</span>();
+$jacob<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setName</span>(<span style="color:#e6db74">&#34;Jacob&#34;</span>);
 
-<pre><code class="language-php">$jacob = new Person();
-$jacob-&gt;setName(&quot;Jacob&quot;);
+$project_one <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">Project</span>();
+$project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setLeadDeveloper</span>($jacob);
+$project_two <span style="color:#f92672">=</span> <span style="color:#66d9ef">clone</span> $project_one;
 
-$project_one = new Project();
-$project_one-&gt;setLeadDeveloper($jacob);
-$project_two = clone $project_one;
+$project_two<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getLeadDeveloper</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">setName</span>(<span style="color:#e6db74">&#34;Matthew&#34;</span>);
 
-$project_two-&gt;getLeadDeveloper()-&gt;setName(&quot;Matthew&quot;);
-
-print $project_one-&gt;getLeadDeveloper()-&gt;getName(); // Outputs &quot;Matthew&quot;
-</code></pre>
-
-<p>The plot thickens. Here we can see that <code>$project_one-&gt;leadDeveloper</code> and
+<span style="color:#66d9ef">print</span> $project_one<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getLeadDeveloper</span>()<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">getName</span>(); <span style="color:#75715e">// Outputs &#34;Matthew&#34;
+</span></code></pre></div><p>The plot thickens. Here we can see that <code>$project_one-&gt;leadDeveloper</code> and
 <code>$project_two-&gt;leadDeveloper</code> both point to the same object. $project_one
 and $project_two are both unique objects but they do not have unique values for
 properties that are references or object identifiers. This is what is meant by
 a shallow copy. If we wanted the two projects to be completely separate we
 would need to change the default behavior of clone to perform a deep copy
 instead of a shallow copy. To do this I define the magic <code>__clone</code> method.</p>
-
-<pre><code class="language-php">class Project {
-    // Snip properties, getters, and setters
-
-    public function __clone() {
-        $this-&gt;leadDeveloper = clone $this-&gt;leadDeveloper;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Project</span> {
+    <span style="color:#75715e">// Snip properties, getters, and setters
+</span><span style="color:#75715e"></span>
+    <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __clone() {
+        $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">leadDeveloper</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">clone</span> $this<span style="color:#f92672">-&gt;</span><span style="color:#a6e22e">leadDeveloper</span>;
     }
 }
-</code></pre>
-
-<p>After PHP clones an object it will attempt to call the <code>__clone</code> method on
+</code></pre></div><p>After PHP clones an object it will attempt to call the <code>__clone</code> method on
 <strong>the new cloned object</strong>. Now when we perform the previous test we can see
 that <code>$project_one-&gt;leadDeveloper</code> and <code>$project_two-&gt;leadDeveloper</code>
 point to two completely different objects. This is a deep copy.</p>
-
 <p>Note that a common technique for ensuring a deep copy is to serialize then
 immediately unserialize each of a class&rsquo;s object properties. Take for example
 this code from PHPExcel</p>
-
-<pre><code class="language-php">public function __clone() {
-    foreach($this as $key =&gt; $val) {
-        if (is_object($val) || (is_array($val))) {
-            $this-&gt;{$key} = unserialize(serialize($val));
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">function</span> __clone() {
+    <span style="color:#66d9ef">foreach</span>($this <span style="color:#66d9ef">as</span> $key <span style="color:#f92672">=&gt;</span> $val) {
+        <span style="color:#66d9ef">if</span> (<span style="color:#a6e22e">is_object</span>($val) <span style="color:#f92672">||</span> (<span style="color:#a6e22e">is_array</span>($val))) {
+            $this<span style="color:#f92672">-&gt;</span>{$key} <span style="color:#f92672">=</span> <span style="color:#a6e22e">unserialize</span>(<span style="color:#a6e22e">serialize</span>($val));
         }
     }
 }
-</code></pre>
-
-<p>This method forces PHP to split apart any object properties from their
+</code></pre></div><p>This method forces PHP to split apart any object properties from their
 references and return new instances.</p>
-
 <p>Additional information and examples about cloning can be found on
 <a href="http://php.net/manual/en/language.oop5.cloning.php">php.net</a></p>
 

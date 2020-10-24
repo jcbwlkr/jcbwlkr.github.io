@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="generator" content="Hugo 0.47" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
 <link rel="canonical" url="https://www.ardanlabs.com/blog/2018/11/goroutine-leaks-the-forgotten-sender.html" />
@@ -146,170 +146,121 @@
 
       </header>
 
-      
-
-<p>This post was originally published on the <a href="https://www.ardanlabs.com/blog/2018/11/goroutine-leaks-the-forgotten-sender.html">Ardan Labs Blog</a>.</p>
-
+      <p>This post was originally published on the <a href="https://www.ardanlabs.com/blog/2018/11/goroutine-leaks-the-forgotten-sender.html">Ardan Labs Blog</a>.</p>
 <h3 id="introduction">Introduction</h3>
-
 <p>Concurrent programming allows developers to solve problems using more than one path of execution and is often used in an attempt to improve performance. Concurrency doesn’t mean these multiple paths are executing in parallel; it means these paths are executing out-of-order instead of sequentially. Historically, this type of programming is facilitated using libraries that are either provided by a standard library or from 3rd party developers.</p>
-
 <p>In Go, concurrency features like Goroutines and channels are built into the language and runtime to reduce or eliminate the need for libraries. This has created the illusion that writing concurrent programs in Go is easy. You must be cautious when deciding to use concurrency as it comes with some unique side effects or traps if not used correctly. These traps can create complexity and nasty bugs if you’re not careful.</p>
-
 <p>The traps I will discuss in this post are related to Goroutine leaks.</p>
-
 <h3 id="leaking-goroutines">Leaking Goroutines</h3>
-
 <p>When it comes to memory management, Go deals with many of the details for you. The Go compiler decides where values are located in memory using <a href="https://www.ardanlabs.com/blog/2017/05/language-mechanics-on-escape-analysis.html">escape analysis</a>. The runtime tracks and manages heap allocations through the use of the <a href="https://blog.golang.org/ismmkeynote">garbage collector</a>. Though it’s not impossible to create <a href="https://en.wikipedia.org/wiki/Memory_leak">memory leaks</a> in your applications, the chances are greatly reduced.</p>
-
 <p>A common type of memory leak is leaking Goroutines. If you start a Goroutine that you expect to eventually terminate but it never does then it has leaked. It lives for the lifetime of the application and any memory allocated for the Goroutine can’t be released. This is part of the reasoning behind the advice &ldquo;<a href="https://dave.cheney.net/2016/12/22/never-start-a-goroutine-without-knowing-how-it-will-stop">Never start a goroutine without knowing how it will stop</a>&rdquo;.</p>
-
 <p>To illustrate a basic Goroutine leak, look at the following code:</p>
-
-<p><strong>Listing 1</strong><br />
+<p><strong>Listing 1</strong><br>
 <a href="https://play.golang.org/p/dsu3PARM24K">https://play.golang.org/p/dsu3PARM24K</a></p>
-
-<pre><code class="language-go">31 // leak is a buggy function. It launches a goroutine that
-32 // blocks receiving from a channel. Nothing will ever be
-33 // sent on that channel and the channel is never closed so
-34 // that goroutine will be blocked forever.
-35 func leak() {
-36     ch := make(chan int)
-37 
-38     go func() {
-39         val := &lt;-ch
-40         fmt.Println(&quot;We received a value:&quot;, val)
-41     }()
-42 }
-</code></pre>
-
-<p>Listing 1 defines a function named <code>leak</code>. The function creates a channel on line 36 that allows Goroutines to pass integer data. Then on line 38 Goroutine is created which blocks on line 39 waiting to receive a value from the channel. While that Goroutine is waiting, the <code>leak</code> function returns. At this point, no other part of the program can send a signal over the channel. This leaves the Goroutine blocked on line 39 waiting indefinitely. The <code>fmt.Println</code> call on line 40 will never happen.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ae81ff">31</span> <span style="color:#75715e">// leak is a buggy function. It launches a goroutine that
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">32</span> <span style="color:#75715e">// blocks receiving from a channel. Nothing will ever be
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">33</span> <span style="color:#75715e">// sent on that channel and the channel is never closed so
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">34</span> <span style="color:#75715e">// that goroutine will be blocked forever.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">35</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">leak</span>() {
+<span style="color:#ae81ff">36</span>     <span style="color:#a6e22e">ch</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#66d9ef">int</span>)
+<span style="color:#ae81ff">37</span> 
+<span style="color:#ae81ff">38</span>     <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() {
+<span style="color:#ae81ff">39</span>         <span style="color:#a6e22e">val</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">ch</span>
+<span style="color:#ae81ff">40</span>         <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;We received a value:&#34;</span>, <span style="color:#a6e22e">val</span>)
+<span style="color:#ae81ff">41</span>     }()
+<span style="color:#ae81ff">42</span> }
+</code></pre></div><p>Listing 1 defines a function named <code>leak</code>. The function creates a channel on line 36 that allows Goroutines to pass integer data. Then on line 38 Goroutine is created which blocks on line 39 waiting to receive a value from the channel. While that Goroutine is waiting, the <code>leak</code> function returns. At this point, no other part of the program can send a signal over the channel. This leaves the Goroutine blocked on line 39 waiting indefinitely. The <code>fmt.Println</code> call on line 40 will never happen.</p>
 <p>In this example, the Goroutine leak could be quickly identified during a code review. Unfortunately, Goroutine leaks in production code are usually more difficult to find. I can’t show every possible way a Goroutine leak can happen, but this post will detail one kind of Goroutine leak that you may encounter:</p>
-
 <h3 id="leak-the-forgotten-sender">Leak: The Forgotten Sender</h3>
-
 <p><em><strong>For this leak example you will see a Goroutine that is blocked indefinitely, waiting to send a value on a channel.</strong></em></p>
-
 <p>The program we will look at finds a record based on some search term which is then printed. The program is built around a function called <code>search</code>:</p>
-
-<p><strong>Listing 2</strong><br />
+<p><strong>Listing 2</strong><br>
 <a href="https://play.golang.org/p/o6_eMjxMVFv">https://play.golang.org/p/o6_eMjxMVFv</a></p>
-
-<pre><code class="language-go">29 // search simulates a function that finds a record based
-30 // on a search term. It takes 200ms to perform this work.
-31 func search(term string) (string, error) {
-32     time.Sleep(200 * time.Millisecond)
-33     return &quot;some value&quot;, nil
-34 }
-</code></pre>
-
-<p>The <code>search</code> function on line 31 in Listing 2 is a mock implementation to simulate a long running operation like a database query or a web call. In this example, it is hard-coded to take 200ms.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ae81ff">29</span> <span style="color:#75715e">// search simulates a function that finds a record based
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">30</span> <span style="color:#75715e">// on a search term. It takes 200ms to perform this work.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">31</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">term</span> <span style="color:#66d9ef">string</span>) (<span style="color:#66d9ef">string</span>, <span style="color:#66d9ef">error</span>) {
+<span style="color:#ae81ff">32</span>     <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Sleep</span>(<span style="color:#ae81ff">200</span> <span style="color:#f92672">*</span> <span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Millisecond</span>)
+<span style="color:#ae81ff">33</span>     <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#34;some value&#34;</span>, <span style="color:#66d9ef">nil</span>
+<span style="color:#ae81ff">34</span> }
+</code></pre></div><p>The <code>search</code> function on line 31 in Listing 2 is a mock implementation to simulate a long running operation like a database query or a web call. In this example, it is hard-coded to take 200ms.</p>
 <p>The program calls the <code>search</code> function as shown in Listing 3.</p>
-
-<p><strong>Listing 3</strong><br />
+<p><strong>Listing 3</strong><br>
 <a href="https://play.golang.org/p/o6_eMjxMVFv">https://play.golang.org/p/o6_eMjxMVFv</a></p>
-
-<pre><code class="language-go">17 // process is the work for the program. It finds a record
-18 // then prints it.
-19 func process(term string) error {
-20     record, err := search(term)
-21     if err != nil {
-22         return err
-23     }
-24
-25     fmt.Println(&quot;Received:&quot;, record)
-26     return nil
-27 }
-</code></pre>
-
-<p>In Listing 3 on line 19, a function called <code>process</code> is defined which takes a single <code>string</code> argument representing a search term. On line 20, the <code>term</code> variable is then passed to the <code>search</code> function which returns a record and an error. If an error occurs, the error is returned to the caller on line 22. If there was no error, the record is printed on line 25.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ae81ff">17</span> <span style="color:#75715e">// process is the work for the program. It finds a record
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">18</span> <span style="color:#75715e">// then prints it.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">19</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">process</span>(<span style="color:#a6e22e">term</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">error</span> {
+<span style="color:#ae81ff">20</span>     <span style="color:#a6e22e">record</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">term</span>)
+<span style="color:#ae81ff">21</span>     <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+<span style="color:#ae81ff">22</span>         <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">err</span>
+<span style="color:#ae81ff">23</span>     }
+<span style="color:#ae81ff">24</span>
+<span style="color:#ae81ff">25</span>     <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Received:&#34;</span>, <span style="color:#a6e22e">record</span>)
+<span style="color:#ae81ff">26</span>     <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+<span style="color:#ae81ff">27</span> }
+</code></pre></div><p>In Listing 3 on line 19, a function called <code>process</code> is defined which takes a single <code>string</code> argument representing a search term. On line 20, the <code>term</code> variable is then passed to the <code>search</code> function which returns a record and an error. If an error occurs, the error is returned to the caller on line 22. If there was no error, the record is printed on line 25.</p>
 <p>For some applications the latency incurred when calling <code>search</code> sequentially may be unacceptable. Assuming the <code>search</code> function can’t be made to run any faster, the <code>process</code> function can be changed to not consume the total latency cost incurred by <code>search</code>.</p>
-
 <p>To do this, a Goroutine can be used as shown in Listing 4 below. Unfortunately this first attempt is buggy as it creates a potential Goroutine leak.</p>
-
-<p><strong>Listing 4</strong><br />
+<p><strong>Listing 4</strong><br>
 <a href="https://play.golang.org/p/m0DHuchgX0A">https://play.golang.org/p/m0DHuchgX0A</a></p>
-
-<pre><code class="language-go">38 // result wraps the return values from search. It allows us
-39 // to pass both values across a single channel.
-40 type result struct {
-41     record string
-42     err    error
-43 }
-44 
-45 // process is the work for the program. It finds a record
-46 // then prints it. It fails if it takes more than 100ms.
-47 func process(term string) error {
-48 
-49     // Create a context that will be canceled in 100ms.
-50     ctx, cancel := context.WithTimeout(context.Background(), 100*time.Millisecond)
-51     defer cancel()
-52 
-53     // Make a channel for the goroutine to report its result.
-54     ch := make(chan result)
-55 
-56     // Launch a goroutine to find the record. Create a result
-57     // from the returned values to send through the channel.
-58     go func() {
-59         record, err := search(term)
-60         ch &lt;- result{record, err}
-61     }()
-62 
-63     // Block waiting to either receive from the goroutine's
-64     // channel or for the context to be canceled.
-65     select {
-66     case &lt;-ctx.Done():
-67         return errors.New(&quot;search canceled&quot;)
-68     case result := &lt;-ch:
-69         if result.err != nil {
-70             return result.err
-71         }
-72         fmt.Println(&quot;Received:&quot;, result.record)
-73         return nil
-74     }
-75 }
-</code></pre>
-
-<p>In listing 4 on line 50, the <code>process</code> function is rewritten to create a <code>Context</code> that will be canceled in 100ms. For more information on how to use <code>Context</code> read the <a href="https://blog.golang.org/context">golang.org blog post</a>.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ae81ff">38</span> <span style="color:#75715e">// result wraps the return values from search. It allows us
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">39</span> <span style="color:#75715e">// to pass both values across a single channel.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">40</span> <span style="color:#66d9ef">type</span> <span style="color:#a6e22e">result</span> <span style="color:#66d9ef">struct</span> {
+<span style="color:#ae81ff">41</span>     <span style="color:#a6e22e">record</span> <span style="color:#66d9ef">string</span>
+<span style="color:#ae81ff">42</span>     <span style="color:#a6e22e">err</span>    <span style="color:#66d9ef">error</span>
+<span style="color:#ae81ff">43</span> }
+<span style="color:#ae81ff">44</span> 
+<span style="color:#ae81ff">45</span> <span style="color:#75715e">// process is the work for the program. It finds a record
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">46</span> <span style="color:#75715e">// then prints it. It fails if it takes more than 100ms.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">47</span> <span style="color:#66d9ef">func</span> <span style="color:#a6e22e">process</span>(<span style="color:#a6e22e">term</span> <span style="color:#66d9ef">string</span>) <span style="color:#66d9ef">error</span> {
+<span style="color:#ae81ff">48</span> 
+<span style="color:#ae81ff">49</span>     <span style="color:#75715e">// Create a context that will be canceled in 100ms.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">50</span>     <span style="color:#a6e22e">ctx</span>, <span style="color:#a6e22e">cancel</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">WithTimeout</span>(<span style="color:#a6e22e">context</span>.<span style="color:#a6e22e">Background</span>(), <span style="color:#ae81ff">100</span><span style="color:#f92672">*</span><span style="color:#a6e22e">time</span>.<span style="color:#a6e22e">Millisecond</span>)
+<span style="color:#ae81ff">51</span>     <span style="color:#66d9ef">defer</span> <span style="color:#a6e22e">cancel</span>()
+<span style="color:#ae81ff">52</span> 
+<span style="color:#ae81ff">53</span>     <span style="color:#75715e">// Make a channel for the goroutine to report its result.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">54</span>     <span style="color:#a6e22e">ch</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">result</span>)
+<span style="color:#ae81ff">55</span> 
+<span style="color:#ae81ff">56</span>     <span style="color:#75715e">// Launch a goroutine to find the record. Create a result
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">57</span>     <span style="color:#75715e">// from the returned values to send through the channel.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">58</span>     <span style="color:#66d9ef">go</span> <span style="color:#66d9ef">func</span>() {
+<span style="color:#ae81ff">59</span>         <span style="color:#a6e22e">record</span>, <span style="color:#a6e22e">err</span> <span style="color:#f92672">:=</span> <span style="color:#a6e22e">search</span>(<span style="color:#a6e22e">term</span>)
+<span style="color:#ae81ff">60</span>         <span style="color:#a6e22e">ch</span> <span style="color:#f92672">&lt;-</span> <span style="color:#a6e22e">result</span>{<span style="color:#a6e22e">record</span>, <span style="color:#a6e22e">err</span>}
+<span style="color:#ae81ff">61</span>     }()
+<span style="color:#ae81ff">62</span> 
+<span style="color:#ae81ff">63</span>     <span style="color:#75715e">// Block waiting to either receive from the goroutine&#39;s
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">64</span>     <span style="color:#75715e">// channel or for the context to be canceled.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">65</span>     <span style="color:#66d9ef">select</span> {
+<span style="color:#ae81ff">66</span>     <span style="color:#66d9ef">case</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">ctx</span>.<span style="color:#a6e22e">Done</span>():
+<span style="color:#ae81ff">67</span>         <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">errors</span>.<span style="color:#a6e22e">New</span>(<span style="color:#e6db74">&#34;search canceled&#34;</span>)
+<span style="color:#ae81ff">68</span>     <span style="color:#66d9ef">case</span> <span style="color:#a6e22e">result</span> <span style="color:#f92672">:=</span> <span style="color:#f92672">&lt;-</span><span style="color:#a6e22e">ch</span>:
+<span style="color:#ae81ff">69</span>         <span style="color:#66d9ef">if</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">err</span> <span style="color:#f92672">!=</span> <span style="color:#66d9ef">nil</span> {
+<span style="color:#ae81ff">70</span>             <span style="color:#66d9ef">return</span> <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">err</span>
+<span style="color:#ae81ff">71</span>         }
+<span style="color:#ae81ff">72</span>         <span style="color:#a6e22e">fmt</span>.<span style="color:#a6e22e">Println</span>(<span style="color:#e6db74">&#34;Received:&#34;</span>, <span style="color:#a6e22e">result</span>.<span style="color:#a6e22e">record</span>)
+<span style="color:#ae81ff">73</span>         <span style="color:#66d9ef">return</span> <span style="color:#66d9ef">nil</span>
+<span style="color:#ae81ff">74</span>     }
+<span style="color:#ae81ff">75</span> }
+</code></pre></div><p>In listing 4 on line 50, the <code>process</code> function is rewritten to create a <code>Context</code> that will be canceled in 100ms. For more information on how to use <code>Context</code> read the <a href="https://blog.golang.org/context">golang.org blog post</a>.</p>
 <p>Then on line 54, the program creates an unbuffered channel that allows Goroutines to pass data of the <code>result</code> type. On lines 58 to 61 an anonymous function is defined and then called as a Goroutine. This Goroutine calls <code>search</code> and attempts to send its return values through the channel on line 60.</p>
-
 <p>While the Goroutine is doing its work, the <code>process</code> function executes the <code>select</code> block on line 65. This block has two cases which are both channel receive operations.</p>
-
 <p>On line 66 there is a case which receives from the <code>ctx.Done()</code> channel. This case will be executed if the <code>Context</code> gets canceled (the 100ms duration passes). If this case is executed, then <code>process</code> will return an error indicating that it gave up waiting for <code>search</code> on line 67.</p>
-
 <p>Alternatively, the case on line 68 receives from the <code>ch</code> channel and assigns the value to a variable named <code>result</code>. As before in the sequential implementation, the program checks and handles the error on lines 69 and 70. If there was no error, the program prints the record on line 72 and returns <code>nil</code> to indicate success.</p>
-
 <p>This refactoring sets a maximum duration the <code>process</code> function will wait on <code>search</code> to complete. However this implementation also creates a potential Goroutine leak. Think about what the Goroutine in this code is doing; on line 60 it sends on the channel. Sending on this channel blocks execution until another Goroutine is ready to receive the value. In the timeout case, the receiver stops waiting to receive from the Goroutine and moves on. This will cause the  Goroutine to block <strong>forever</strong> waiting for a receiver to appear which can never happen. This is when the Goroutine leaks.</p>
-
 <h4 id="fix-make-some-space">Fix: Make Some Space</h4>
-
 <p>The simplest way to resolve this leak is to change the channel from an unbuffered channel to a buffered channel with a capacity of 1.</p>
-
-<p><strong>Listing 5</strong><br />
+<p><strong>Listing 5</strong><br>
 <a href="https://play.golang.org/p/u3xtQ48G3qK">https://play.golang.org/p/u3xtQ48G3qK</a></p>
-
-<pre><code class="language-go">53     // Make a channel for the goroutine to report its result.
-54     // Give it capacity so sending doesn't block.
-55     ch := make(chan result, 1)
-</code></pre>
-
-<p>Now in the timeout case, after the receiver has moved on, the search Goroutine will complete its send by placing the <code>result</code> value in the channel then it will return. The memory for that Goroutine will eventually be reclaimed as well as the memory for the channel. Everything will naturally work itself out.</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-go" data-lang="go"><span style="color:#ae81ff">53</span>     <span style="color:#75715e">// Make a channel for the goroutine to report its result.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">54</span>     <span style="color:#75715e">// Give it capacity so sending doesn&#39;t block.
+</span><span style="color:#75715e"></span><span style="color:#ae81ff">55</span>     <span style="color:#a6e22e">ch</span> <span style="color:#f92672">:=</span> make(<span style="color:#66d9ef">chan</span> <span style="color:#a6e22e">result</span>, <span style="color:#ae81ff">1</span>)
+</code></pre></div><p>Now in the timeout case, after the receiver has moved on, the search Goroutine will complete its send by placing the <code>result</code> value in the channel then it will return. The memory for that Goroutine will eventually be reclaimed as well as the memory for the channel. Everything will naturally work itself out.</p>
 <p>In <a href="https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html">The Behavior of Channels</a> William Kennedy gives several great examples of channel behavior and provides philosophy regarding their use. The final example of that article <a href="https://www.ardanlabs.com/blog/2017/10/the-behavior-of-channels.html#signal-without-data-context">&ldquo;Listing 10&rdquo;</a>  shows a program similar to this timeout example. Read that article for more advice on when to use buffered channels and what level of capacity is appropriate.</p>
-
 <h3 id="conclusion">Conclusion</h3>
-
 <p>Go makes it simple to start Goroutines but it is our responsibility to use them wisely. In this post, I have shown one example of how Goroutines can be used incorrectly. There are many more ways to create Goroutine leaks as well as other traps you may encounter when using concurrency. In future posts, I will provide more examples of Goroutine leaks and other concurrency traps. For now I will leave you with this advice; any time you start a Goroutine you must ask yourself:</p>
-
 <ul>
 <li>When will it terminate?</li>
 <li>What could prevent it from terminating?</li>
 </ul>
-
 <p><em><strong>Concurrency is a useful tool, but it must be used with caution.</strong></em></p>
 
 

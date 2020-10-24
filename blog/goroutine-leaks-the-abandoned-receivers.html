@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="generator" content="Hugo 0.47" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
 <link rel="canonical" url="https://www.ardanlabs.com/blog/2018/12/goroutine-leaks-the-abandonded-receivers.html" />
@@ -146,23 +146,14 @@
 
       </header>
 
-      
-
-<p>This post was originally published on the <a href="https://www.ardanlabs.com/blog/2018/12/goroutine-leaks-the-abandonded-receivers.html">Ardan Labs Blog</a>.</p>
-
+      <p>This post was originally published on the <a href="https://www.ardanlabs.com/blog/2018/12/goroutine-leaks-the-abandonded-receivers.html">Ardan Labs Blog</a>.</p>
 <h3 id="introduction">Introduction</h3>
-
 <p>Goroutine Leaks are a common cause of memory leaks in Go programs. In my <a href="https://jacob-walker.com/blog/goroutine-leaks-the-forgotten-sender.html">previous post</a>, I presented an introduction to Goroutine leaks and provided one example of a common mistake that many Go developers make. Continuing that work, this post presents another scenario on how Goroutines could be leaked.</p>
-
 <h3 id="leak-the-abandoned-receivers">Leak: The Abandoned Receivers</h3>
-
 <p><em><strong>For this leak example you will see multiple Goroutines blocked waiting to receive values that will never be sent.</strong></em></p>
-
 <p>The program for this post starts multiple Goroutines to process a batch of records from a file. Each Goroutine receives values from an input channel and then sends new values through an output channel.</p>
-
-<p><strong>Listing 1</strong><br />
+<p><strong>Listing 1</strong><br>
 <a href="https://play.golang.org/p/Jtpla_UvrmN">https://play.golang.org/p/Jtpla_UvrmN</a></p>
-
 <pre><code>35 // processRecords is given a slice of values such as lines
 36 // from a file. The order of these values is not important
 37 // so the function can start multiple workers to perform some
@@ -212,41 +203,25 @@
 81     }
 82     fmt.Printf(&quot;[worker %d]: shutting down\n&quot;, id)
 83 }
-</code></pre>
-
-<p>In Listing 1 on line 39, a function called <code>processRecords</code> is defined. The function accepts a slice of <code>string</code> values. On line 46, a buffered channel called <code>input</code> is created. Lines 47 and 48 run a loop that copies every <code>string</code> value from the slice and sends them into the channel. The <code>input</code> channel is created with enough capacity to hold every value from the slice, so none of the channel sends on line 48 will block. This channel is a pipeline to distribute the values across multiple Goroutines.</p>
-
+</code></pre><p>In Listing 1 on line 39, a function called <code>processRecords</code> is defined. The function accepts a slice of <code>string</code> values. On line 46, a buffered channel called <code>input</code> is created. Lines 47 and 48 run a loop that copies every <code>string</code> value from the slice and sends them into the channel. The <code>input</code> channel is created with enough capacity to hold every value from the slice, so none of the channel sends on line 48 will block. This channel is a pipeline to distribute the values across multiple Goroutines.</p>
 <p>Next on lines 56 through 60, the program creates a pool of Goroutines to receive the work from the pipeline. On line 56, a buffered channel named <code>output</code> is created; this is where each Goroutine will send its result. Lines 57 to 59 run a loop to create a number of Goroutines using the <code>worker</code> function. The number of Goroutines equals the number of logical CPUs on the machine. A copy of the loop variable <code>i</code> as well as the <code>input</code> and <code>output</code> channels are passed in to the Goroutine.</p>
-
 <p>The <code>worker</code> function is defined on line 77. The function’s signature defines <code>input</code> as a <code>&lt;-chan string</code>  which means it’s a receive-only channel. The function also accepts <code>output</code> as a <code>chan&lt;- string</code> which means it’s a send-only channel.</p>
-
 <p>Inside the function, the Goroutines are receiving from the <code>input</code> channel using a <code>range</code> loop on line 78. Using <code>range</code> on a channel receives in a loop until the channel is closed and empty of values. For each iteration, the received value is assigned to the iteration variable <code>v</code> which is printed on line 79. Then on line 80, the <code>worker</code> function passes <code>v</code> to the <code>strings.ToUpper</code> function which returns a new <code>string</code>. The worker immediately sends that new <code>string</code> on the <code>output</code> channel.</p>
-
 <p>Back in the <code>processRecords</code> function, execution has moved down to line 65 where it is running another loop. This loop iterates until it has received and processed all values from the <code>output</code> channel. On line 66, the <code>processRecords</code> function waits to receive a value from one of the worker Goroutines. The received values are printed on line 67. When the program has received a value for each input, it exits the loop and terminates the function.</p>
-
 <p>Running this program prints the transformed data so it seems to work, but the program is leaking multiple Goroutines. The program never reaches line 82 which would announce that the worker is shutting down. Even after the <code>processRecords</code> function returns, each of the worker Goroutines is still alive and waiting for input on line 78. Ranging over a channel receives until the channel is <strong>closed and empty</strong>. The problem is that the program never closes the channel.</p>
-
 <h4 id="fix-signal-completion">Fix: Signal Completion</h4>
-
 <p>Fixing the leak only needs one line of code: <code>close(input)</code>. Closing a channel is a way of signaling &ldquo;no more data will be sent&rdquo;. The most appropriate place to close the channel is right after the last value is sent on line 50 as shown in Listing 2:</p>
-
-<p><strong>Listing 2</strong><br />
+<p><strong>Listing 2</strong><br>
 <a href="https://play.golang.org/p/QNsxbT0eIay">https://play.golang.org/p/QNsxbT0eIay</a></p>
-
 <pre><code>45     total := len(records)
 46     input := make(chan string, total)
 47     for _, record := range records {
 48         input &lt;- record
 49     }
 50     close(input)
-</code></pre>
-
-<p>It’s valid to close a buffered channel that still has values in its buffer; the channel is only closed for sending, not receiving. The worker Goroutines running <code>range input</code> will work through the buffer until they are signaled the channel has been closed. This lets the workers finish their loop before terminating.</p>
-
+</code></pre><p>It’s valid to close a buffered channel that still has values in its buffer; the channel is only closed for sending, not receiving. The worker Goroutines running <code>range input</code> will work through the buffer until they are signaled the channel has been closed. This lets the workers finish their loop before terminating.</p>
 <h3 id="conclusion">Conclusion</h3>
-
 <p>As mentioned in the previous post, Go makes it simple to start Goroutines but it’s your responsibility to use them carefully. In this post, I have shown another Goroutine mistake that can be easily made. There are still many more ways to create Goroutine leaks as well as other traps you may encounter when using concurrency. Future posts will continue discussing these traps. As always, I will continue to repeat the advice &ldquo;<a href="https://dave.cheney.net/2016/12/22/never-start-a-goroutine-without-knowing-how-it-will-stop">Never start a goroutine without knowing how it will stop</a>&rdquo;.</p>
-
 <p><em><strong>Concurrency is a useful tool, but it must be used with caution.</strong></em></p>
 
 

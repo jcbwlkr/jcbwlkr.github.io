@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Jinja2 on jcbwlkr</title>
+    <title>jinja2 on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/jinja2.html</link>
-    <description>Recent content in Jinja2 on jcbwlkr</description>
+    <description>Recent content in jinja2 on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/tags/jinja2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/tags/jinja2/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>pysag</title>
       <link>https://jacob-walker.com/portfolio/pysag.html</link>
@@ -18,9 +14,7 @@
       <guid>https://jacob-walker.com/portfolio/pysag.html</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://github.com/jcbwlkr/pysag&#34;&gt;pysag&lt;/a&gt; is a tool I developed for generating static web apps. It differs
 from other (great) static site generators like Jekyll by being focused on data
-first and pages second.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+first and pages second.&lt;/p&gt;</description>
     </item>
     
   </channel>

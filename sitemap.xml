@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
@@ -88,7 +88,37 @@
   </url>
   
   <url>
+    <loc>https://jacob-walker.com/blog.html</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories.html</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/tags/concurrency.html</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories/go.html</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/</loc>
+    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/tags.html</loc>
     <lastmod>2019-04-18T00:00:00+00:00</lastmod>
   </url>
   
@@ -103,13 +133,73 @@
   </url>
   
   <url>
+    <loc>https://jacob-walker.com/categories/bash.html</loc>
+    <lastmod>2016-10-04T14:27:34-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jacob-walker.com/blog/taming-tmux-find-one-process-among-many-windows.html</loc>
     <lastmod>2016-10-04T14:27:34-05:00</lastmod>
   </url>
   
   <url>
+    <loc>https://jacob-walker.com/tags/tmux.html</loc>
+    <lastmod>2016-10-04T14:27:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories/vim.html</loc>
+    <lastmod>2016-10-04T14:27:34-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/tags/api.html</loc>
+    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories/docker.html</loc>
+    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories/javascript.html</loc>
+    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories/mysql.html</loc>
+    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/portfolio.html</loc>
+    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/tags/tdd.html</loc>
+    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</loc>
     <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/tags/innodb.html</loc>
+    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/tags/oop.html</loc>
+    <lastmod>2013-01-06T00:00:00-06:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jacob-walker.com/categories/php.html</loc>
+    <lastmod>2013-01-06T00:00:00-06:00</lastmod>
   </url>
   
   <url>
@@ -119,215 +209,86 @@
   
   <url>
     <loc>https://jacob-walker.com/tags/angular.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/ansible.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags/api.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/aws.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/bash.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/blog.html</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/bootstrap.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/canvas.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/categories/community.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags/concurrency.html</loc>
-    <lastmod>2019-04-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/docker.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/doctrine.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/e-commerce.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/go.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/html5.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags/innodb.html</loc>
-    <lastmod>2013-06-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/javascript.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/jenkins.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/jinja2.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/mongo.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/mysql.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags/oop.html</loc>
-    <lastmod>2013-01-06T00:00:00-06:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/phabricator.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/php.html</loc>
-    <lastmod>2013-01-06T00:00:00-06:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/portfolio.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/presentation.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/categories/python.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/qemu.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/rails.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/regex.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/categories/ruby.html</loc>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/symfony.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags/tdd.html</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/tags/tmux.html</loc>
-    <lastmod>2016-10-04T14:27:34-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://jacob-walker.com/tags/twig.html</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/categories/vim.html</loc>
-    <lastmod>2016-10-04T14:27:34-05:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://jacob-walker.com/</loc>
-    <lastmod>2016-09-19T22:26:33-05:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

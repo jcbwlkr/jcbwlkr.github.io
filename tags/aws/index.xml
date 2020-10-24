@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aws on jcbwlkr</title>
+    <title>aws on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/aws.html</link>
-    <description>Recent content in Aws on jcbwlkr</description>
+    <description>Recent content in aws on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/tags/aws/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Wrecking Ball Media</title>
       <link>https://jacob-walker.com/portfolio/wrecking-ball-media.html</link>
@@ -20,9 +16,7 @@
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
   </channel>

@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Innodb on jcbwlkr</title>
+    <title>innodb on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/innodb.html</link>
-    <description>Recent content in Innodb on jcbwlkr</description>
+    <description>Recent content in innodb on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 27 Jun 2013 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jacob-walker.com/tags/innodb/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 27 Jun 2013 00:00:00 +0000</lastBuildDate><atom:link href="https://jacob-walker.com/tags/innodb/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Note on Recovering from InnoDB Corruption</title>
       <link>https://jacob-walker.com/blog/a-note-on-recovering-from-innodb-corruption.html</link>
@@ -20,12 +16,9 @@
       <description>&lt;p&gt;InnoDB is a great storage engine for MySQL offering, among other things,
 transaction support. One of its drawbacks is the difficulty that you can face
 when corruption inevitably hits.&lt;/p&gt;
-
 &lt;p&gt;At work we have dealt with corrupt InnoDB tables often enough to make the
 procedure fairly routine. Last week I was faced with a situation that had me
-pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;</description>
     </item>
     
   </channel>

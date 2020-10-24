@@ -5,7 +5,7 @@
 <meta http-equiv="content-type" content="text/html; charset=utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
-<meta name="generator" content="Hugo 0.47" />
+<meta name="generator" content="Hugo 0.76.5" />
 
 
 
@@ -53,7 +53,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <meta property="og:title" content="cqlstore" />
-<meta property="og:description" content="In Go web development the Gorilla web toolkit is a very popular collection of libraries for common web tasks. The gorilla/sessions package provides an easy interface for using/storing users&amp;rsquo; session data. There was no implementation for Cassandra DB so I created one." />
+<meta property="og:description" content="In Go web development the Gorilla web toolkit is a very popular collection of libraries for common web tasks. The gorilla/sessions package provides an easy interface for using/storing users&#39; session data. There was no implementation for Cassandra DB so I created one." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://jacob-walker.com/portfolio/cqlstore.html" />
 <meta property="og:type" content="article" />
@@ -135,18 +135,14 @@
 
       <p>In Go web development the <a href="http://www.gorillatoolkit.org/">Gorilla web toolkit</a> is a very popular
 collection of libraries for common web tasks. The <code>gorilla/sessions</code> package
-provides an easy interface for using/storing users&rsquo; session data. There was no
+provides an easy interface for using/storing users' session data. There was no
 implementation for <a href="http://cassandra.apache.org/">Cassandra DB</a> so I created one.</p>
-
-<p></p>
-
 <p>The <code>gorilla/sessions</code> package itself relies on implementations of its storage
 interface so developers can store the data in whatever place is best for their
 environment. For an application we were prototyping at work we elected to store
 everything in <a href="http://cassandra.apache.org/">Cassandra DB</a>. I created the session store and it
 worked well enough for our prototype. We elected not to use Cassandra for
 staffing reasons so my storage implementation never saw production use.</p>
-
 <ul>
 <li><a href="https://github.com/jcbwlkr/cqlstore">Source</a></li>
 <li><a href="https://godoc.org/github.com/jcbwlkr/cqlstore">Documentation</a></li>

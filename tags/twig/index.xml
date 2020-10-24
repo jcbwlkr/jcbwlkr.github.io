@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Twig on jcbwlkr</title>
+    <title>twig on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/twig.html</link>
-    <description>Recent content in Twig on jcbwlkr</description>
+    <description>Recent content in twig on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/tags/twig/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/tags/twig/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Templating In PHP With Twig</title>
       <link>https://jacob-walker.com/portfolio/twig.html</link>
@@ -18,9 +14,7 @@
       <guid>https://jacob-walker.com/portfolio/twig.html</guid>
       <description>&lt;p&gt;In November 2013 I gave a short presentation to &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; about the PHP
 templating engine &lt;a href=&#34;http://twig.sensiolabs.org&#34;&gt;Twig&lt;/a&gt;. The talk covered the basics of
-installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+installing/configuring Twig, rendering templates, and writing templates.&lt;/p&gt;</description>
     </item>
     
   </channel>

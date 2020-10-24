@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ruby on jcbwlkr</title>
+    <title>ruby on jcbwlkr</title>
     <link>https://jacob-walker.com/categories/ruby.html</link>
-    <description>Recent content in Ruby on jcbwlkr</description>
+    <description>Recent content in ruby on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Implementing OOP</title>
       <link>https://jacob-walker.com/portfolio/implementing-oop.html</link>
@@ -20,9 +16,18 @@
 Object Oriented Programming in PHP and Ruby. I chose this topic when I was
 explaining inheritance to a friend and realized others would be interested. I
 chose PHP and Ruby for examples because I was already familiar with OOP in PHP
-and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Startup Wichita</title>
+      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
+Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
+hackathon to kick-start development on the community site.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -35,22 +40,7 @@ and I wanted to learn more about Ruby&amp;rsquo;s object model.&lt;/p&gt;
 process of hiding the 200-some LiveJournal blog posts I generated in my late
 teens. It uses a public gem to talk to the LiveJournal API. Check out &lt;a href=&#34;https://github.com/jcbwlkr/livejournal-amnesia&#34;&gt;the
 README on GitHub&lt;/a&gt; for more info then you, too, can pretend like
-you never wrote that poem Junior year!&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Startup Wichita</title>
-      <link>https://jacob-walker.com/portfolio/startup-wichita.html</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://jacob-walker.com/portfolio/startup-wichita.html</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;http://startupwichita.com&#34;&gt;Startup Wichita&lt;/a&gt; was a grass roots effort to connect entrepreneurs in
-Wichita with local people and resources. In March 2014 &lt;a href=&#34;https://jacob-walker.com/portfolio/devict.html&#34;&gt;devICT&lt;/a&gt; held a
-hackathon to kick-start development on the community site.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+you never wrote that poem Junior year!&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -62,9 +52,7 @@ hackathon to kick-start development on the community site.&lt;/p&gt;
       <description>&lt;p&gt;&lt;a href=&#34;http://myylwichita.com&#34;&gt;Young Life Wichita&lt;/a&gt; (YLW) is a local chapter of the larger Young Life
 organization. YLW supports local families through various charitable events and
 activities. My consulting company was hired to develop an online application
-where people could RSVP for different activities.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+where people could RSVP for different activities.&lt;/p&gt;</description>
     </item>
     
   </channel>

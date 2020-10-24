@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Docker on jcbwlkr</title>
+    <title>docker on jcbwlkr</title>
     <link>https://jacob-walker.com/categories/docker.html</link>
-    <description>Recent content in Docker on jcbwlkr</description>
+    <description>Recent content in docker on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate>
-    
-	<atom:link href="https://jacob-walker.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Mon, 19 Sep 2016 22:26:33 -0500</lastBuildDate><atom:link href="https://jacob-walker.com/categories/docker/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ardan Labs</title>
       <link>https://jacob-walker.com/portfolio/ardan-labs.html</link>
@@ -19,9 +15,7 @@
       <guid>https://jacob-walker.com/portfolio/ardan-labs.html</guid>
       <description>&lt;p&gt;My full time engagement is with the very talented team at &lt;a href=&#34;https://www.ardanlabs.com/&#34;&gt;Ardan Labs&lt;/a&gt;.
 We specialize in the Go programming language and offer training and consulting
-services.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+services.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -34,9 +28,7 @@ services.&lt;/p&gt;
 Ball Media Group&lt;/a&gt;. As a part of this team I worked on a web based
 community platform for &lt;a href=&#34;http://www.adobe.com/&#34;&gt;Adobe&lt;/a&gt;. The project utilized several different
 APIs from Adobe and other vendors to create a white labeled site for connecting
-and empowering creative youth.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+and empowering creative youth.&lt;/p&gt;</description>
     </item>
     
   </channel>

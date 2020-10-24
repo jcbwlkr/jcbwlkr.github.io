@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Concurrency on jcbwlkr</title>
+    <title>concurrency on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/concurrency.html</link>
-    <description>Recent content in Concurrency on jcbwlkr</description>
+    <description>Recent content in concurrency on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jacob-walker.com/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jacob-walker.com/tags/concurrency/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concurrency Trap #2: Incomplete Work</title>
       <link>https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html</link>

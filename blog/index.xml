@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on jcbwlkr</title>
@@ -6,11 +6,7 @@
     <description>Recent content in Blog on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://jacob-walker.com/blog/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 18 Apr 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://jacob-walker.com/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Concurrency Trap #2: Incomplete Work</title>
       <link>https://jacob-walker.com/blog/2019/04/concurrency-trap-2-incomplete-work.html</link>
@@ -53,9 +49,7 @@ and more windows and my workspace starts to get a bit cluttered. Occasionally I
 will try to open some file in vim that is already open in another window. I
 used to dread playing &amp;ldquo;find the right window,&amp;rdquo; especially if I had backgrounded
 vim. This happened often enough that I spent the time to make a little tmux
-keybinding for finding that window automatically.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+keybinding for finding that window automatically.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -67,12 +61,9 @@ keybinding for finding that window automatically.&lt;/p&gt;
       <description>&lt;p&gt;InnoDB is a great storage engine for MySQL offering, among other things,
 transaction support. One of its drawbacks is the difficulty that you can face
 when corruption inevitably hits.&lt;/p&gt;
-
 &lt;p&gt;At work we have dealt with corrupt InnoDB tables often enough to make the
 procedure fairly routine. Last week I was faced with a situation that had me
-pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+pulling my hair out; in fact we almost threw in the towel.&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -86,9 +77,7 @@ recently I saw how Mark Baker overrides the magic &lt;code&gt;__clone&lt;/code&g
 comments about ensuring that cloning will perform a deep copy instead of a
 shallow one. This is a topic with which I had not had much experience so I did
 some research and experimenting to learn what happens when you use &lt;code&gt;clone&lt;/code&gt; and
-the difference between a shallow copy and a deep copy.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+the difference between a shallow copy and a deep copy.&lt;/p&gt;</description>
     </item>
     
   </channel>

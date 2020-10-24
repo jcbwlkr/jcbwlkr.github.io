@@ -1,15 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Symfony on jcbwlkr</title>
+    <title>symfony on jcbwlkr</title>
     <link>https://jacob-walker.com/tags/symfony.html</link>
-    <description>Recent content in Symfony on jcbwlkr</description>
+    <description>Recent content in symfony on jcbwlkr</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    
-	<atom:link href="https://jacob-walker.com/tags/symfony/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <language>en-us</language><atom:link href="https://jacob-walker.com/tags/symfony/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Norris Training Systems</title>
       <link>https://jacob-walker.com/portfolio/norris-training.html</link>
@@ -21,9 +17,7 @@ education training to insurance agents. My consulting company &lt;a href=&#34;ht
 Consulting, LLC&lt;/a&gt; developed their e-commerce website which allows
 agents to purchase and schedule classes. Additionally agents can download
 documents associated with their course and take related quizzes to prepare for
-their state license exam.&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;</description>
+their state license exam.&lt;/p&gt;</description>
     </item>
     
   </channel>
