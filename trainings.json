@@ -1,21 +1,21 @@
 {
-	"Students": 1397,
+	"Students": 1427,
 	"StudentsByType": {
 		"Community/Talk": 140,
 		"Community/Training": 85,
 		"Conference/Talk": 355,
 		"Conference/Training": 131,
-		"Corporate/Training": 686
+		"Corporate/Training": 716
 	},
 	"EventsByType": {
 		"Community/Talk": 7,
 		"Community/Training": 5,
 		"Conference/Talk": 3,
 		"Conference/Training": 2,
-		"Corporate/Training": 26
+		"Corporate/Training": 27
 	},
-	"Count": 43,
-	"Companies": 25,
+	"Count": 44,
+	"Companies": 26,
 	"Cities": 20,
 	"Countries": 5,
 	"Events": [
@@ -543,7 +543,7 @@
 			"Start": "2019-04-24T00:00:00Z",
 			"End": "2019-04-26T00:00:00Z",
 			"Location": "Singapore",
-			"Country": "Singapore",
+			"Country": "SG",
 			"Host": "Singapore Power",
 			"Event": "Corporate",
 			"Type": "Training",
@@ -556,7 +556,7 @@
 			"Start": "2019-04-29T00:00:00Z",
 			"End": "2019-04-30T00:00:00Z",
 			"Location": "Singapore",
-			"Country": "Singapore",
+			"Country": "SG",
 			"Host": "GopherCon Singapore",
 			"Event": "Conference",
 			"Type": "Training",
@@ -569,13 +569,26 @@
 			"Start": "2019-05-03T00:00:00Z",
 			"End": "2019-05-03T00:00:00Z",
 			"Location": "Singapore",
-			"Country": "Singapore",
+			"Country": "SG",
 			"Host": "GopherCon Singapore",
 			"Event": "Conference",
 			"Type": "Talk",
 			"Language": "Go",
 			"Topic": "Go",
 			"Attendees": 300,
+			"URL": "https://www.youtube.com/watch?v=ZMZpH4yT7M0"
+		},
+		{
+			"Start": "2019-05-14T00:00:00Z",
+			"End": "2019-05-16T00:00:00Z",
+			"Location": "Boston, MA",
+			"Country": "US",
+			"Host": "Wayfair",
+			"Event": "Corporate",
+			"Type": "Training",
+			"Language": "Service",
+			"Topic": "Go",
+			"Attendees": 30,
 			"URL": ""
 		}
 	]
